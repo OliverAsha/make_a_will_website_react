@@ -1,68 +1,69 @@
 import { Link } from 'react-router-dom';
 import { BlogIllustration } from '../components/Illustrations';
+import SEO from '../components/SEO';
 
 function Blog() {
   const blogPosts = [
     {
       title: "Have you thought about these 5 reasons to update your will?",
       excerpt: "Life changes constantly, and your will should reflect those changes. Here are five important reasons you might need to update your will.",
-      date: "October 2025",
+      date: "2025-10-20",
       category: "General Guidance",
       path: "/5-reasons-to-update-your-will"
     },
     {
       title: "Why make a will?",
       excerpt: "Making a will is one of the most important things you can do to protect your family and ensure your wishes are carried out.",
-      date: "October 2025",
+      date: "2025-10-12",
       category: "General Guidance",
       path: "/why-make-a-will"
     },
     {
       title: "What is Probate and do I need it?",
       excerpt: "Understanding probate is essential if you're dealing with someone's estate. Learn what probate is and when it's required.",
-      date: "September 2025",
+      date: "2025-09-28",
       category: "Executors and Probate",
       path: "/do-I-need-probate"
     },
     {
       title: "What happens if you die without a will?",
       excerpt: "Dying without a will means your estate will be distributed according to intestacy rules, which may not reflect your wishes.",
-      date: "September 2025",
+      date: "2025-09-15",
       category: "General Guidance",
       path: "/dying-without-a-will-intestacy"
     },
     {
       title: "Children and gifts in wills: 5 ways to get peace of mind",
       excerpt: "When you have children, making a will becomes even more important. Here's how to ensure your children are protected.",
-      date: "August 2025",
+      date: "2025-08-22",
       category: "Family Situations",
       path: "/children-and-gifts-in-wills"
     },
     {
       title: "What is a Lasting Power of Attorney?",
       excerpt: "An LPA lets you appoint someone to make decisions on your behalf if you lose mental capacity. Find out why it's important.",
-      date: "August 2025",
+      date: "2025-08-10",
       category: "Lasting Powers of Attorney",
       path: "/resource/lasting-power-of-attorney"
     },
     {
       title: "Do you cohabit? Your key questions answered",
       excerpt: "Unmarried couples have very different rights from married couples when it comes to inheritance. Here's what you need to know.",
-      date: "July 2025",
+      date: "2025-07-25",
       category: "Family Situations",
       path: "/do-you-cohabit"
     },
     {
       title: "Wills for British Ex-Pats",
       excerpt: "Living abroad as a British citizen? Understanding how different jurisdictions affect your will is crucial.",
-      date: "July 2025",
+      date: "2025-07-11",
       category: "Wills for British Expats",
       path: "/uk-expat-wills"
     },
     {
       title: "Charity Gifts in Wills: how and why",
       excerpt: "Leaving a gift to charity in your will can make a lasting difference and may even reduce inheritance tax on your estate.",
-      date: "June 2025",
+      date: "2025-06-18",
       category: "General Guidance",
       path: "/charity-gifts-in-wills-how-and-why"
     }
@@ -79,6 +80,7 @@ function Blog() {
 
   return (
     <>
+      <SEO />
       <div className="page-header">
         <div className="container">
           <h1>Blog</h1>
@@ -103,7 +105,7 @@ function Blog() {
                     </div>
                     <div className="blog-card-content">
                       <div className="blog-card-meta">
-                        {post.date} • {post.category}
+                        <time dateTime={post.date}>{new Date(post.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}</time> • {post.category}
                       </div>
                       <h3>{post.title}</h3>
                       <p>{post.excerpt}</p>

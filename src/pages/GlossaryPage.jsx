@@ -1,12 +1,13 @@
 import { useLocation, Link } from 'react-router-dom';
 import { GlossaryIllustration } from '../components/Illustrations';
+import SEO from '../components/SEO';
 
 // Glossary terms content
 const glossaryContent = {
   'beneficiary': {
     title: 'Beneficiary',
     content: `
-      <p>A beneficiary is any person or organisation that receives something under a will. The term covers anyone who inherits from your estate, whether they receive a specific item, a sum of money, or a share of what's left after other gifts and debts are paid.</p>
+      <p>A beneficiary is any person or organisation that receives something under <a href="/resource/do-i-need-to-make-a-will">a will</a>. The term covers anyone who inherits from your estate, whether they receive a specific item, a sum of money, or a share of what's left after other gifts and debts are paid.</p>
 
       <h2>Types of beneficiary</h2>
       <p>Beneficiaries can include:</p>
@@ -26,8 +27,8 @@ const glossaryContent = {
       <h2>Rules about beneficiaries</h2>
       <ul>
         <li>Anyone can be a beneficiary - there are no restrictions on who you can leave your estate to</li>
-        <li>Beneficiaries can also be executors (very common with spouses and children)</li>
-        <li>Beneficiaries should NOT witness the will - if they do, their gift is void</li>
+        <li>Beneficiaries can also be <a href="/resource/executors">executors</a> (very common with spouses and children)</li>
+        <li>Beneficiaries should NOT <a href="/resource/who-can-witness-a-will">witness the will</a> - if they do, their gift is void</li>
         <li>A beneficiary's spouse should also not witness the will</li>
       </ul>
     `
@@ -35,7 +36,7 @@ const glossaryContent = {
   'bequest': {
     title: 'Bequest',
     content: `
-      <p>A bequest is a gift made in a will. The term is often used interchangeably with "legacy" or "gift", though technically a bequest refers specifically to a gift of personal property (not real estate).</p>
+      <p>A bequest is a gift made in <a href="/resource/do-i-need-to-make-a-will">a will</a>. The term is often used interchangeably with "legacy" or "gift", though technically a bequest refers specifically to a gift of personal property (not real estate).</p>
 
       <h2>Types of bequest</h2>
 
@@ -61,13 +62,13 @@ const glossaryContent = {
       </ul>
 
       <h2>Making bequests in your will</h2>
-      <p>When making bequests, be as specific as possible about what you're giving and to whom. Vague descriptions can lead to disputes. Our solicitor-checked wills ensure your bequests are clearly worded.</p>
+      <p>When making bequests, be as specific as possible about what you're giving and to whom. Vague descriptions can lead to disputes. Our solicitor-checked wills ensure your bequests are clearly worded. See our <a href="/resource/will-writing-glossary">will writing glossary</a> for more terms.</p>
     `
   },
   'codicil': {
     title: 'Codicil',
     content: `
-      <p>A codicil is a document that makes changes to an existing will without replacing it entirely. It must be signed and witnessed in the same way as a will.</p>
+      <p>A codicil is a document that makes <a href="/resource/how-to-change-your-will">changes to an existing will</a> without replacing it entirely. It must be signed and witnessed in the same way as a will.</p>
 
       <h2>When to use a codicil</h2>
       <p>Historically, codicils were used for minor amendments:</p>
@@ -79,7 +80,7 @@ const glossaryContent = {
       </ul>
 
       <h2>Why codicils are rarely used today</h2>
-      <p>Modern will-writing services (including ours) have made it so easy and affordable to create a new will that codicils are rarely recommended anymore. Making a new will has several advantages:</p>
+      <p>Modern <a href="/resource/will-writing-glossary">will-writing</a> services (including ours) have made it so easy and affordable to create a new will that codicils are rarely recommended anymore. Making a new will has several advantages:</p>
       <ul>
         <li><strong>Clearer:</strong> Everything is in one document</li>
         <li><strong>Safer:</strong> No risk of the codicil being separated from the will</li>
@@ -96,13 +97,13 @@ const glossaryContent = {
       </ul>
 
       <h2>Our recommendation</h2>
-      <p>With our lifetime updates feature, you can simply create a new will whenever your circumstances change. This is safer, clearer, and included in your original purchase. There's no good reason to use codicils when updating your will is so straightforward.</p>
+      <p>With our <a href="/lifetime-updates">lifetime updates</a> feature, you can simply create a new will whenever your circumstances change. This is safer, clearer, and included in your original purchase. There's no good reason to use codicils when updating your will is so straightforward.</p>
     `
   },
   'legacy': {
     title: 'Legacy',
     content: `
-      <p>A legacy is a gift left to someone in a will. The word is often used interchangeably with "bequest" or simply "gift". In everyday language, leaving a "legacy" also means the lasting impact you have on the world.</p>
+      <p>A legacy is a gift left to someone in a will. The word is often used interchangeably with "bequest" or simply "gift". In everyday language, leaving a "legacy" also means the lasting impact you have on the world. See our <a href="/resource/will-writing-glossary">will writing glossary</a> for related terms.</p>
 
       <h2>Types of legacy</h2>
 
@@ -119,7 +120,7 @@ const glossaryContent = {
       <p>A gift from a specific fund or source: "I leave £5,000 from my Premium Bonds to charity."</p>
 
       <h2>Charitable legacies</h2>
-      <p>A charitable legacy is a gift to a registered charity in your will. These are exempt from inheritance tax and can help reduce the tax rate on the rest of your estate if they amount to at least 10% of your net estate.</p>
+      <p>A charitable legacy is a gift to a registered charity in your will. These are exempt from <a href="/charity-gifts-in-wills-how-and-why">inheritance tax</a> and can help reduce the tax rate on the rest of your estate if they amount to at least 10% of your net estate.</p>
 
       <h2>Things to consider when leaving legacies</h2>
       <ul>
@@ -134,10 +135,10 @@ const glossaryContent = {
   'testator': {
     title: 'Testator',
     content: `
-      <p>The testator is the person who makes a will. If you're making a will, you're the testator. The female equivalent (testatrix) is now rarely used - "testator" applies to everyone.</p>
+      <p>The testator is the person who makes a will. If you're making a will, you're the testator. The female equivalent (testatrix) is now rarely used - "testator" applies to everyone. See our <a href="/resource/will-writing-glossary">will writing glossary</a> for more terms.</p>
 
       <h2>Requirements to be a testator</h2>
-      <p>To make a valid will as a testator, you must:</p>
+      <p>To make a valid will as a testator, you must meet certain <a href="/resource/are-online-wills-legal">legal requirements</a>:</p>
       <ul>
         <li><strong>Be at least 18 years old</strong> (with some exceptions for members of the armed forces)</li>
         <li><strong>Have "testamentary capacity"</strong> - you must understand what making a will means, know roughly what you own, and understand who might expect to benefit from your estate</li>
@@ -191,6 +192,7 @@ function GlossaryPage() {
 
   return (
     <>
+      <SEO />
       <div className="page-header">
         <div className="container">
           <h1>{term.title}</h1>

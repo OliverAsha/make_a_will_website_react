@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -41,6 +42,29 @@ function App() {
   return (
     <Router>
       <div className="app">
+        <Helmet>
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Make a Will",
+              "url": "https://www.makeawill.co.uk",
+              "logo": "https://www.makeawill.co.uk/logos/makeawill_websitelogo.png",
+              "description": "The UK's only solicitor-checked online will writing service. Create your legally valid will in minutes.",
+              "foundingDate": "2008",
+              "areaServed": {
+                "@type": "Country",
+                "name": "United Kingdom"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "customer service",
+                "availableLanguage": "English"
+              },
+              "sameAs": []
+            })}
+          </script>
+        </Helmet>
         <Header />
         <main>
           <Routes>
@@ -55,7 +79,7 @@ function App() {
 
             {/* Resources */}
             <Route path="/resource" element={<Resources />} />
-            <Route path="/resources" element={<Resources />} />
+            <Route path="/resources" element={<Resources canonical="/resource" />} />
             <Route path="/resource/:slug" element={<ResourcePage />} />
             <Route path="/resources/:slug" element={<ResourcePage />} />
             <Route path="/useful-resources" element={<Resources />} />

@@ -1,4 +1,5 @@
 import { useLocation, Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 import {
   LifetimeUpdatesIllustration,
   MirrorWillsIllustration,
@@ -29,13 +30,13 @@ const serviceContent = {
     title: 'Lifetime Updates',
     description: 'Update your will whenever you need',
     content: `
-      <p>Life changes, and your will should change with it. With our lifetime updates feature, you can modify your will as many times as you need, at no extra cost.</p>
+      <p>Life changes, and your will should change with it. With our lifetime updates feature, you can modify your will as many times as you need, at no extra cost. Find out <a href="/resource/how-to-change-your-will">how to change your will</a> whenever your circumstances evolve.</p>
 
       <h2>Why lifetime updates matter</h2>
       <p>Your circumstances will change over time. You might:</p>
       <ul>
-        <li>Get married or divorced</li>
-        <li>Have children or grandchildren</li>
+        <li><a href="/resource/i-am-getting-married-do-i-need-a-will">Get married</a> or <a href="/resource/separated-from-partner-divorce-wills">divorced</a></li>
+        <li>Have <a href="/resource/legal-guardians">children</a> or grandchildren</li>
         <li>Lose a loved one named in your will</li>
         <li>Buy or sell property</li>
         <li>Move to a different country</li>
@@ -77,14 +78,14 @@ const serviceContent = {
     title: 'Mirror Wills',
     description: 'Matching wills for couples',
     content: `
-      <p>Mirror wills are matching wills for couples that reflect each other. They're the most popular choice for married couples and civil partners.</p>
+      <p>Mirror wills are matching wills for couples that reflect each other. They're the most popular choice for <a href="/resource/i-am-getting-married-do-i-need-a-will">married</a> couples and civil partners.</p>
 
       <h2>What are mirror wills?</h2>
       <p>Mirror wills are two separate wills that contain essentially the same provisions. Typically:</p>
       <ul>
         <li>Each partner leaves everything to the other</li>
         <li>If both have died, the estate goes to children or other named beneficiaries</li>
-        <li>Each partner names the same (or similar) executors and guardians</li>
+        <li>Each partner names the same (or similar) <a href="/resource/executors">executors</a> and guardians</li>
       </ul>
       <p>They're called "mirror" wills because they reflect each other - what Partner A says about Partner B is mirrored by what Partner B says about Partner A.</p>
 
@@ -108,7 +109,7 @@ const serviceContent = {
       <h2>When to consider alternatives</h2>
       <p>Mirror wills might not be right if:</p>
       <ul>
-        <li>You have children from previous relationships (blended families)</li>
+        <li>You have children from previous relationships (<a href="/resource/blended-families">blended families</a>)</li>
         <li>You have very different assets or wishes</li>
         <li>You want to protect assets from future claims</li>
         <li>You're concerned about remarriage after your death</li>
@@ -510,6 +511,7 @@ function ServicePage() {
 
   return (
     <>
+      <SEO />
       <div className="page-header">
         <div className="container">
           <h1>{page.title}</h1>

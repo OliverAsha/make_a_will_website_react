@@ -80,8 +80,11 @@ function Hero() {
         <div className="hero-inner">
           <div className="hero-content">
             <h1>
-              <span>Peace of mind</span> in minutes
+              <span>Make a Will Online</span> — Solicitor-Checked from £90
             </h1>
+            <p className="hero-subtitle">
+              The UK's only online will writing service where every will is reviewed by a qualified solicitor. Create your legally valid will in as little as 15 minutes.
+            </p>
             <ul className="hero-features">
               <li>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -93,19 +96,19 @@ function Hero() {
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <polyline points="20 6 9 17 4 12"/>
                 </svg>
-                <span><strong>Quick and easy</strong> — Complete your will in as little as 15 minutes</span>
+                <span><strong>Single will £90, mirror wills £135</strong> — Clear, affordable pricing</span>
               </li>
               <li>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <polyline points="20 6 9 17 4 12"/>
                 </svg>
-                <span><strong>Legally valid</strong> — Meets all UK legal requirements</span>
+                <span><strong>Legally valid in England &amp; Wales</strong> — Meets all UK legal requirements</span>
               </li>
               <li>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <polyline points="20 6 9 17 4 12"/>
                 </svg>
-                <span><strong>Lifetime updates</strong> — Update your will whenever you need</span>
+                <span><strong>Lifetime updates included</strong> — Update your will whenever you need</span>
               </li>
               <li>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

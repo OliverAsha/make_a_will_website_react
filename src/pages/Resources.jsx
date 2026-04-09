@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import { ResourcesIllustration } from '../components/Illustrations';
+import SEO from '../components/SEO';
 
-function Resources() {
+function Resources({ canonical }) {
   const resourceCategories = [
     {
       title: "Making a Will",
@@ -13,6 +14,9 @@ function Resources() {
         { title: "Who can witness a will?", path: "/resource/who-can-witness-a-will" },
         { title: "How To Sign a Will", path: "/resource/how-to-sign-execute-a-will" },
         { title: "Will writing glossary", path: "/resource/will-writing-glossary" },
+        { title: "How much does it cost to make a will?", path: "/resource/cost-of-making-a-will" },
+        { title: "Will template UK", path: "/resource/will-template-uk" },
+        { title: "How to change your will", path: "/resource/how-to-change-your-will" },
       ]
     },
     {
@@ -24,6 +28,9 @@ function Resources() {
         { title: "How to apply for Probate", path: "/resource/apply-for-probate" },
         { title: "Probate Directory", path: "/resource/probate-directory" },
         { title: "Understanding estate accounts", path: "/resource/preparing-estate-accounts" },
+        { title: "What to do when someone dies", path: "/resource/what-to-do-when-someone-dies" },
+        { title: "Inheritance tax guide", path: "/resource/inheritance-tax-guide" },
+        { title: "Trusts in wills", path: "/resource/trusts-in-wills" },
       ]
     },
     {
@@ -35,6 +42,7 @@ function Resources() {
         { title: "What is an attorney?", path: "/resource/attorneys" },
         { title: "Choosing attorneys", path: "/resource/choosing-attorneys" },
         { title: "How much does an LPA cost?", path: "/resource/lpa-cost" },
+        { title: "LPA vs Will: what's the difference?", path: "/resource/lpa-vs-will" },
       ]
     },
     {
@@ -70,6 +78,7 @@ function Resources() {
 
   return (
     <>
+      <SEO canonical={canonical ? `https://www.makeawill.co.uk${canonical}` : undefined} />
       <div className="page-header">
         <div className="container">
           <h1>Resources</h1>

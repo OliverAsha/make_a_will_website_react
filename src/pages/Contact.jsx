@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { ContactIllustration } from '../components/Illustrations';
+import SEO from '../components/SEO';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -24,6 +25,7 @@ function Contact() {
 
   return (
     <>
+      <SEO />
       <div className="page-header">
         <div className="container">
           <h1>Contact Us</h1>

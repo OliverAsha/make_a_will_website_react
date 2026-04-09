@@ -1,17 +1,19 @@
 import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
+import SEO from '../components/SEO';
 
 function Home() {
   return (
     <>
+      <SEO />
       <Hero />
 
       {/* Steps Section */}
       <section className="steps-section">
         <div className="container">
           <div className="section-title">
-            <h2>Make Your Will in 3 Simple Steps</h2>
-            <p>Creating a legally valid will has never been easier. Our guided process ensures nothing is missed.</p>
+            <h2>Make Your Will Online in 3 Simple Steps</h2>
+            <p>Creating a legally valid, solicitor-checked will has never been easier. Our guided process ensures nothing is missed.</p>
           </div>
           <div className="steps-grid">
             <div className="step-card">
@@ -89,8 +91,8 @@ function Home() {
       <section className="comparison-section">
         <div className="container">
           <div className="section-title">
-            <h2>Why Choose Make a Will Online?</h2>
-            <p>See how we compare to other options for creating your will.</p>
+            <h2>Why Choose Our Online Will Writing Service?</h2>
+            <p>See how our solicitor-checked wills compare to other options in the UK.</p>
           </div>
           <table className="comparison-table">
             <thead>

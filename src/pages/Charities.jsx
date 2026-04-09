@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import Breadcrumb from '../components/Breadcrumb';
 import { CharitiesIllustration } from '../components/Illustrations';
+import SEO from '../components/SEO';
 
 function Charities() {
   const charityServices = [
@@ -32,6 +33,7 @@ function Charities() {
 
   return (
     <>
+      <SEO />
       <div className="page-header">
         <div className="container">
           <Breadcrumb items={[

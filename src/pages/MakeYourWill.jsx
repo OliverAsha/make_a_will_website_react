@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom';
 import { MakeWillIllustration } from '../components/Illustrations';
+import SEO from '../components/SEO';
 
 function MakeYourWill() {
   return (
     <>
+      <SEO />
       <div className="page-header">
         <div className="container">
           <h1>Make Your Will</h1>

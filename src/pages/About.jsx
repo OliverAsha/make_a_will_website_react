@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom';
 import { AboutIllustration } from '../components/Illustrations';
+import SEO from '../components/SEO';
 
 function About() {
   return (
     <>
+      <SEO />
       <div className="page-header">
         <div className="container">
           <h1>About Us</h1>

@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom';
 import { SampleWillIllustration } from '../components/Illustrations';
+import SEO from '../components/SEO';
 
 function SampleWill() {
   return (
     <>
+      <SEO />
       <div className="page-header">
         <div className="container">
           <h1>Sample Will</h1>
@@ -119,6 +121,8 @@ function SampleWill() {
               <li><strong>Residuary estate:</strong> Everything else goes to your main beneficiary</li>
               <li><strong>Attestation clause:</strong> Witnesses confirm the will was properly signed</li>
             </ul>
+
+            <p>For a detailed breakdown of what each section means and why it matters, see our guide to <Link to="/resource/will-template-uk">what your will should include</Link>.</p>
 
             <h2>Your Will Can Include</h2>
             <ul>

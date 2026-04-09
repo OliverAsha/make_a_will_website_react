@@ -1,5 +1,6 @@
 import { useParams, useLocation, Link } from 'react-router-dom';
 import Breadcrumb from '../components/Breadcrumb';
+import SEO from '../components/SEO';
 import {
   GeneralGuidanceIllustration,
   FamilyIllustration,
@@ -49,13 +50,13 @@ const externalResourcesByCategory = {
 const blogContent = {
   'why-make-a-will': {
     title: 'Why Make a Will?',
-    date: 'October 2025',
+    date: '2025-10-12',
     category: 'General Guidance',
     content: `
       <p>Making a will is one of the most important things you can do to protect your family and ensure your wishes are carried out after you die. Yet surveys consistently show that around half of adults in the UK don't have one. Here's why you should.</p>
 
       <h2>You decide who inherits</h2>
-      <p>Without a will, the law decides who gets your estate through the intestacy rules. These rules are rigid and may not match your wishes at all. For example:</p>
+      <p>Without a will, the law decides who gets your estate through the <a href="/resource/dying-without-a-will-intestacy">intestacy rules</a>. These rules are rigid and may not match your wishes at all. For example:</p>
       <ul>
         <li>Unmarried partners receive nothing, regardless of how long you've been together</li>
         <li>Stepchildren don't inherit unless you've adopted them</li>
@@ -65,11 +66,11 @@ const blogContent = {
       <p>A will puts you in control. You can leave your estate to whoever you choose, in whatever proportions you decide.</p>
 
       <h2>Protect your children</h2>
-      <p>If you have children under 18, a will lets you name guardians - the people who would look after your children if you're no longer able to. Without this, the court decides, and they may not choose who you would have chosen.</p>
-      <p>You can also set up trusts within your will to manage money for your children until they're old enough to handle it themselves. Many parents choose to delay inheritance until children are 21 or 25, rather than letting them inherit everything at 18.</p>
+      <p>If you have children under 18, a will lets you <a href="/resource/legal-guardians">name guardians</a> - the people who would look after your children if you're no longer able to. Without this, the court decides, and they may not choose who you would have chosen.</p>
+      <p>You can also set up <a href="/resource/trusts-in-wills">trusts</a> within your will to manage money for your children until they're old enough to handle it themselves. Many parents choose to delay inheritance until children are 21 or 25, rather than letting them inherit everything at 18.</p>
 
       <h2>Reduce inheritance tax</h2>
-      <p>Careful will planning can significantly reduce the inheritance tax bill on your estate. Options include:</p>
+      <p>Careful will planning can significantly <a href="/charity-gifts-in-wills-how-and-why">reduce the inheritance tax bill</a> on your estate. Options include:</p>
       <ul>
         <li>Using your spouse's nil-rate band effectively</li>
         <li>Leaving at least 10% to charity (which reduces the IHT rate from 40% to 36%)</li>
@@ -80,7 +81,7 @@ const blogContent = {
       <h2>Make things easier for your family</h2>
       <p>Dealing with someone's affairs after they die is hard enough without uncertainty about their wishes. A clear will makes the process much easier:</p>
       <ul>
-        <li>Executors know what to do and have clear authority to act</li>
+        <li><a href="/resource/executors">Executors</a> know what to do and have clear authority to act</li>
         <li>Beneficiaries know what they're entitled to</li>
         <li>Disputes and uncertainty are minimised</li>
         <li>The estate can be administered more quickly</li>
@@ -92,7 +93,7 @@ const blogContent = {
       <h2>When should I make a will?</h2>
       <p>Now. Whatever your age or circumstances, you should have a will. Key life events that should definitely prompt you to make or update a will include:</p>
       <ul>
-        <li>Getting married (marriage cancels previous wills)</li>
+        <li><a href="/resource/i-am-getting-married-do-i-need-a-will">Getting married</a> (marriage cancels previous wills)</li>
         <li>Having children</li>
         <li>Buying property</li>
         <li>Divorce or separation</li>
@@ -103,22 +104,22 @@ const blogContent = {
   },
   'why-write-a-will': {
     title: 'Why Write a Will?',
-    date: 'October 2025',
+    date: '2025-10-12',
     category: 'General Guidance',
     content: `
       <p>If you've ever wondered whether you really need to write a will, the answer is almost certainly yes. Here's a comprehensive look at why writing a will matters and what can happen if you don't.</p>
 
       <h2>The consequences of not having a will</h2>
-      <p>When someone dies without a will (intestate), their estate is distributed according to strict legal rules. These intestacy rules were last updated in 2014 and may produce results you wouldn't want:</p>
+      <p>When someone dies without a will (<a href="/resource/dying-without-a-will-intestacy">intestate</a>), their estate is distributed according to strict legal rules. These intestacy rules were last updated in 2014 and may produce results you wouldn't want:</p>
 
       <h3>For married couples</h3>
       <p>Your spouse doesn't automatically get everything. If you have children, your spouse gets the first £322,000 plus personal possessions, and only half of anything above that. Your children get the rest.</p>
 
       <h3>For unmarried couples</h3>
-      <p>Your partner gets absolutely nothing under intestacy rules - even if you've been together for decades, have children together, or own a home jointly. Everything goes to blood relatives.</p>
+      <p>Your <a href="/do-you-cohabit">partner gets absolutely nothing</a> under intestacy rules - even if you've been together for decades, have children together, or own a home jointly. Everything goes to blood relatives.</p>
 
       <h3>For those with stepchildren</h3>
-      <p>Stepchildren you've raised as your own receive nothing unless you've formally adopted them. Only biological and legally adopted children inherit.</p>
+      <p><a href="/resource/wills-and-stepchildren">Stepchildren</a> you've raised as your own receive nothing unless you've formally adopted them. Only biological and legally adopted children inherit.</p>
 
       <h2>Who needs a will most?</h2>
       <p>While everyone should have a will, it's especially critical if you:</p>
@@ -136,8 +137,8 @@ const blogContent = {
       <h2>What can you include in a will?</h2>
       <p>A will isn't just about who gets what. You can also:</p>
       <ul>
-        <li>Appoint guardians for your children</li>
-        <li>Set up trusts to protect assets</li>
+        <li><a href="/resource/legal-guardians">Appoint guardians</a> for your children</li>
+        <li>Set up <a href="/resource/trusts-in-wills">trusts</a> to protect assets</li>
         <li>Specify when beneficiaries inherit (at 18, 21, 25, etc.)</li>
         <li>Leave instructions about your funeral</li>
         <li>Make charitable donations</li>
@@ -161,7 +162,7 @@ const blogContent = {
   },
   '5-reasons-to-update-your-will': {
     title: 'Have You Thought About These 5 Reasons to Update Your Will?',
-    date: 'October 2025',
+    date: '2025-10-20',
     category: 'General Guidance',
     content: `
       <p>Making a will isn't a one-time event. Your circumstances change over time, and your will should change with them. Here are five key reasons why you might need to update your will.</p>
@@ -170,12 +171,12 @@ const blogContent = {
       <p>These are probably the most important triggers for updating your will.</p>
 
       <h3>Getting married</h3>
-      <p>Marriage automatically cancels any existing will you have. This is the law in England and Wales. If you marry without making a new will, you'll die intestate, which may not reflect your wishes at all.</p>
+      <p><a href="/resource/i-am-getting-married-do-i-need-a-will">Marriage automatically cancels any existing will</a> you have. This is the law in England and Wales. If you marry without making a new will, you'll die intestate, which may not reflect your wishes at all.</p>
 
       <h3>Getting divorced</h3>
       <p>When your divorce becomes final, your ex-spouse is treated as if they had died for the purposes of your will. They won't inherit and can't act as executor. However, this might mean your estate goes to someone you didn't intend, so you should still make a new will.</p>
 
-      <h3>Separation</h3>
+      <h3><a href="/resource/separated-from-partner-divorce-wills">Separation</a></h3>
       <p>Unlike divorce, separation has no effect on your will. Your estranged spouse could still inherit everything. If you've separated, update your will immediately.</p>
 
       <h2>2. Children and grandchildren</h2>
@@ -185,7 +186,7 @@ const blogContent = {
         <li>You want to change how money is divided between children</li>
         <li>Your children reach adulthood (you might want to remove trustees)</li>
         <li>A child has special needs requiring trust arrangements</li>
-        <li>Your chosen guardians are no longer appropriate</li>
+        <li>Your chosen <a href="/resource/legal-guardians">guardians</a> are no longer appropriate</li>
       </ul>
 
       <h2>3. Death of a beneficiary or executor</h2>
@@ -210,18 +211,18 @@ const blogContent = {
 
       <h2>How often should I review my will?</h2>
       <p>As a rule of thumb, review your will every three to five years, even if nothing obvious has changed. Life circumstances evolve gradually, and a regular review ensures your will stays current.</p>
-      <p>With our lifetime updates feature, you can revise your will whenever you need to at no extra cost. There's no excuse for an outdated will.</p>
+      <p>With our <a href="/lifetime-updates">lifetime updates feature</a>, you can revise your will whenever you need to at no extra cost. Learn <a href="/resource/how-to-change-your-will">how to change your will</a> step by step. There's no excuse for an outdated will.</p>
     `
   },
   'children-and-gifts-in-wills': {
     title: 'Children and Gifts in Wills: 5 Ways to Get Peace of Mind',
-    date: 'August 2025',
+    date: '2025-08-22',
     category: 'Family Situations',
     content: `
       <p>When you have children, making a will becomes even more important. Here are five key ways your will can protect your children and give you peace of mind.</p>
 
       <h2>1. Appoint guardians</h2>
-      <p>If you have children under 18, your will is the only way to legally appoint guardians - the people who would raise your children if you die while they're still young.</p>
+      <p>If you have children under 18, your will is the only way to legally appoint <a href="/resource/legal-guardians">guardians</a> - the people who would raise your children if you die while they're still young.</p>
       <p>Think carefully about who you'd want:</p>
       <ul>
         <li>Do they share your values and parenting approach?</li>
@@ -234,7 +235,7 @@ const blogContent = {
 
       <h2>2. Control when children inherit</h2>
       <p>Under English law, children can't inherit directly until they're 18. But even at 18, many young people aren't ready to handle a large inheritance responsibly.</p>
-      <p>Your will can specify that children don't receive their inheritance until they're older - 21, 25, or whatever age you choose. In the meantime, trustees manage the money and can use it for the children's benefit.</p>
+      <p>Your will can specify that children don't receive their inheritance until they're older - 21, 25, or whatever age you choose. In the meantime, <a href="/resource/trusts-in-wills">trustees</a> manage the money and can use it for the children's benefit.</p>
       <p>You can even set up graduated distributions - perhaps a third at 21, a third at 25, and the remainder at 30.</p>
 
       <h2>3. Provide for children's immediate needs</h2>
@@ -262,7 +263,7 @@ const blogContent = {
   },
   'do-you-cohabit': {
     title: 'Do You Cohabit? Your Key Questions Answered',
-    date: 'July 2025',
+    date: '2025-07-25',
     category: 'Family Situations',
     content: `
       <p>More and more couples are choosing to live together without getting married. If you're one of them, you might be surprised to learn how little legal protection cohabitation provides - especially when it comes to inheritance.</p>
@@ -271,7 +272,7 @@ const blogContent = {
       <p>Despite what many people believe, there is no such thing as "common law marriage" in England and Wales. No matter how long you've lived together, cohabiting couples don't have the same automatic rights as married couples or civil partners.</p>
 
       <h2>What happens if my partner dies without a will?</h2>
-      <p>This is where it gets serious. Under the intestacy rules:</p>
+      <p>This is where it gets serious. Under the <a href="/resource/dying-without-a-will-intestacy">intestacy rules</a>:</p>
       <ul>
         <li>If your partner dies without a will, you inherit absolutely nothing</li>
         <li>Their estate goes to their children, parents, siblings, or other blood relatives</li>
@@ -291,7 +292,7 @@ const blogContent = {
       <h2>What should cohabiting couples do?</h2>
 
       <h3>Make wills</h3>
-      <p>The single most important thing you can do. Both partners should make wills leaving their estate (or the relevant part of it) to each other. This ensures your partner is provided for.</p>
+      <p>The single most important thing you can do. Both partners should <a href="/resource/do-i-need-to-make-a-will">make wills</a> leaving their estate (or the relevant part of it) to each other. This ensures your partner is provided for.</p>
 
       <h3>Review property ownership</h3>
       <p>If you own property together, understand how you hold it:</p>
@@ -313,7 +314,7 @@ const blogContent = {
   },
   'uk-expat-wills': {
     title: 'Wills for British Ex-Pats',
-    date: 'July 2025',
+    date: '2025-07-11',
     category: 'Wills for British Expats',
     content: `
       <p>If you're a British citizen living abroad, or you have assets in multiple countries, your will situation is more complicated than most. Here's what you need to know.</p>
@@ -351,10 +352,10 @@ const blogContent = {
         <li>UK pension rights</li>
         <li>Inheritance expectations from UK relatives</li>
       </ul>
-      <p>You need a valid UK will to deal with these assets. Our service is ideal for British expats who need a UK will.</p>
+      <p>You need a valid <a href="/resource/do-i-need-to-make-a-will">UK will</a> to deal with these assets. Our service is ideal for British expats who need a UK will.</p>
 
       <h2>Tax implications</h2>
-      <p>Living abroad doesn't necessarily exempt you from UK inheritance tax. The rules are complex and depend on your domicile status. If you have substantial assets, get specialist tax advice.</p>
+      <p>Living abroad doesn't necessarily exempt you from UK <a href="/charity-gifts-in-wills-how-and-why">inheritance tax</a>. The rules are complex and depend on your domicile status. If you have substantial assets, get specialist tax advice.</p>
 
       <h2>Getting it right</h2>
       <p>International estate planning is complicated. At minimum:</p>
@@ -369,7 +370,7 @@ const blogContent = {
   },
   'charity-gifts-in-wills-how-and-why': {
     title: 'Charity Gifts in Wills: How and Why',
-    date: 'June 2025',
+    date: '2025-06-18',
     category: 'General Guidance',
     content: `
       <p>Leaving a gift to charity in your will is a wonderful way to support causes you care about and create a lasting legacy. It can also reduce the inheritance tax bill on your estate.</p>
@@ -425,10 +426,10 @@ const blogContent = {
   },
   'do-I-need-probate': {
     title: 'What is Probate and Do I Need It?',
-    date: 'September 2025',
+    date: '2025-09-28',
     category: 'Executors and Probate',
     content: `
-      <p>Probate is a word that causes confusion and anxiety. Here's a plain-English explanation of what it is, when you need it, and how the process works.</p>
+      <p>Probate is a word that causes confusion and anxiety. Here's a plain-English explanation of what it is, when you need it, and how the process works. You can also read <a href="/resource/do-i-need-probate">our full guide to probate</a> for more detail.</p>
 
       <h2>What is probate?</h2>
       <p>Probate is the legal and administrative process of dealing with someone's estate after they die. It involves:</p>
@@ -439,7 +440,7 @@ const blogContent = {
         <li>Paying debts and taxes</li>
         <li>Distributing what's left to the beneficiaries</li>
       </ul>
-      <p>When people talk about "getting probate", they usually mean obtaining a Grant of Probate - the official document that confirms the executors' authority to deal with the estate.</p>
+      <p>When people talk about "getting probate", they usually mean obtaining a Grant of Probate - the official document that confirms the <a href="/resource/executors">executors'</a> authority to deal with the estate.</p>
 
       <h2>When is probate needed?</h2>
       <p>You'll usually need a Grant of Probate when:</p>
@@ -463,7 +464,7 @@ const blogContent = {
       <ol>
         <li><strong>Value the estate:</strong> Establish what the deceased owned and what it's worth</li>
         <li><strong>Complete tax forms:</strong> Inheritance tax forms must be submitted even if no tax is due</li>
-        <li><strong>Apply for the grant:</strong> Submit the application to the Probate Registry</li>
+        <li><strong><a href="/resource/apply-for-probate">Apply for the grant</a>:</strong> Submit the application to the Probate Registry</li>
         <li><strong>Swear the oath:</strong> Confirm the information is true</li>
         <li><strong>Receive the grant:</strong> Usually 4-8 weeks after application</li>
         <li><strong>Collect assets:</strong> Use the grant to access accounts and transfer assets</li>
@@ -487,10 +488,10 @@ const blogContent = {
   },
   'dying-without-a-will-intestacy': {
     title: 'What Happens if You Die Without a Will?',
-    date: 'September 2025',
+    date: '2025-09-15',
     category: 'General Guidance',
     content: `
-      <p>When someone dies without a valid will, they're said to have died "intestate". Instead of their wishes determining who inherits, strict legal rules take over. The results often come as a shock to families.</p>
+      <p>When someone dies without a valid will, they're said to have died "intestate". Instead of their wishes determining who inherits, strict legal rules take over. The results often come as a shock to families. See <a href="/resource/dying-without-a-will-intestacy">our full guide to intestacy</a> for a detailed breakdown.</p>
 
       <h2>The intestacy rules</h2>
       <p>Under the current rules in England and Wales (updated 2014):</p>
@@ -525,7 +526,7 @@ const blogContent = {
       <h2>Who doesn't inherit under intestacy?</h2>
       <p>This is where the rules cause the most problems. The following people receive NOTHING:</p>
       <ul>
-        <li><strong>Unmarried partners:</strong> Even if you've lived together for 30 years</li>
+        <li><strong><a href="/do-you-cohabit">Unmarried partners</a>:</strong> Even if you've lived together for 30 years</li>
         <li><strong>Stepchildren:</strong> Unless you've legally adopted them</li>
         <li><strong>Friends:</strong> No matter how close</li>
         <li><strong>Charities:</strong> Even ones you've supported your whole life</li>
@@ -545,7 +546,7 @@ const blogContent = {
       <p>Certain people can apply to court for provision from an intestate estate, but this is expensive, uncertain, and causes family conflict. It's far better to make a will.</p>
 
       <h2>The solution</h2>
-      <p>Making a will is the only way to ensure your estate goes where you want it to go. It doesn't take long, doesn't cost much, and gives you complete control. Don't leave your family to deal with the consequences of intestacy.</p>
+      <p><a href="/resource/do-i-need-to-make-a-will">Making a will</a> is the only way to ensure your estate goes where you want it to go. It doesn't take long, doesn't cost much, and gives you complete control. Don't leave your family to deal with the consequences of intestacy.</p>
     `
   }
 };
@@ -582,8 +583,35 @@ function BlogPost() {
   // Get external resources for this post's category
   const furtherReading = externalResourcesByCategory[post.category] || externalResourcesByCategory['General Guidance'];
 
+  const blogPostSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": post.title,
+    "datePublished": post.date,
+    "dateModified": post.date,
+    "author": {
+      "@type": "Organization",
+      "name": "Make a Will"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Make a Will",
+      "url": "https://www.makeawill.co.uk"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://www.makeawill.co.uk/${postSlug}`
+    },
+    "articleSection": post.category
+  };
+
+  const formattedDate = new Date(post.date).toLocaleDateString('en-GB', {
+    day: 'numeric', month: 'long', year: 'numeric'
+  });
+
   return (
     <>
+      <SEO type="article" schema={blogPostSchema} />
       <div className="page-header">
         <div className="container">
           <Breadcrumb items={[
@@ -591,7 +619,7 @@ function BlogPost() {
             { label: post.title }
           ]} />
           <h1>{post.title}</h1>
-          <p>{post.date} | {post.category}</p>
+          <p><time dateTime={post.date}>{formattedDate}</time> | {post.category}</p>
         </div>
       </div>
 
