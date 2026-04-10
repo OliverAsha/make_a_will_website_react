@@ -77,7 +77,7 @@ function Footer() {
 
         <div className="footer-bottom">
           <p>&copy; {new Date().getFullYear()} Make a Will. All rights reserved.</p>
-          <p>Make a Will is a trading name of Digilegal Ltd. Solicitor-checked wills for England &amp; Wales.</p>
+          <p>Make a Will is a trading name of Capacity Vault Ltd. Solicitor-checked wills for England &amp; Wales.</p>
         </div>
       </div>
     </footer>

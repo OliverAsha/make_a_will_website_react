@@ -12,7 +12,7 @@ function Home() {
       <section className="steps-section">
         <div className="container">
           <div className="section-title">
-            <h2>Make Your Will Online in 3 Simple Steps</h2>
+            <h2>Make Your Will in 3 Simple Steps</h2>
             <p>Creating a legally valid, solicitor-checked will has never been easier. Our guided process ensures nothing is missed.</p>
           </div>
           <div className="steps-grid">
@@ -41,7 +41,7 @@ function Home() {
           <div className="feature-row">
             <div className="feature-content">
               <h3>Solicitor-Checked for Peace of Mind</h3>
-              <p>Unlike other online will services, every will we create is reviewed by a qualified solicitor. This ensures your will is legally valid and your wishes will be carried out exactly as you intend.</p>
+              <p>Unlike other will services, every will we create is reviewed by a qualified solicitor. This ensures your will is legally valid and your wishes will be carried out exactly as you intend.</p>
               <p>Our team of legal experts catch potential issues before they become problems, giving you complete confidence in your will.</p>
               <Link to="/resource/what-is-a-solicitor-checked-will" className="btn btn-primary">Learn More</Link>
             </div>
@@ -91,14 +91,14 @@ function Home() {
       <section className="comparison-section">
         <div className="container">
           <div className="section-title">
-            <h2>Why Choose Our Online Will Writing Service?</h2>
+            <h2>Why Choose Our Will Writing Service?</h2>
             <p>See how our solicitor-checked wills compare to other options in the UK.</p>
           </div>
           <table className="comparison-table">
             <thead>
               <tr>
                 <th>Feature</th>
-                <th>Make a Will Online</th>
+                <th>Make a Will</th>
                 <th>Traditional Solicitor</th>
                 <th>Other Online Services</th>
               </tr>

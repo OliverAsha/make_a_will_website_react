@@ -80,10 +80,10 @@ function Hero() {
         <div className="hero-inner">
           <div className="hero-content">
             <h1>
-              <span>Make a Will Online</span> — Solicitor-Checked from £90
+              <span>Make a Will</span> — Solicitor-Checked from £90
             </h1>
             <p className="hero-subtitle">
-              The UK's only online will writing service where every will is reviewed by a qualified solicitor. Create your legally valid will in as little as 15 minutes.
+              The UK's only will writing service where every will is reviewed by a qualified solicitor. Create your legally valid will in as little as 15 minutes.
             </p>
             <ul className="hero-features">
               <li>
