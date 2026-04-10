@@ -1,7 +1,7 @@
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
 
-name: Node.js CI
+name: deploy.maw CI
 
 on:
   push:
@@ -38,6 +38,5 @@ jobs:
     - name: Deploy to S3
       run: aws s3 sync dist/ s3://${{ secrets.S3_MAW_WEBSITE }} --delete
 
-# Optional: Invalidate CloudFront cache if using CloudFront
-# - name: Invalidate CloudFront
-#   run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*" 
+    - name: Invalidate CloudFront
+      run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*" 
