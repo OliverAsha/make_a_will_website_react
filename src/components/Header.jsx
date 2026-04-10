@@ -9,7 +9,7 @@ function Header() {
       <div className="container">
         <div className="header-inner">
           <Link to="/" className="logo">
-            <img src="/logos/makeawill_websitelogo.png" alt="Make a Will" style={{ height: '40px', width: 'auto' }} />
+            <img src="/logos/makeawilllogohorizontal.png" alt="Make a Will" style={{ height: '60px', width: 'auto' }} />
           </Link>
 
           <nav className={`nav ${menuOpen ? 'open' : ''}`}>

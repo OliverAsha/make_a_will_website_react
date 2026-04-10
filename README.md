@@ -1,5 +1,9 @@
 # React + Vite
 
+## Important Rules
+
+- **Do NOT modify any files in `.github/workflows/` unless directly instructed to do so.** These files control the automated deployment pipeline and changes can break the build/deploy process.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
