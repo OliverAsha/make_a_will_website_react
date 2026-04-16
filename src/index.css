@@ -1,26 +1,26 @@
-/* Montserrat from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+/* Poppins from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 /* Hero font from Fontfabric */
 @font-face {
-  font-family: 'Hero';
-  src: url('/fonts/Hero-Light.otf') format('opentype');
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Light.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Hero';
-  src: url('/fonts/Hero-Regular.otf') format('opentype');
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Hero';
-  src: url('/fonts/Hero-Bold.otf') format('opentype');
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -48,8 +48,10 @@
   --gray-800: #3a3432;
   --gray-900: #2a2624;
   --success: #5a8a4a;
-  --font-family: 'Hero', 'Nunito', sans-serif;
-  --font-heading: 'Montserrat', sans-serif;
+  /* Trust accent — calming blue/teal for trust badges, security icons, info sections */
+  --trust-blue: #2D6A8A;
+  --font-family: 'Poppins', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
   --shadow-sm: 0 1px 2px rgba(139, 77, 59, 0.08);
   --shadow: 0 4px 6px rgba(139, 77, 59, 0.12);
   --shadow-lg: 0 10px 25px rgba(139, 77, 59, 0.18);
@@ -65,7 +67,7 @@
 
 body {
   font-family: var(--font-family);
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.7;
   color: var(--gray-800);
   background-color: var(--white);
@@ -108,7 +110,7 @@ p {
 /* Buttons */
 .btn {
   display: inline-block;
-  padding: 16px 30px;
+  padding: 10px 30px;
   font-family: var(--font-family);
   font-size: 18px;
   font-weight: 600;
@@ -155,6 +157,7 @@ p {
   position: sticky;
   top: 0;
   z-index: 1000;
+  font-family: var(--font-heading);
 }
 
 .header-inner {
@@ -301,7 +304,8 @@ p {
 }
 
 .hero-features strong {
-  color: var(--primary);
+  /* Dark neutral instead of orange — avoids "warning" feel on light backgrounds */
+  color: var(--gray-900);
 }
 
 .hero-image {
@@ -320,6 +324,9 @@ p {
   display: flex;
   align-items: center;
   gap: 10px;
+  /* Trust-blue text signals credibility for review/trust badges */
+  color: var(--trust-blue);
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {
@@ -339,7 +346,7 @@ p {
 
 /* Steps Section */
 .steps-section {
-  padding: 80px 0;
+  padding: 100px 0;
   background: var(--white);
 }
 
@@ -409,7 +416,7 @@ p {
 
 /* Features Section */
 .features-section {
-  padding: 80px 0;
+  padding: 100px 0;
   background: var(--gray-100);
 }
 
@@ -561,6 +568,7 @@ p {
   background: var(--gray-900);
   color: var(--gray-300);
   padding: 60px 0 20px;
+  font-family: var(--font-heading);
 }
 
 .footer-grid {
@@ -925,7 +933,8 @@ p {
   border-radius: var(--border-radius);
   padding: 30px;
   margin-top: 40px;
-  border-left: 4px solid var(--primary);
+  /* Trust-blue border for informational/reference sections */
+  border-left: 4px solid var(--trust-blue);
 }
 
 .further-reading h3 {
@@ -989,7 +998,8 @@ p {
 
 .charity-hub-intro h2 {
   margin-top: 0;
-  color: var(--primary);
+  /* Headings use neutral dark colour; orange reserved for CTAs/interactive elements */
+  color: var(--gray-900);
 }
 
 .charity-services-grid {
