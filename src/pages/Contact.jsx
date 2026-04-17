@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { ContactIllustration } from '../components/Illustrations';
 import SEO from '../components/SEO';
 
 function Contact() {
@@ -35,17 +34,16 @@ function Contact() {
 
       <section className="page-content">
         <div className="container">
+          <div className="text-center" style={{ marginBottom: '40px' }}>
+            <img src="/logos/contact-image.png" alt="Contact us illustration" width={1402} height={1122} style={{ maxWidth: '300px', height: 'auto' }} />
+            <p style={{ marginTop: '20px', maxWidth: '600px', margin: '20px auto 0' }}>
+              Have questions about making your will? Our team is here to help. Fill out the form and we'll get back to you as soon as possible.
+            </p>
+          </div>
           <div className="content-wrapper">
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', marginBottom: '40px' }}>
               <div>
-                <div style={{ marginBottom: '30px' }}>
-                  <ContactIllustration />
-                </div>
                 <h2>Get in Touch</h2>
-                <p>
-                  Have questions about making your will? Our team is here to help.
-                  Fill out the form and we'll get back to you as soon as possible.
-                </p>
 
                 <div style={{ marginTop: '30px' }}>
                   <h3>Other Ways to Reach Us</h3>

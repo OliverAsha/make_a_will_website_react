@@ -87,8 +87,8 @@ function Resources({ canonical }) {
 
       <section className="resources-section">
         <div className="container">
-          <div className="text-center" style={{ marginBottom: '50px' }}>
-            <img src="/logos/resources-image.png" alt="Resources illustration" style={{ maxWidth: '300px', height: 'auto' }} />
+          <div className="text-center" style={{ marginBottom: '40px' }}>
+            <img src="/logos/resources-image.png" alt="Resources illustration" width={1402} height={1122} style={{ maxWidth: '300px', height: 'auto' }} />
             <p style={{ marginTop: '20px', maxWidth: '600px', margin: '20px auto 0' }}>
               Browse our comprehensive library of guides covering everything from making your first will to understanding probate.
             </p>

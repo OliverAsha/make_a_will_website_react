@@ -43,7 +43,7 @@ function Home() {
               <h3>Solicitor-Checked for Peace of Mind</h3>
               <p>Unlike other will services, every will we create is reviewed by a qualified solicitor. This ensures your will is legally valid and your wishes will be carried out exactly as you intend.</p>
               <p>Our team of legal experts catch potential issues before they become problems, giving you complete confidence in your will.</p>
-              <Link to="/resource/what-is-a-solicitor-checked-will" className="btn btn-primary">Learn More</Link>
+              <Link to="/resource/what-is-a-solicitor-checked-will" className="btn btn-primary">Learn About Solicitor-Checked Wills</Link>
             </div>
             <div className="feature-image">
               <div style={{
@@ -56,7 +56,7 @@ function Home() {
                   <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
                   <polyline points="22 4 12 14.01 9 11.01"/>
                 </svg>
-                <h4 style={{ marginTop: '20px', color: '#D4832E' }}>Solicitor Verified</h4>
+                <h4 style={{ marginTop: '20px', color: '#8B4D3B' }}>Solicitor Verified</h4>
               </div>
             </div>
           </div>
@@ -66,7 +66,7 @@ function Home() {
               <h3>Lifetime Updates Included</h3>
               <p>Life changes, and so should your will. With our lifetime updates feature, you can modify your will whenever your circumstances change - whether you get married, have children, or simply change your mind.</p>
               <p>No additional fees, no hassle. Just log in and make your changes.</p>
-              <Link to="/lifetime-updates" className="btn btn-primary">Learn More</Link>
+              <Link to="/lifetime-updates" className="btn btn-primary">Learn About Lifetime Updates</Link>
             </div>
             <div className="feature-image">
               <div style={{
@@ -80,7 +80,7 @@ function Home() {
                   <polyline points="17 8 12 3 7 8"/>
                   <line x1="12" y1="3" x2="12" y2="15"/>
                 </svg>
-                <h4 style={{ marginTop: '20px', color: '#D4832E' }}>Always Up to Date</h4>
+                <h4 style={{ marginTop: '20px', color: '#8B4D3B' }}>Always Up to Date</h4>
               </div>
             </div>
           </div>

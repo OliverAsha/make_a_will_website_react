@@ -1,6 +1,3 @@
-/* Poppins from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
 /* Hero font from Fontfabric */
 @font-face {
   font-family: 'Poppins';
@@ -123,15 +120,15 @@ p {
 }
 
 .btn-primary {
-  background-color: var(--primary);
-  color: var(--white);
-  border-color: var(--primary);
-}
-
-.btn-primary:hover {
   background-color: var(--primary-dark);
   color: var(--white);
   border-color: var(--primary-dark);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-dark);
+  color: var(--white);
+  border-color: var(--secondary-dark);
 }
 
 .btn-secondary {
@@ -578,10 +575,11 @@ p {
   margin-bottom: 40px;
 }
 
-.footer-column h4 {
+.footer-column .footer-heading {
   color: var(--white);
   margin-bottom: 20px;
   font-size: 1.1rem;
+  font-weight: 700;
 }
 
 .footer-column ul {
@@ -1041,9 +1039,10 @@ p {
   margin-bottom: 30px;
 }
 
-.footer-authority h4 {
+.footer-authority .footer-heading {
   color: var(--gray-400);
   font-size: 0.95rem;
+  font-weight: 700;
   margin-bottom: 15px;
   text-transform: uppercase;
   letter-spacing: 0.05em;

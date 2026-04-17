@@ -14,11 +14,13 @@ function About() {
 
       <section className="page-content">
         <div className="container">
+          <div className="text-center" style={{ marginBottom: '40px' }}>
+            <img src="/logos/about-us-image.png" alt="About us illustration" width={1402} height={1122} style={{ maxWidth: '300px', height: 'auto' }} />
+            <p style={{ marginTop: '20px', maxWidth: '600px', margin: '20px auto 0' }}>
+              Learn about who we are, why we started Make a Will, and how we're making professional will-writing accessible to everyone.
+            </p>
+          </div>
           <div className="content-wrapper">
-            <div className="text-center" style={{ marginBottom: '40px' }}>
-              <img src="/logos/about-us-image.png" alt="About us illustration" style={{ maxWidth: '300px', height: 'auto' }} />
-            </div>
-
             <h2>Our Mission</h2>
             <p>
               At Make a Will, we believe everyone deserves access to quality legal services

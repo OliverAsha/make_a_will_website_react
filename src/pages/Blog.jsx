@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { BlogIllustration } from '../components/Illustrations';
 import SEO from '../components/SEO';
 
 function Blog() {
@@ -90,6 +89,12 @@ function Blog() {
 
       <section className="page-content">
         <div className="container">
+          <div className="text-center" style={{ marginBottom: '40px' }}>
+            <img src="/logos/blog-image.png" alt="Blog illustration" width={1402} height={1122} style={{ maxWidth: '300px', height: 'auto' }} />
+            <p style={{ marginTop: '20px', maxWidth: '600px', margin: '20px auto 0' }}>
+              Insights and advice on wills, estate planning, and protecting your family's future.
+            </p>
+          </div>
           <div className="page-with-sidebar">
             <div>
               <div className="blog-grid">
@@ -130,9 +135,6 @@ function Blog() {
                 </ul>
               </div>
 
-              <div className="sidebar-widget" style={{ textAlign: 'center' }}>
-                <BlogIllustration />
-              </div>
 
               <div className="sidebar-widget">
                 <h4>Ready to Make Your Will?</h4>

@@ -14,19 +14,15 @@ function SampleWill() {
 
       <section className="page-content">
         <div className="container">
+          <div className="text-center" style={{ marginBottom: '40px' }}>
+            <img src="/logos/sample-will-image.png" alt="Sample will illustration" width={1402} height={1122} style={{ maxWidth: '300px', height: 'auto' }} />
+            <p style={{ marginTop: '20px', maxWidth: '600px', margin: '20px auto 0' }}>
+              Wondering what your will might look like? Below is an example of a professionally
+              drafted will similar to what you would receive from Make a Will. Every will
+              we create is checked by a qualified solicitor to ensure it meets all legal requirements.
+            </p>
+          </div>
           <div className="content-wrapper">
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px', alignItems: 'center', marginBottom: '40px' }}>
-              <div>
-                <p style={{ marginBottom: 0 }}>
-                  Wondering what your will might look like? Below is an example of a professionally
-                  drafted will similar to what you would receive from Make a Will. Every will
-                  we create is checked by a qualified solicitor to ensure it meets all legal requirements.
-                </p>
-              </div>
-              <div className="text-center">
-                <img src="/logos/sample-will-image.png" alt="Sample will illustration" style={{ maxWidth: '100%', height: 'auto' }} />
-              </div>
-            </div>
 
             <div style={{
               background: '#f8f9fa',

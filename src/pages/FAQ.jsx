@@ -97,6 +97,12 @@ function FAQ() {
 
       <section className="faq-section">
         <div className="container">
+          <div className="text-center" style={{ marginBottom: '40px' }}>
+            <img src="/logos/faq-image.png" alt="FAQ illustration" width={1402} height={1122} style={{ maxWidth: '300px', height: 'auto' }} />
+            <p style={{ marginTop: '20px', maxWidth: '600px', margin: '20px auto 0' }}>
+              Find answers to the most common questions about making a will online, from legal validity to pricing.
+            </p>
+          </div>
           <div className="content-wrapper">
             {faqs.map((faq, index) => (
               <div
@@ -118,8 +124,7 @@ function FAQ() {
           </div>
 
           <div className="text-center mt-4" style={{ background: '#f8f9fa', padding: '40px', borderRadius: '12px' }}>
-            <img src="/logos/faq-image.png" alt="FAQ illustration" style={{ maxWidth: '300px', height: 'auto' }} />
-            <h3 style={{ marginTop: '20px' }}>Still have questions?</h3>
+            <h3>Still have questions?</h3>
             <p>Our team is here to help you with any questions about making your will.</p>
             <Link to="/contact" className="btn btn-primary">Contact Us</Link>
           </div>

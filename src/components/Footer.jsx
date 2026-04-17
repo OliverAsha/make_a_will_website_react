@@ -6,7 +6,7 @@ function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-column">
-            <h4>Make a Will</h4>
+            <p className="footer-heading">Make a Will</p>
             <p>The only solicitor-checked wills service. Create your legally valid will in minutes.</p>
             <div className="footer-social">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
@@ -28,7 +28,7 @@ function Footer() {
           </div>
 
           <div className="footer-column">
-            <h4>Quick Links</h4>
+            <p className="footer-heading">Quick Links</p>
             <ul>
               <li><Link to="/faq">FAQs</Link></li>
               <li><Link to="/sample-will">Sample Will</Link></li>
@@ -41,7 +41,7 @@ function Footer() {
           </div>
 
           <div className="footer-column">
-            <h4>Resources</h4>
+            <p className="footer-heading">Resources</p>
             <ul>
               <li><Link to="/resource/do-i-need-to-make-a-will">Do I Need a Will?</Link></li>
               <li><Link to="/resource/executors">What is an Executor?</Link></li>
@@ -52,7 +52,7 @@ function Footer() {
           </div>
 
           <div className="footer-column">
-            <h4>Policies</h4>
+            <p className="footer-heading">Policies</p>
             <ul>
               <li><Link to="/data-handling-policy">Data Handling Policy</Link></li>
               <li><Link to="/disclaimer">Disclaimer</Link></li>
@@ -64,7 +64,7 @@ function Footer() {
 
         {/* External Authority Links */}
         <div className="footer-authority">
-          <h4>Useful External Resources</h4>
+          <p className="footer-heading">Useful External Resources</p>
           <ul className="authority-links">
             <li><a href="https://www.gov.uk/make-will" target="_blank" rel="noopener noreferrer">GOV.UK - Wills</a></li>
             <li><a href="https://www.gov.uk/applying-for-probate" target="_blank" rel="noopener noreferrer">GOV.UK - Probate</a></li>
