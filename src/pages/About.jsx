@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { AboutIllustration } from '../components/Illustrations';
 import SEO from '../components/SEO';
 
 function About() {
@@ -17,7 +16,7 @@ function About() {
         <div className="container">
           <div className="content-wrapper">
             <div className="text-center" style={{ marginBottom: '40px' }}>
-              <AboutIllustration />
+              <img src="/logos/about-us-image.png" alt="About us illustration" style={{ maxWidth: '300px', height: 'auto' }} />
             </div>
 
             <h2>Our Mission</h2>

@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FAQIllustration } from '../components/Illustrations';
 import SEO from '../components/SEO';
 
 function FAQ() {
@@ -119,7 +118,7 @@ function FAQ() {
           </div>
 
           <div className="text-center mt-4" style={{ background: '#f8f9fa', padding: '40px', borderRadius: '12px' }}>
-            <FAQIllustration />
+            <img src="/logos/faq-image.png" alt="FAQ illustration" style={{ maxWidth: '300px', height: 'auto' }} />
             <h3 style={{ marginTop: '20px' }}>Still have questions?</h3>
             <p>Our team is here to help you with any questions about making your will.</p>
             <Link to="/contact" className="btn btn-primary">Contact Us</Link>

@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { SampleWillIllustration } from '../components/Illustrations';
 import SEO from '../components/SEO';
 
 function SampleWill() {
@@ -25,7 +24,7 @@ function SampleWill() {
                 </p>
               </div>
               <div className="text-center">
-                <SampleWillIllustration />
+                <img src="/logos/sample-will-image.png" alt="Sample will illustration" style={{ maxWidth: '100%', height: 'auto' }} />
               </div>
             </div>
 

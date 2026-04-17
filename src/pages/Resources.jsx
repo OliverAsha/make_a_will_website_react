@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { ResourcesIllustration } from '../components/Illustrations';
 import SEO from '../components/SEO';
 
 function Resources({ canonical }) {
@@ -89,7 +88,7 @@ function Resources({ canonical }) {
       <section className="resources-section">
         <div className="container">
           <div className="text-center" style={{ marginBottom: '50px' }}>
-            <ResourcesIllustration />
+            <img src="/logos/resources-image.png" alt="Resources illustration" style={{ maxWidth: '300px', height: 'auto' }} />
             <p style={{ marginTop: '20px', maxWidth: '600px', margin: '20px auto 0' }}>
               Browse our comprehensive library of guides covering everything from making your first will to understanding probate.
             </p>
