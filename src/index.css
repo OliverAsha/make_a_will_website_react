@@ -162,6 +162,8 @@ p {
   align-items: center;
   justify-content: space-between;
   padding: 15px 0;
+  flex-wrap: nowrap;
+  gap: 20px;
 }
 
 .logo {
@@ -183,27 +185,37 @@ p {
   display: flex;
   align-items: center;
   gap: 30px;
+  flex-wrap: nowrap;
 }
 
 .nav-links {
   display: flex;
+  align-items: center;
   gap: 25px;
   list-style: none;
+  flex-wrap: nowrap;
 }
 
 .nav-links a {
   color: var(--gray-700);
   font-weight: 500;
   font-size: 1.06rem;
+  line-height: 1.2;
   padding: 8px 0;
   position: relative;
+  display: inline-flex;
+  align-items: center;
 }
 
 .nav-login {
   color: var(--gray-700);
   font-weight: 500;
   font-size: 1.06rem;
+  line-height: 1.2;
+  padding: 8px 0;
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
 }
 
 .nav-links a:hover,

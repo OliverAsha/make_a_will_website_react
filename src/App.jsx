@@ -59,7 +59,7 @@ function App() {
               "@type": "Organization",
               "name": "Make a Will",
               "url": "https://www.makeawill.co.uk",
-              "logo": "https://www.makeawill.co.uk/logos/makeawill_websitelogo.png",
+              "logo": "https://www.makeawill.co.uk/logos/favicon-512.png",
               "description": "The UK's only solicitor-checked online will writing service. Create your legally valid will in minutes.",
               "foundingDate": "2008",
               "areaServed": {

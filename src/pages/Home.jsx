@@ -74,18 +74,7 @@ function Home() {
               <Link to="/resource/what-is-a-solicitor-checked-will" className="btn btn-primary">learn about solicitor-checked wills</Link>
             </div>
             <div className="feature-image">
-              <div style={{
-                background: '#f8f9fa',
-                padding: '40px',
-                borderRadius: '8px',
-                textAlign: 'center'
-              }}>
-                <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="#D4832E" strokeWidth="1.5">
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                <h4 style={{ marginTop: '20px', color: '#8B4D3B' }}>Solicitor Verified</h4>
-              </div>
+              <img src="/logos/feature-solicitor-verified.svg" alt="Origami illustration representing a solicitor-verified will with a badge and checkmark" width={400} height={320} style={{ maxWidth: '100%', height: 'auto' }} />
             </div>
           </div>
 
@@ -97,19 +86,7 @@ function Home() {
               <Link to="/lifetime-updates" className="btn btn-primary">learn about lifetime updates</Link>
             </div>
             <div className="feature-image">
-              <div style={{
-                background: '#f8f9fa',
-                padding: '40px',
-                borderRadius: '8px',
-                textAlign: 'center'
-              }}>
-                <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="#D4832E" strokeWidth="1.5">
-                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                  <polyline points="17 8 12 3 7 8"/>
-                  <line x1="12" y1="3" x2="12" y2="15"/>
-                </svg>
-                <h4 style={{ marginTop: '20px', color: '#8B4D3B' }}>Always Up to Date</h4>
-              </div>
+              <img src="/logos/feature-always-up-to-date.svg" alt="Origami illustration of a current will on top of older versions, representing lifetime updates" width={400} height={320} style={{ maxWidth: '100%', height: 'auto' }} />
             </div>
           </div>
         </div>

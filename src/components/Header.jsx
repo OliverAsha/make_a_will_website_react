@@ -9,7 +9,7 @@ function Header() {
       <div className="container">
         <div className="header-inner">
           <Link to="/" className="logo">
-            <img src="/logos/makeawilllogohorizontal.png" alt="Make a Will" width={970} height={205} style={{ height: '60px', width: 'auto' }} />
+            <img src="/logos/logo-main-long.svg" alt="Make a Will" width={540} height={100} style={{ height: '60px', width: 'auto' }} />
           </Link>
 
           <nav className={`nav ${menuOpen ? 'open' : ''}`}>
@@ -22,7 +22,7 @@ function Header() {
               <li><NavLink to="/contact">Contact</NavLink></li>
             </ul>
             <div className="nav-buttons">
-              <a href="https://makeawillonline.co.uk/my-will/my-will/login" className="nav-login">Login</a>
+              <a href="https://makeawillonline.co.uk/my-will/login" className="nav-login">Login</a>
               <a href="https://makeawillonline.co.uk/my-will" className="btn btn-primary">make a will</a>
             </div>
           </nav>

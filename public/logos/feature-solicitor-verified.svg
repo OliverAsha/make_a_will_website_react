@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320">
+  <rect width="400" height="320" fill="#faf8f6"/>
+  <ellipse cx="200" cy="175" rx="155" ry="135" fill="#f0ebe6"/>
+  <ellipse cx="200" cy="185" rx="115" ry="100" fill="#e0d6cc"/>
+
+  <polygon points="60,265 340,265 360,285 40,285" fill="#c4b5a5"/>
+  <polygon points="40,285 360,285 380,295 20,295" fill="#e0d6cc"/>
+
+  <polygon points="68,52 74,46 80,52 74,58" fill="#D4832E"/>
+  <polygon points="322,48 328,42 334,48 328,54" fill="#E5A630"/>
+  <polygon points="340,92 346,86 352,92 346,98" fill="#2D6A8A"/>
+
+  <g>
+    <polygon points="148,112 258,100 266,272 146,276" fill="#8B4D3B"/>
+    <polygon points="152,110 258,98 260,268 150,272" fill="#f0ebe6"/>
+    <polygon points="206,104 258,98 260,268 210,270" fill="#e0d6cc"/>
+    <polygon points="258,98 242,103 258,118" fill="#c4b5a5"/>
+    <polygon points="160,138 250,128 250,150 160,158" fill="#D4832E"/>
+    <polygon points="160,138 206,133 206,152 160,158" fill="#E5A630"/>
+    <polygon points="164,175 244,167 244,182 164,188" fill="#c4b5a5"/>
+    <polygon points="164,198 244,190 244,205 164,211" fill="#c4b5a5"/>
+    <polygon points="164,221 210,216 210,231 164,234" fill="#c4b5a5"/>
+  </g>
+
+  <g>
+    <polygon points="270,188 304,150 338,188 304,226" fill="#3A7FA0"/>
+    <polygon points="304,150 338,188 304,226" fill="#2D6A8A"/>
+    <polygon points="280,188 304,162 328,188 304,214" fill="#4A8FB0"/>
+    <polygon points="304,162 328,188 304,214" fill="#2D6A8A"/>
+    <polygon points="290,190 303,204 323,180 325,183 303,210 287,194" fill="#E5A630"/>
+    <polygon points="303,204 323,180 325,183 305,207" fill="#D4832E"/>
+  </g>
+
+  <g>
+    <polygon points="35,282 52,260 70,278 53,288" fill="#5a8a4a"/>
+    <polygon points="52,260 70,278 62,276 57,270" fill="#6a9a5a"/>
+    <polygon points="55,288 70,278 74,288" fill="#4a7a3a"/>
+  </g>
+  <g>
+    <polygon points="330,284 348,262 366,278 349,290" fill="#5a8a4a"/>
+    <polygon points="348,262 366,278 357,276 352,270" fill="#6a9a5a"/>
+    <polygon points="333,288 348,262 340,282" fill="#4a7a3a"/>
+  </g>
+
+  <polygon points="86,38 94,46 86,54 78,46" fill="#E5A630"/>
+  <polygon points="312,34 320,42 312,50 304,42" fill="#D4832E"/>
+</svg>
