@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
+  <!-- Warm background -->
+  <rect width="400" height="320" fill="#faf8f6"/>
+  <ellipse cx="200" cy="175" rx="155" ry="135" fill="#f0ebe6"/>
+  <ellipse cx="200" cy="185" rx="115" ry="100" fill="#e0d6cc"/>
+  <!-- Ground surface -->
+  <polygon points="60,265 340,265 360,285 40,285" fill="#c4b5a5"/>
+  <polygon points="40,285 360,285 380,295 20,295" fill="#e0d6cc"/>
+
+  <!-- Origami document (centre) -->
+  <g>
+    <!-- Paper left facet -->
+    <polygon points="155,110 210,105 210,250 155,255" fill="#faf8f6"/>
+    <!-- Paper right facet -->
+    <polygon points="210,105 255,110 255,255 210,250" fill="#f0ebe6"/>
+    <!-- Fold corner -->
+    <polygon points="238,105 255,110 255,130" fill="#e0d6cc"/>
+    <!-- Text lines -->
+    <polygon points="168,138 205,136 205,142 168,144" fill="#e0d6cc"/>
+    <polygon points="168,154 208,152 208,158 168,160" fill="#e0d6cc"/>
+    <polygon points="168,170 198,168 198,174 168,176" fill="#e0d6cc"/>
+    <polygon points="168,186 206,184 206,190 168,192" fill="#e0d6cc"/>
+    <polygon points="168,202 195,200 195,206 168,208" fill="#e0d6cc"/>
+    <!-- Wax seal -->
+    <polygon points="192,222 199,216 208,219 210,228 203,233 194,231" fill="#D4832E"/>
+    <polygon points="199,216 208,219 203,224 196,222" fill="#B86D1F"/>
+  </g>
+
+  <!-- Refresh arrow left (curved arrow built from angular polygons) -->
+  <g>
+    <!-- Arrow arc segments -->
+    <polygon points="90,130 105,100 115,105 100,135" fill="#D4832E"/>
+    <polygon points="100,135 115,105 130,95 120,128" fill="#E5A630"/>
+    <polygon points="120,128 130,95 148,90 140,120" fill="#D4832E"/>
+    <!-- Arrow bottom arc -->
+    <polygon points="90,130 100,135 95,155 85,150" fill="#B86D1F"/>
+    <!-- Arrowhead -->
+    <polygon points="80,120 90,130 85,150 72,138" fill="#E5A630"/>
+    <polygon points="72,138 80,120 90,130" fill="#D4832E"/>
+  </g>
+
+  <!-- Refresh arrow right (curved arrow built from angular polygons) -->
+  <g>
+    <!-- Arrow arc segments -->
+    <polygon points="310,195 295,225 285,220 300,190" fill="#D4832E"/>
+    <polygon points="300,190 285,220 270,230 280,198" fill="#E5A630"/>
+    <polygon points="280,198 270,230 252,235 260,205" fill="#D4832E"/>
+    <!-- Arrow top arc -->
+    <polygon points="310,195 300,190 305,170 315,175" fill="#B86D1F"/>
+    <!-- Arrowhead -->
+    <polygon points="320,205 310,195 315,175 328,187" fill="#E5A630"/>
+    <polygon points="328,187 320,205 310,195" fill="#D4832E"/>
+  </g>
+
+  <!-- Origami leaf left -->
+  <g>
+    <polygon points="72,232 87,207 97,232 87,257" fill="#5a8a4a"/>
+    <polygon points="87,207 97,232 92,220" fill="#4a7a3a"/>
+    <polygon points="72,232 87,207 80,220" fill="#6a9a5a"/>
+  </g>
+
+  <!-- Origami leaf right -->
+  <g>
+    <polygon points="318,228 333,203 343,228 333,253" fill="#5a8a4a"/>
+    <polygon points="333,203 343,228 338,216" fill="#4a7a3a"/>
+    <polygon points="318,228 333,203 326,216" fill="#6a9a5a"/>
+  </g>
+
+  <!-- Decorative diamonds -->
+  <polygon points="58,73 66,63 74,73 66,83" fill="#E5A630"/>
+  <polygon points="66,63 74,73 70,68" fill="#D4832E"/>
+  <polygon points="342,72 349,64 356,72 349,80" fill="#D4832E"/>
+  <polygon points="349,64 356,72 352,68" fill="#B86D1F"/>
+
+  <!-- Accent circles -->
+  <circle cx="50" cy="108" r="7" fill="#f0ebe6"/>
+  <circle cx="355" cy="115" r="5" fill="#e0d6cc"/>
+  <circle cx="46" cy="256" r="5" fill="#E5A630"/>
+</svg>

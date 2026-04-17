@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
+  <rect width="400" height="320" fill="#faf8f6"/>
+  <ellipse cx="200" cy="175" rx="155" ry="135" fill="#f0ebe6"/>
+  <ellipse cx="200" cy="185" rx="115" ry="100" fill="#e0d6cc"/>
+  <polygon points="60,265 340,265 360,285 40,285" fill="#c4b5a5"/>
+  <polygon points="40,285 360,285 380,295 20,295" fill="#e0d6cc"/>
+
+  <!-- Open book -->
+  <g>
+    <!-- Left page -->
+    <polygon points="110,130 198,125 198,230 105,235" fill="#faf8f6"/>
+    <polygon points="110,130 198,125 195,128 112,133" fill="#e0d6cc"/>
+    <!-- Left page text lines -->
+    <polygon points="125,150 185,148 185,151 125,153" fill="#c4b5a5"/>
+    <polygon points="127,162 183,160 183,163 127,165" fill="#c4b5a5"/>
+    <polygon points="128,174 180,172 180,175 128,177" fill="#c4b5a5"/>
+    <polygon points="129,186 178,184 178,187 129,189" fill="#c4b5a5"/>
+    <polygon points="130,198 175,196 175,199 130,201" fill="#c4b5a5"/>
+    <!-- Left page shadow -->
+    <polygon points="105,235 110,130 112,133 107,237" fill="#c4b5a5"/>
+
+    <!-- Right page -->
+    <polygon points="202,125 290,130 295,235 202,230" fill="#f0ebe6"/>
+    <polygon points="202,125 290,130 288,133 205,128" fill="#e0d6cc"/>
+    <!-- Right page text lines -->
+    <polygon points="215,148 275,150 275,153 215,151" fill="#c4b5a5"/>
+    <polygon points="217,160 273,162 273,165 217,163" fill="#c4b5a5"/>
+    <polygon points="218,172 270,174 270,177 218,175" fill="#c4b5a5"/>
+    <polygon points="219,184 268,186 268,189 219,187" fill="#c4b5a5"/>
+    <!-- Right page shadow -->
+    <polygon points="295,235 290,130 288,133 293,237" fill="#c4b5a5"/>
+
+    <!-- Spine -->
+    <polygon points="198,125 202,125 202,230 198,230" fill="#8B4D3B"/>
+  </g>
+
+  <!-- Bookmark ribbon -->
+  <g>
+    <polygon points="195,125 202,125 204,170 200,180 196,170" fill="#D4832E"/>
+    <polygon points="200,180 196,170 198,172" fill="#B86D1F"/>
+    <polygon points="200,180 204,170 202,172" fill="#E5A630"/>
+  </g>
+
+  <!-- Floating page 1 (top left, tilted) -->
+  <g>
+    <polygon points="130,65 170,60 175,100 135,105" fill="#faf8f6"/>
+    <polygon points="130,65 170,60 168,63 132,68" fill="#e0d6cc"/>
+    <polygon points="138,75 163,72 163,75 138,78" fill="#c4b5a5"/>
+    <polygon points="139,82 160,80 160,83 139,85" fill="#c4b5a5"/>
+  </g>
+
+  <!-- Floating page 2 (top center) -->
+  <g>
+    <polygon points="185,50 220,52 218,88 183,86" fill="#f0ebe6"/>
+    <polygon points="185,50 220,52 218,55 185,53" fill="#c4b5a5"/>
+    <polygon points="190,62 212,63 212,66 190,65" fill="#c4b5a5"/>
+    <polygon points="191,70 210,71 210,74 191,73" fill="#c4b5a5"/>
+  </g>
+
+  <!-- Floating page 3 (top right, tilted) -->
+  <g>
+    <polygon points="240,58 275,65 270,100 235,93" fill="#faf8f6"/>
+    <polygon points="240,58 275,65 273,68 242,61" fill="#e0d6cc"/>
+    <polygon points="245,72 268,77 268,80 245,75" fill="#c4b5a5"/>
+  </g>
+
+  <!-- Decorative leaves bottom-left -->
+  <g>
+    <polygon points="55,260 70,250 75,260" fill="#5a8a4a"/>
+    <polygon points="55,260 70,255 65,265" fill="#4a7a3a"/>
+    <polygon points="80,258 90,248 95,258" fill="#6a9a5a"/>
+    <polygon points="80,258 90,252 85,263" fill="#5a8a4a"/>
+  </g>
+
+  <!-- Decorative leaves bottom-right -->
+  <g>
+    <polygon points="325,260 310,250 305,260" fill="#5a8a4a"/>
+    <polygon points="325,260 310,255 315,265" fill="#4a7a3a"/>
+    <polygon points="300,258 290,248 285,258" fill="#6a9a5a"/>
+    <polygon points="300,258 290,252 295,263" fill="#5a8a4a"/>
+  </g>
+
+  <!-- Diamond top-left -->
+  <polygon points="45,30 55,22 65,30 55,38" fill="#E5A630"/>
+  <!-- Diamond top-right -->
+  <polygon points="335,30 345,22 355,30 345,38" fill="#D4832E"/>
+
+  <!-- Accent circles -->
+  <circle cx="50" cy="55" r="3" fill="#E5A630"/>
+  <circle cx="350" cy="55" r="3" fill="#D4832E"/>
+  <circle cx="200" cy="42" r="2.5" fill="#B86D1F"/>
+</svg>

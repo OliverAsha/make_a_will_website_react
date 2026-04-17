@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
+  <!-- Warm background -->
+  <rect width="400" height="320" fill="#faf8f6"/>
+  <!-- Background circles like the PNG images -->
+  <ellipse cx="200" cy="175" rx="155" ry="135" fill="#f0ebe6"/>
+  <ellipse cx="200" cy="185" rx="115" ry="100" fill="#e0d6cc"/>
+  <!-- Ground surface -->
+  <polygon points="60,265 340,265 360,285 40,285" fill="#c4b5a5"/>
+  <polygon points="40,285 360,285 380,295 20,295" fill="#e0d6cc"/>
+
+  <!-- Origami phone/tablet -->
+  <g>
+    <!-- Body left facet -->
+    <polygon points="145,85 200,82 200,210 145,215" fill="#D4832E"/>
+    <!-- Body right facet -->
+    <polygon points="200,82 255,85 255,215 200,210" fill="#B86D1F"/>
+    <!-- Screen left -->
+    <polygon points="155,98 200,96 200,190 155,193" fill="#faf8f6"/>
+    <!-- Screen right -->
+    <polygon points="200,96 245,98 245,193 200,190" fill="#f0ebe6"/>
+  </g>
+
+  <!-- Origami coin on screen -->
+  <g>
+    <!-- Hexagonal coin -->
+    <polygon points="185,130 200,120 215,130 215,150 200,160 185,150" fill="#E5A630"/>
+    <!-- Facets -->
+    <polygon points="185,130 200,120 200,140 185,140" fill="#D4832E"/>
+    <polygon points="200,120 215,130 215,140 200,140" fill="#E5A630"/>
+    <polygon points="185,150 200,160 200,140 185,140" fill="#D4832E"/>
+    <polygon points="200,160 215,150 215,140 200,140" fill="#B86D1F"/>
+  </g>
+
+  <!-- Small origami lock on screen -->
+  <g>
+    <polygon points="190,170 200,165 210,170 210,185 190,185" fill="#8B4D3B"/>
+    <polygon points="200,165 210,170 200,175" fill="#6D3A2C"/>
+    <!-- Shackle -->
+    <polygon points="193,170 193,162 200,157 207,162 207,170" fill="#D4832E"/>
+    <polygon points="200,157 207,162 207,170 200,166" fill="#B86D1F"/>
+  </g>
+
+  <!-- Origami document (right side) -->
+  <g>
+    <!-- Paper left facet -->
+    <polygon points="270,100 310,95 310,210 270,215" fill="#faf8f6"/>
+    <!-- Paper right facet -->
+    <polygon points="310,95 345,100 345,215 310,210" fill="#f0ebe6"/>
+    <!-- Fold corner -->
+    <polygon points="325,95 345,100 345,118" fill="#e0d6cc"/>
+    <!-- Text lines -->
+    <polygon points="280,125 305,123 305,128 280,130" fill="#e0d6cc"/>
+    <polygon points="280,138 310,136 310,141 280,143" fill="#e0d6cc"/>
+    <polygon points="280,151 300,149 300,154 280,156" fill="#e0d6cc"/>
+    <polygon points="280,164 308,162 308,167 280,169" fill="#e0d6cc"/>
+    <!-- Wax seal -->
+    <polygon points="300,185 308,178 318,182 320,192 312,198 302,196" fill="#D4832E"/>
+    <polygon points="308,178 318,182 312,188 305,185" fill="#B86D1F"/>
+  </g>
+
+  <!-- Origami wallet (left side) -->
+  <g>
+    <!-- Body left -->
+    <polygon points="55,135 100,130 100,190 55,195" fill="#D4832E"/>
+    <!-- Body right -->
+    <polygon points="100,130 130,135 130,195 100,190" fill="#B86D1F"/>
+    <!-- Flap -->
+    <polygon points="55,135 130,135 120,148 65,148" fill="#E5A630"/>
+    <polygon points="95,135 130,135 120,148 95,148" fill="#D4832E"/>
+    <!-- Clasp -->
+    <polygon points="108,155 118,152 120,162 110,164" fill="#E5A630"/>
+  </g>
+
+  <!-- Origami leaf left -->
+  <g>
+    <polygon points="75,230 90,205 100,230 90,255" fill="#5a8a4a"/>
+    <polygon points="90,205 100,230 95,218" fill="#4a7a3a"/>
+    <polygon points="75,230 90,205 82,218" fill="#6a9a5a"/>
+  </g>
+
+  <!-- Origami leaf right -->
+  <g>
+    <polygon points="320,228 335,205 345,228 335,252" fill="#5a8a4a"/>
+    <polygon points="335,205 345,228 340,216" fill="#4a7a3a"/>
+    <polygon points="320,228 335,205 328,216" fill="#6a9a5a"/>
+  </g>
+
+  <!-- Small decorative origami diamonds -->
+  <polygon points="60,75 68,65 76,75 68,85" fill="#E5A630"/>
+  <polygon points="68,65 76,75 72,70" fill="#D4832E"/>
+
+  <polygon points="340,80 347,72 354,80 347,88" fill="#D4832E"/>
+  <polygon points="347,72 354,80 350,76" fill="#B86D1F"/>
+
+  <!-- Small heart -->
+  <polygon points="345,55 350,48 355,55 350,62" fill="#D4832E"/>
+  <polygon points="350,48 355,55 352,51" fill="#B86D1F"/>
+
+  <!-- Accent circles (matching PNG style) -->
+  <circle cx="50" cy="105" r="8" fill="#f0ebe6"/>
+  <circle cx="355" cy="115" r="6" fill="#e0d6cc"/>
+  <circle cx="45" cy="260" r="5" fill="#E5A630"/>
+</svg>

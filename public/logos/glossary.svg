@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
+  <rect width="400" height="320" fill="#faf8f6"/>
+  <ellipse cx="200" cy="175" rx="155" ry="135" fill="#f0ebe6"/>
+  <ellipse cx="200" cy="185" rx="115" ry="100" fill="#e0d6cc"/>
+  <polygon points="60,265 340,265 360,285 40,285" fill="#c4b5a5"/>
+  <polygon points="40,285 360,285 380,295 20,295" fill="#e0d6cc"/>
+
+  <!-- Large open book -->
+  <g>
+    <!-- Left page -->
+    <polygon points="80,110 197,105 197,235 75,240" fill="#faf8f6"/>
+    <polygon points="80,110 197,105 194,108 82,113" fill="#e0d6cc"/>
+    <!-- Left page text lines -->
+    <polygon points="95,130 182,128 182,131 95,133" fill="#c4b5a5"/>
+    <polygon points="97,143 180,141 180,144 97,146" fill="#c4b5a5"/>
+    <polygon points="98,156 178,154 178,157 98,159" fill="#c4b5a5"/>
+    <polygon points="99,169 175,167 175,170 99,172" fill="#c4b5a5"/>
+    <polygon points="100,182 173,180 173,183 100,185" fill="#c4b5a5"/>
+    <polygon points="101,195 170,193 170,196 101,198" fill="#c4b5a5"/>
+    <polygon points="102,208 168,206 168,209 102,211" fill="#c4b5a5"/>
+    <!-- Left page side shadow -->
+    <polygon points="75,240 80,110 82,113 77,242" fill="#c4b5a5"/>
+
+    <!-- Right page -->
+    <polygon points="203,105 320,110 325,240 203,235" fill="#f0ebe6"/>
+    <polygon points="203,105 320,110 318,113 206,108" fill="#e0d6cc"/>
+    <!-- Right page text lines -->
+    <polygon points="218,128 305,130 305,133 218,131" fill="#c4b5a5"/>
+    <polygon points="220,141 303,143 303,146 220,144" fill="#c4b5a5"/>
+    <polygon points="221,154 300,156 300,159 221,157" fill="#c4b5a5"/>
+    <polygon points="222,167 298,169 298,172 222,170" fill="#c4b5a5"/>
+    <polygon points="223,180 295,182 295,185 223,183" fill="#c4b5a5"/>
+    <!-- Right page side shadow -->
+    <polygon points="325,240 320,110 318,113 323,242" fill="#c4b5a5"/>
+
+    <!-- Spine -->
+    <polygon points="197,105 203,105 203,235 197,235" fill="#8B4D3B"/>
+    <polygon points="197,105 200,103 203,105 200,107" fill="#6D3A2C"/>
+  </g>
+
+  <!-- Magnifying glass -->
+  <g>
+    <!-- Handle -->
+    <polygon points="310,195 320,185 340,215 330,225" fill="#8B4D3B"/>
+    <polygon points="310,195 320,185 325,190 315,200" fill="#6D3A2C"/>
+    <!-- Handle end cap -->
+    <polygon points="335,210 345,220 340,225 330,215" fill="#6D3A2C"/>
+    <!-- Lens frame (hexagonal) -->
+    <polygon points="290,150 310,140 325,150 325,170 310,180 290,170" fill="#D4832E"/>
+    <!-- Lens interior (hexagonal, lighter) -->
+    <polygon points="293,153 308,144 321,153 321,167 308,176 293,167" fill="#E5A630"/>
+    <!-- Glass area -->
+    <polygon points="296,156 306,148 317,156 317,164 306,172 296,164" fill="#f0ebe6"/>
+    <!-- Glass highlight -->
+    <polygon points="298,155 304,150 308,155 304,158" fill="#faf8f6"/>
+  </g>
+
+  <!-- Bookmark shapes -->
+  <g>
+    <!-- Bookmark 1 (in left page) -->
+    <polygon points="90,105 98,105 100,130 94,123 88,130" fill="#D4832E"/>
+    <!-- Bookmark 2 (in right page) -->
+    <polygon points="300,105 308,105 310,125 304,120 298,125" fill="#E5A630"/>
+    <!-- Bookmark 3 (spine area) -->
+    <polygon points="196,103 204,103 205,122 200,117 195,122" fill="#B86D1F"/>
+  </g>
+
+  <!-- Decorative leaves bottom-left -->
+  <g>
+    <polygon points="55,260 70,250 75,260" fill="#5a8a4a"/>
+    <polygon points="55,260 70,255 65,265" fill="#4a7a3a"/>
+    <polygon points="80,258 90,248 95,258" fill="#6a9a5a"/>
+    <polygon points="80,258 90,252 85,263" fill="#5a8a4a"/>
+  </g>
+
+  <!-- Decorative leaves bottom-right -->
+  <g>
+    <polygon points="325,260 310,250 305,260" fill="#5a8a4a"/>
+    <polygon points="325,260 310,255 315,265" fill="#4a7a3a"/>
+    <polygon points="300,258 290,248 285,258" fill="#6a9a5a"/>
+    <polygon points="300,258 290,252 295,263" fill="#5a8a4a"/>
+  </g>
+
+  <!-- Diamond top-left -->
+  <polygon points="45,30 55,22 65,30 55,38" fill="#E5A630"/>
+  <!-- Diamond top-right -->
+  <polygon points="335,30 345,22 355,30 345,38" fill="#D4832E"/>
+
+  <!-- Accent circles -->
+  <circle cx="50" cy="55" r="3" fill="#E5A630"/>
+  <circle cx="350" cy="55" r="3" fill="#D4832E"/>
+  <circle cx="307" cy="160" r="2" fill="#faf8f6"/>
+</svg>

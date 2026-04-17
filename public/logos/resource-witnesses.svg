@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
+  <rect width="400" height="320" fill="#faf8f6"/>
+  <ellipse cx="200" cy="175" rx="155" ry="135" fill="#f0ebe6"/>
+  <ellipse cx="200" cy="185" rx="115" ry="100" fill="#e0d6cc"/>
+  <polygon points="60,265 340,265 360,285 40,285" fill="#c4b5a5"/>
+  <polygon points="40,285 360,285 380,295 20,295" fill="#e0d6cc"/>
+
+  <!-- Document (centre) -->
+  <g>
+    <polygon points="165,115 255,115 255,250 165,250" fill="#faf8f6"/>
+    <polygon points="165,115 255,115 253,118 167,118" fill="#e0d6cc"/>
+    <polygon points="255,115 255,250 253,248 253,118" fill="#c4b5a5"/>
+    <!-- Text lines -->
+    <polygon points="178,132 242,132 242,135 178,135" fill="#c4b5a5"/>
+    <polygon points="178,142 238,142 238,145 178,145" fill="#c4b5a5"/>
+    <polygon points="178,152 240,152 240,155 178,155" fill="#c4b5a5"/>
+    <polygon points="178,162 235,162 235,165 178,165" fill="#c4b5a5"/>
+    <polygon points="178,172 237,172 237,175 178,175" fill="#c4b5a5"/>
+    <polygon points="178,182 233,182 233,185 178,185" fill="#c4b5a5"/>
+    <!-- Signature line -->
+    <polygon points="185,215 245,215 245,217 185,217" fill="#8B4D3B"/>
+    <polygon points="185,232 245,232 245,234 185,234" fill="#8B4D3B"/>
+  </g>
+
+  <!-- Left person (brown) -->
+  <g>
+    <!-- Head -->
+    <polygon points="95,120 105,112 115,120 110,130 100,130" fill="#8B4D3B"/>
+    <polygon points="95,120 105,112 100,118 95,120" fill="#6D3A2C"/>
+    <!-- Body / torso -->
+    <polygon points="85,140 105,130 125,140 120,195 90,195" fill="#8B4D3B"/>
+    <polygon points="85,140 105,130 95,135 85,140" fill="#6D3A2C"/>
+    <polygon points="105,130 125,140 120,145 105,135" fill="#6D3A2C"/>
+    <!-- Left arm -->
+    <polygon points="85,140 78,170 83,173 90,148" fill="#6D3A2C"/>
+    <!-- Right arm (reaching toward document, holding pen) -->
+    <polygon points="125,140 135,160 155,155 152,150 133,155 122,138" fill="#8B4D3B"/>
+    <polygon points="125,140 130,145 135,160 125,155" fill="#6D3A2C"/>
+    <!-- Legs -->
+    <polygon points="90,195 100,195 98,250 88,250" fill="#6D3A2C"/>
+    <polygon points="110,195 120,195 122,250 112,250" fill="#8B4D3B"/>
+    <!-- Feet -->
+    <polygon points="85,248 100,248 100,255 82,255" fill="#6D3A2C"/>
+    <polygon points="110,248 125,248 128,255 110,255" fill="#8B4D3B"/>
+  </g>
+
+  <!-- Pen in left person's hand -->
+  <g>
+    <polygon points="152,150 158,148 170,200 165,202" fill="#D4832E"/>
+    <polygon points="152,150 155,149 158,148 155,151" fill="#E5A630"/>
+    <polygon points="165,202 170,200 172,210 167,212" fill="#6D3A2C"/>
+    <polygon points="167,212 172,210 170,218" fill="#E5A630"/>
+  </g>
+
+  <!-- Right person (blue) -->
+  <g>
+    <!-- Head -->
+    <polygon points="285,125 295,117 305,125 300,135 290,135" fill="#2D6A8A"/>
+    <polygon points="285,125 295,117 290,123 285,125" fill="#1d5a7a"/>
+    <!-- Body / torso -->
+    <polygon points="275,145 295,135 315,145 310,200 280,200" fill="#2D6A8A"/>
+    <polygon points="275,145 295,135 285,140 275,145" fill="#1d5a7a"/>
+    <polygon points="295,135 315,145 310,150 295,140" fill="#1d5a7a"/>
+    <!-- Left arm (pointing toward document) -->
+    <polygon points="275,145 265,165 260,163 270,143" fill="#2D6A8A"/>
+    <!-- Right arm -->
+    <polygon points="315,145 322,175 317,178 310,150" fill="#1d5a7a"/>
+    <!-- Legs -->
+    <polygon points="280,200 290,200 288,250 278,250" fill="#1d5a7a"/>
+    <polygon points="300,200 310,200 312,250 302,250" fill="#2D6A8A"/>
+    <!-- Feet -->
+    <polygon points="276,248 290,248 290,255 273,255" fill="#1d5a7a"/>
+    <polygon points="300,248 314,248 317,255 300,255" fill="#2D6A8A"/>
+  </g>
+
+  <!-- Decorative leaves bottom-left -->
+  <g>
+    <polygon points="55,260 70,250 75,260" fill="#5a8a4a"/>
+    <polygon points="55,260 70,255 65,265" fill="#4a7a3a"/>
+    <polygon points="80,258 90,248 95,258" fill="#6a9a5a"/>
+    <polygon points="80,258 90,252 85,263" fill="#5a8a4a"/>
+  </g>
+
+  <!-- Decorative leaves bottom-right -->
+  <g>
+    <polygon points="325,260 310,250 305,260" fill="#5a8a4a"/>
+    <polygon points="325,260 310,255 315,265" fill="#4a7a3a"/>
+    <polygon points="300,258 290,248 285,258" fill="#6a9a5a"/>
+    <polygon points="300,258 290,252 295,263" fill="#5a8a4a"/>
+  </g>
+
+  <!-- Diamond top-left -->
+  <polygon points="45,30 55,22 65,30 55,38" fill="#E5A630"/>
+  <!-- Diamond top-right -->
+  <polygon points="335,30 345,22 355,30 345,38" fill="#D4832E"/>
+
+  <!-- Accent circles -->
+  <circle cx="50" cy="55" r="3" fill="#E5A630"/>
+  <circle cx="350" cy="55" r="3" fill="#D4832E"/>
+  <circle cx="200" cy="108" r="2" fill="#c4b5a5"/>
+</svg>

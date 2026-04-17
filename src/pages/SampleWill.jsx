@@ -133,7 +133,7 @@ function SampleWill() {
             <div className="text-center mt-4">
               <h3>Ready to Create Your Own Will?</h3>
               <p>Our guided process makes it easy to create a comprehensive, solicitor-checked will.</p>
-              <Link to="/make-your-will" className="btn btn-primary btn-lg">Start Your Will</Link>
+              <Link to="/make-your-will" className="btn btn-primary btn-lg">Start your will</Link>
             </div>
           </div>
         </div>

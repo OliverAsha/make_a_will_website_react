@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
+  <!-- Warm background -->
+  <rect width="400" height="320" fill="#faf8f6"/>
+  <ellipse cx="200" cy="175" rx="155" ry="135" fill="#f0ebe6"/>
+  <ellipse cx="200" cy="185" rx="115" ry="100" fill="#e0d6cc"/>
+  <!-- Ground surface -->
+  <polygon points="60,265 340,265 360,285 40,285" fill="#c4b5a5"/>
+  <polygon points="40,285 360,285 380,295 20,295" fill="#e0d6cc"/>
+
+  <!-- Orange building block (front-left) -->
+  <g>
+    <!-- Front face -->
+    <polygon points="80,185 140,185 140,245 80,245" fill="#D4832E"/>
+    <!-- Top face -->
+    <polygon points="80,185 140,185 160,168 100,168" fill="#E5A630"/>
+    <!-- Right face -->
+    <polygon points="140,185 160,168 160,228 140,245" fill="#B86D1F"/>
+  </g>
+
+  <!-- Blue building block (back-centre, stacked) -->
+  <g>
+    <!-- Front face -->
+    <polygon points="120,130 175,130 175,185 120,185" fill="#2D6A8A"/>
+    <!-- Top face -->
+    <polygon points="120,130 175,130 195,113 140,113" fill="#3a8aaa"/>
+    <!-- Right face -->
+    <polygon points="175,130 195,113 195,168 175,185" fill="#1a5575"/>
+  </g>
+
+  <!-- Green building block (right) -->
+  <g>
+    <!-- Front face -->
+    <polygon points="170,195 225,195 225,250 170,250" fill="#5a8a4a"/>
+    <!-- Top face -->
+    <polygon points="170,195 225,195 245,178 190,178" fill="#6a9a5a"/>
+    <!-- Right face -->
+    <polygon points="225,195 245,178 245,233 225,250" fill="#4a7a3a"/>
+  </g>
+
+  <!-- Origami paper crane -->
+  <g>
+    <!-- Body -->
+    <polygon points="290,140 310,125 330,140 310,155" fill="#D4832E"/>
+    <polygon points="310,125 330,140 320,132" fill="#B86D1F"/>
+    <!-- Left wing (upper) -->
+    <polygon points="290,140 270,115 285,130" fill="#E5A630"/>
+    <polygon points="270,115 260,105 285,130" fill="#D4832E"/>
+    <!-- Right wing (upper) -->
+    <polygon points="330,140 350,115 335,130" fill="#E5A630"/>
+    <polygon points="350,115 358,108 335,130" fill="#B86D1F"/>
+    <!-- Neck -->
+    <polygon points="310,125 300,100 305,102 312,122" fill="#D4832E"/>
+    <!-- Head -->
+    <polygon points="300,100 295,95 305,102" fill="#B86D1F"/>
+    <polygon points="295,95 288,92 300,100" fill="#E5A630"/>
+    <!-- Tail -->
+    <polygon points="310,155 325,170 318,162" fill="#D4832E"/>
+    <polygon points="325,170 332,178 318,162" fill="#B86D1F"/>
+  </g>
+
+  <!-- Small origami heart -->
+  <g>
+    <!-- Heart left facet -->
+    <polygon points="280,195 270,185 280,178 290,185" fill="#D4832E"/>
+    <!-- Heart right facet -->
+    <polygon points="280,195 290,185 300,178 310,185" fill="#B86D1F"/>
+    <!-- Heart bottom -->
+    <polygon points="280,195 290,210 300,195" fill="#D4832E"/>
+    <polygon points="280,195 270,210 290,210" fill="#E5A630"/>
+    <!-- Heart highlight -->
+    <polygon points="275,182 280,178 285,182" fill="#E5A630"/>
+  </g>
+
+  <!-- Origami leaf left -->
+  <g>
+    <polygon points="68,230 83,205 93,230 83,255" fill="#5a8a4a"/>
+    <polygon points="83,205 93,230 88,218" fill="#4a7a3a"/>
+    <polygon points="68,230 83,205 76,218" fill="#6a9a5a"/>
+  </g>
+
+  <!-- Origami leaf right -->
+  <g>
+    <polygon points="322,228 337,203 347,228 337,253" fill="#5a8a4a"/>
+    <polygon points="337,203 347,228 342,216" fill="#4a7a3a"/>
+    <polygon points="322,228 337,203 330,216" fill="#6a9a5a"/>
+  </g>
+
+  <!-- Decorative diamonds -->
+  <polygon points="58,72 66,62 74,72 66,82" fill="#E5A630"/>
+  <polygon points="66,62 74,72 70,67" fill="#D4832E"/>
+  <polygon points="340,68 347,60 354,68 347,76" fill="#D4832E"/>
+  <polygon points="347,60 354,68 350,64" fill="#B86D1F"/>
+
+  <!-- Accent circles -->
+  <circle cx="48" cy="105" r="7" fill="#f0ebe6"/>
+  <circle cx="358" cy="110" r="5" fill="#e0d6cc"/>
+  <circle cx="45" cy="258" r="5" fill="#E5A630"/>
+</svg>

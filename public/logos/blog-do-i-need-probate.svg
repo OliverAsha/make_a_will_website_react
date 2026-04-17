@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
+  <!-- Warm background -->
+  <rect width="400" height="320" fill="#faf8f6"/>
+  <ellipse cx="200" cy="175" rx="155" ry="135" fill="#f0ebe6"/>
+  <ellipse cx="200" cy="185" rx="115" ry="100" fill="#e0d6cc"/>
+  <!-- Ground surface -->
+  <polygon points="60,265 340,265 360,285 40,285" fill="#c4b5a5"/>
+  <polygon points="40,285 360,285 380,295 20,295" fill="#e0d6cc"/>
+
+  <!-- Scales of justice -->
+  <g>
+    <!-- Central pillar -->
+    <polygon points="193,120 207,120 210,255 190,255" fill="#8B4D3B"/>
+    <polygon points="207,120 210,255 205,255 204,120" fill="#6D3A2C"/>
+    <!-- Pillar base -->
+    <polygon points="170,248 230,248 235,262 165,262" fill="#8B4D3B"/>
+    <polygon points="200,248 230,248 235,262 200,262" fill="#6D3A2C"/>
+
+    <!-- Crossbar -->
+    <polygon points="80,118 320,112 322,125 78,131" fill="#D4832E"/>
+    <polygon points="200,112 320,112 322,125 200,125" fill="#B86D1F"/>
+    <!-- Crossbar top highlight -->
+    <polygon points="80,118 320,112 320,116 80,122" fill="#E5A630"/>
+
+    <!-- Fulcrum triangle -->
+    <polygon points="185,105 215,105 200,90" fill="#E5A630"/>
+    <polygon points="200,90 215,105 207,100" fill="#D4832E"/>
+
+    <!-- Left chain segments -->
+    <polygon points="88,131 93,131 93,158 88,158" fill="#D4832E"/>
+    <polygon points="88,158 93,158 95,165 86,165" fill="#B86D1F"/>
+
+    <!-- Left pan (triangle shape) -->
+    <polygon points="58,168 122,168 90,200" fill="#E5A630"/>
+    <polygon points="90,168 122,168 90,200" fill="#D4832E"/>
+    <!-- Left pan rim -->
+    <polygon points="55,165 125,165 122,168 58,168" fill="#B86D1F"/>
+
+    <!-- Right chain segments -->
+    <polygon points="308,125 313,125 313,148 308,148" fill="#D4832E"/>
+    <polygon points="308,148 313,148 315,155 306,155" fill="#B86D1F"/>
+
+    <!-- Right pan (triangle shape) -->
+    <polygon points="278,158 342,158 310,190" fill="#E5A630"/>
+    <polygon points="310,158 342,158 310,190" fill="#D4832E"/>
+    <!-- Right pan rim -->
+    <polygon points="275,155 345,155 342,158 278,158" fill="#B86D1F"/>
+  </g>
+
+  <!-- Origami leaf left -->
+  <g>
+    <polygon points="70,230 85,205 95,230 85,255" fill="#5a8a4a"/>
+    <polygon points="85,205 95,230 90,218" fill="#4a7a3a"/>
+    <polygon points="70,230 85,205 78,218" fill="#6a9a5a"/>
+  </g>
+
+  <!-- Origami leaf right -->
+  <g>
+    <polygon points="320,228 335,203 345,228 335,253" fill="#5a8a4a"/>
+    <polygon points="335,203 345,228 340,216" fill="#4a7a3a"/>
+    <polygon points="320,228 335,203 328,216" fill="#6a9a5a"/>
+  </g>
+
+  <!-- Decorative diamonds -->
+  <polygon points="55,70 63,60 71,70 63,80" fill="#E5A630"/>
+  <polygon points="63,60 71,70 67,65" fill="#D4832E"/>
+  <polygon points="342,68 349,60 356,68 349,76" fill="#D4832E"/>
+  <polygon points="349,60 356,68 352,64" fill="#B86D1F"/>
+
+  <!-- Accent circles -->
+  <circle cx="48" cy="100" r="7" fill="#f0ebe6"/>
+  <circle cx="358" cy="95" r="5" fill="#e0d6cc"/>
+  <circle cx="45" cy="258" r="5" fill="#E5A630"/>
+</svg>

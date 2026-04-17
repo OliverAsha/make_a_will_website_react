@@ -22,8 +22,8 @@ function Header() {
               <li><NavLink to="/contact">Contact</NavLink></li>
             </ul>
             <div className="nav-buttons">
-              <a href="https://makeawillonline.co.uk/my-will/my-will/login" className="btn btn-secondary">Login</a>
-              <a href="https://makeawillonline.co.uk/my-will" className="btn btn-primary">Make a Will</a>
+              <a href="https://makeawillonline.co.uk/my-will/my-will/login" className="nav-login">Login</a>
+              <a href="https://makeawillonline.co.uk/my-will" className="btn btn-primary">make a will</a>
             </div>
           </nav>
 

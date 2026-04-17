@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
+  <rect width="400" height="320" fill="#faf8f6"/>
+  <ellipse cx="200" cy="175" rx="155" ry="135" fill="#f0ebe6"/>
+  <ellipse cx="200" cy="185" rx="115" ry="100" fill="#e0d6cc"/>
+  <polygon points="60,265 340,265 360,285 40,285" fill="#c4b5a5"/>
+  <polygon points="40,285 360,285 380,295 20,295" fill="#e0d6cc"/>
+
+  <!-- Document -->
+  <g>
+    <polygon points="130,95 270,95 270,255 130,255" fill="#faf8f6"/>
+    <polygon points="130,95 270,95 268,98 132,98" fill="#e0d6cc"/>
+    <polygon points="270,95 270,255 268,253 268,98" fill="#c4b5a5"/>
+    <polygon points="130,255 270,255 268,253 132,253" fill="#c4b5a5"/>
+    <!-- Text lines -->
+    <polygon points="148,115 252,115 252,118 148,118" fill="#c4b5a5"/>
+    <polygon points="148,128 248,128 248,131 148,131" fill="#c4b5a5"/>
+    <polygon points="148,141 250,141 250,144 148,144" fill="#c4b5a5"/>
+    <polygon points="148,154 245,154 245,157 148,157" fill="#c4b5a5"/>
+    <polygon points="148,167 248,167 248,170 148,170" fill="#c4b5a5"/>
+    <polygon points="148,180 242,180 242,183 148,183" fill="#c4b5a5"/>
+    <!-- Signature line -->
+    <polygon points="160,205 250,205 250,207 160,207" fill="#8B4D3B"/>
+    <!-- Signature scrawl (angular) -->
+    <polygon points="168,200 175,192 182,198 190,190 195,197 200,194 205,200" fill="none" stroke="#6D3A2C" stroke-width="1.5"/>
+  </g>
+
+  <!-- Large origami pen -->
+  <g>
+    <!-- Pen barrel upper -->
+    <polygon points="80,90 92,85 160,188 148,193" fill="#8B4D3B"/>
+    <!-- Pen barrel highlight -->
+    <polygon points="80,90 86,87 154,190 148,193" fill="#6D3A2C"/>
+    <!-- Pen barrel top -->
+    <polygon points="86,87 92,85 95,89 89,91" fill="#E5A630"/>
+    <!-- Pen grip section -->
+    <polygon points="148,193 160,188 170,208 158,213" fill="#D4832E"/>
+    <polygon points="148,193 154,190 164,210 158,213" fill="#B86D1F"/>
+    <!-- Pen nib -->
+    <polygon points="158,213 170,208 175,225" fill="#E5A630"/>
+    <polygon points="158,213 164,210 175,225" fill="#D4832E"/>
+    <!-- Nib tip -->
+    <polygon points="170,222 175,225 172,228" fill="#6D3A2C"/>
+    <!-- Pen cap -->
+    <polygon points="74,93 80,90 86,87 80,80 72,84" fill="#D4832E"/>
+    <polygon points="74,93 80,90 80,80 74,83" fill="#B86D1F"/>
+  </g>
+
+  <!-- Wax seal (hexagonal) -->
+  <g>
+    <!-- Outer seal -->
+    <polygon points="200,222 215,215 228,222 228,238 215,245 200,238" fill="#D4832E"/>
+    <!-- Inner seal facet (lighter) -->
+    <polygon points="204,225 215,219 224,225 224,235 215,241 204,235" fill="#B86D1F"/>
+    <!-- Seal centre highlight -->
+    <polygon points="209,228 215,224 220,228 220,233 215,237 209,233" fill="#E5A630"/>
+    <!-- Seal ribbon left -->
+    <polygon points="195,238 200,238 193,260 188,258" fill="#D4832E"/>
+    <polygon points="195,238 198,238 191,258 188,258" fill="#B86D1F"/>
+    <!-- Seal ribbon right -->
+    <polygon points="228,238 233,238 240,260 235,258" fill="#D4832E"/>
+    <polygon points="228,238 231,238 238,258 235,258" fill="#B86D1F"/>
+  </g>
+
+  <!-- Decorative leaves bottom-left -->
+  <g>
+    <polygon points="55,260 70,250 75,260" fill="#5a8a4a"/>
+    <polygon points="55,260 70,255 65,265" fill="#4a7a3a"/>
+    <polygon points="80,258 90,248 95,258" fill="#6a9a5a"/>
+    <polygon points="80,258 90,252 85,263" fill="#5a8a4a"/>
+  </g>
+
+  <!-- Decorative leaves bottom-right -->
+  <g>
+    <polygon points="325,260 310,250 305,260" fill="#5a8a4a"/>
+    <polygon points="325,260 310,255 315,265" fill="#4a7a3a"/>
+    <polygon points="300,258 290,248 285,258" fill="#6a9a5a"/>
+    <polygon points="300,258 290,252 295,263" fill="#5a8a4a"/>
+  </g>
+
+  <!-- Diamond top-left -->
+  <polygon points="45,30 55,22 65,30 55,38" fill="#E5A630"/>
+  <!-- Diamond top-right -->
+  <polygon points="335,30 345,22 355,30 345,38" fill="#D4832E"/>
+
+  <!-- Accent circles -->
+  <circle cx="50" cy="55" r="3" fill="#E5A630"/>
+  <circle cx="350" cy="55" r="3" fill="#D4832E"/>
+  <circle cx="215" cy="230" r="2" fill="#faf8f6"/>
+</svg>

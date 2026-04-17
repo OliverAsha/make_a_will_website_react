@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
+  <rect width="400" height="320" fill="#faf8f6"/>
+  <ellipse cx="200" cy="175" rx="155" ry="135" fill="#f0ebe6"/>
+  <ellipse cx="200" cy="185" rx="115" ry="100" fill="#e0d6cc"/>
+  <polygon points="60,265 340,265 360,285 40,285" fill="#c4b5a5"/>
+  <polygon points="40,285 360,285 380,295 20,295" fill="#e0d6cc"/>
+
+  <!-- Origami heart -->
+  <g>
+    <!-- Left half -->
+    <polygon points="200,95 175,75 160,85 170,105 200,130" fill="#D4832E"/>
+    <polygon points="200,95 175,75 185,78 200,95" fill="#E5A630"/>
+    <polygon points="160,85 170,105 165,100 158,90" fill="#B86D1F"/>
+    <!-- Right half -->
+    <polygon points="200,95 225,75 240,85 230,105 200,130" fill="#B86D1F"/>
+    <polygon points="200,95 225,75 215,78 200,95" fill="#D4832E"/>
+    <polygon points="240,85 230,105 235,100 242,90" fill="#8B4D3B"/>
+    <!-- Centre fold line -->
+    <polygon points="198,95 202,95 202,128 198,128" fill="#B86D1F"/>
+  </g>
+
+  <!-- Left ring (hexagonal) -->
+  <g>
+    <!-- Outer ring -->
+    <polygon points="130,165 150,150 170,155 175,175 160,190 140,188 125,178" fill="#E5A630"/>
+    <!-- Inner cutout (background colour to create ring shape) -->
+    <polygon points="140,168 150,160 162,163 165,175 157,183 145,182 137,175" fill="#D4832E"/>
+    <!-- Inner hole -->
+    <polygon points="145,170 152,165 159,168 160,176 155,180 148,179 143,174" fill="#e0d6cc"/>
+    <!-- Facet highlights -->
+    <polygon points="130,165 150,150 145,155 132,168" fill="#D4832E"/>
+    <polygon points="170,155 175,175 172,172 168,158" fill="#B86D1F"/>
+  </g>
+
+  <!-- Right ring (hexagonal, overlapping) -->
+  <g>
+    <!-- Outer ring -->
+    <polygon points="185,165 205,150 225,155 230,175 215,190 195,188 180,178" fill="#E5A630"/>
+    <!-- Inner cutout -->
+    <polygon points="195,168 205,160 217,163 220,175 212,183 200,182 192,175" fill="#D4832E"/>
+    <!-- Inner hole -->
+    <polygon points="200,170 207,165 214,168 215,176 210,180 203,179 198,174" fill="#e0d6cc"/>
+    <!-- Facet highlights -->
+    <polygon points="185,165 205,150 200,155 187,168" fill="#D4832E"/>
+    <polygon points="225,155 230,175 227,172 223,158" fill="#B86D1F"/>
+  </g>
+
+  <!-- Interlink overlap: part of left ring in front of right ring -->
+  <g>
+    <polygon points="170,155 175,175 172,172 168,158" fill="#E5A630" opacity="0.6"/>
+  </g>
+
+  <!-- Document -->
+  <g>
+    <polygon points="255,120 335,120 335,250 255,250" fill="#faf8f6"/>
+    <polygon points="255,120 335,120 333,123 257,123" fill="#e0d6cc"/>
+    <polygon points="335,120 335,250 333,248 333,123" fill="#c4b5a5"/>
+    <!-- Text lines -->
+    <polygon points="265,138 325,138 325,141 265,141" fill="#c4b5a5"/>
+    <polygon points="265,149 320,149 320,152 265,152" fill="#c4b5a5"/>
+    <polygon points="265,160 322,160 322,163 265,163" fill="#c4b5a5"/>
+    <polygon points="265,171 318,171 318,174 265,174" fill="#c4b5a5"/>
+    <polygon points="265,182 320,182 320,185 265,185" fill="#c4b5a5"/>
+    <polygon points="265,193 315,193 315,196 265,196" fill="#c4b5a5"/>
+    <!-- Signature line -->
+    <polygon points="272,220 325,220 325,222 272,222" fill="#8B4D3B"/>
+    <polygon points="272,235 325,235 325,237 272,237" fill="#8B4D3B"/>
+  </g>
+
+  <!-- Small decorative rings/dots between rings -->
+  <g>
+    <polygon points="175,155 180,152 185,155 182,160 177,160" fill="#E5A630" opacity="0.5"/>
+  </g>
+
+  <!-- Decorative leaves bottom-left -->
+  <g>
+    <polygon points="55,260 70,250 75,260" fill="#5a8a4a"/>
+    <polygon points="55,260 70,255 65,265" fill="#4a7a3a"/>
+    <polygon points="80,258 90,248 95,258" fill="#6a9a5a"/>
+    <polygon points="80,258 90,252 85,263" fill="#5a8a4a"/>
+  </g>
+
+  <!-- Decorative leaves bottom-right -->
+  <g>
+    <polygon points="325,260 310,250 305,260" fill="#5a8a4a"/>
+    <polygon points="325,260 310,255 315,265" fill="#4a7a3a"/>
+    <polygon points="300,258 290,248 285,258" fill="#6a9a5a"/>
+    <polygon points="300,258 290,252 295,263" fill="#5a8a4a"/>
+  </g>
+
+  <!-- Diamond top-left -->
+  <polygon points="45,30 55,22 65,30 55,38" fill="#E5A630"/>
+  <!-- Diamond top-right -->
+  <polygon points="335,30 345,22 355,30 345,38" fill="#D4832E"/>
+
+  <!-- Accent circles -->
+  <circle cx="50" cy="55" r="3" fill="#E5A630"/>
+  <circle cx="350" cy="55" r="3" fill="#D4832E"/>
+  <circle cx="200" cy="135" r="2" fill="#B86D1F"/>
+</svg>

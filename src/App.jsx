@@ -117,6 +117,10 @@ function App() {
             <Route path="/topic/:category" element={<Blog />} />
 
             {/* Blog Posts */}
+            <Route path="/digital-assets-in-your-will" element={<BlogPost />} />
+            <Route path="/inheritance-tax-changes-2026" element={<BlogPost />} />
+            <Route path="/will-law-reform-2026" element={<BlogPost />} />
+            <Route path="/probate-delays-what-to-expect" element={<BlogPost />} />
             <Route path="/why-make-a-will" element={<BlogPost />} />
             <Route path="/why-write-a-will" element={<BlogPost />} />
             <Route path="/5-reasons-to-update-your-will" element={<BlogPost />} />

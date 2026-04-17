@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import Breadcrumb from '../components/Breadcrumb';
-import { CharitiesIllustration } from '../components/Illustrations';
 import SEO from '../components/SEO';
 
 function Charities() {
@@ -9,25 +8,25 @@ function Charities() {
       title: 'Gifts in Wills for Charities',
       description: 'Help your supporters leave a lasting legacy with our charity partnership programme for gifts in wills.',
       link: '/fundraising-online-wills',
-      cta: 'Learn More'
+      cta: 'Learn more'
     },
     {
       title: 'Charities and Fundraising',
       description: 'Discover how charities can work with us to promote legacy giving and increase charitable donations.',
       link: '/charities-and-fundraising-for-gifts-in-wills',
-      cta: 'Explore Partnership'
+      cta: 'Explore partnership'
     },
     {
       title: 'Solicitor-Checked Wills for Supporters',
       description: 'Offer your charity supporters access to affordable, solicitor-checked wills while encouraging legacy gifts.',
       link: '/solicitor-checked-wills-for-charity-supporters',
-      cta: 'View Details'
+      cta: 'View details'
     },
     {
       title: 'Gifts in Wills Training',
       description: 'Professional training with Richard Radcliffe to help your fundraising team maximise legacy income.',
       link: '/gifts-in-wills-training-with-richard-radcliffe',
-      cta: 'Book Training'
+      cta: 'Book training'
     }
   ];
 
@@ -59,7 +58,7 @@ function Charities() {
               </p>
             </div>
             <div>
-              <CharitiesIllustration />
+              <img src="/logos/charities.svg" alt="Charities illustration" width={400} height={320} style={{ maxWidth: '280px', height: 'auto' }} />
             </div>
           </div>
 
@@ -111,7 +110,7 @@ function Charities() {
           <div className="text-center mt-4" style={{ background: '#f8f9fa', padding: '40px', borderRadius: '8px' }}>
             <h3>Ready to Partner With Us?</h3>
             <p>Contact us to discuss how we can help your charity grow legacy income.</p>
-            <Link to="/contact" className="btn btn-primary btn-lg">Get in Touch</Link>
+            <Link to="/contact" className="btn btn-primary btn-lg">Get in touch</Link>
           </div>
         </div>
       </section>

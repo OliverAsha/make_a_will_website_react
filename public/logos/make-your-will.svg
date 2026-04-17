@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
+  <rect width="400" height="320" fill="#faf8f6"/>
+  <ellipse cx="200" cy="175" rx="155" ry="135" fill="#f0ebe6"/>
+  <ellipse cx="200" cy="185" rx="115" ry="100" fill="#e0d6cc"/>
+  <polygon points="60,265 340,265 360,285 40,285" fill="#c4b5a5"/>
+  <polygon points="40,285 360,285 380,295 20,295" fill="#e0d6cc"/>
+
+  <!-- Laptop -->
+  <g>
+    <!-- Screen back -->
+    <polygon points="115,85 285,85 290,90 110,90" fill="#6D3A2C"/>
+    <!-- Screen frame -->
+    <polygon points="118,90 282,90 280,185 120,185" fill="#8B4D3B"/>
+    <!-- Screen area -->
+    <polygon points="125,95 275,95 273,180 127,180" fill="#faf8f6"/>
+    <!-- Form field 1 -->
+    <polygon points="140,110 260,110 260,125 140,125" fill="#f0ebe6"/>
+    <polygon points="140,110 260,110 258,112 142,112" fill="#e0d6cc"/>
+    <!-- Form field 2 -->
+    <polygon points="140,135 260,135 260,150 140,150" fill="#f0ebe6"/>
+    <polygon points="140,135 260,135 258,137 142,137" fill="#e0d6cc"/>
+    <!-- Form field 3 (smaller - button) -->
+    <polygon points="175,160 225,160 225,173 175,173" fill="#D4832E"/>
+    <polygon points="175,160 225,160 223,162 177,162" fill="#E5A630"/>
+    <!-- Keyboard base -->
+    <polygon points="105,185 295,185 305,210 95,210" fill="#8B4D3B"/>
+    <polygon points="105,185 295,185 293,190 107,190" fill="#6D3A2C"/>
+    <!-- Keyboard surface -->
+    <polygon points="107,190 293,190 303,208 97,208" fill="#c4b5a5"/>
+    <!-- Keyboard keys row -->
+    <polygon points="120,195 140,195 140,200 120,200" fill="#8B4D3B"/>
+    <polygon points="145,195 165,195 165,200 145,200" fill="#8B4D3B"/>
+    <polygon points="170,195 190,195 190,200 170,200" fill="#8B4D3B"/>
+    <polygon points="195,195 215,195 215,200 195,200" fill="#8B4D3B"/>
+    <polygon points="220,195 240,195 240,200 220,200" fill="#8B4D3B"/>
+    <polygon points="245,195 265,195 265,200 245,200" fill="#8B4D3B"/>
+  </g>
+
+  <!-- Clock (right side) -->
+  <g>
+    <!-- Octagonal clock face -->
+    <polygon points="325,130 340,118 355,118 370,130 370,150 355,162 340,162 325,150" fill="#f0ebe6"/>
+    <polygon points="325,130 340,118 347,125 330,135" fill="#faf8f6"/>
+    <polygon points="370,150 355,162 348,155 365,145" fill="#e0d6cc"/>
+    <!-- Clock border -->
+    <polygon points="325,130 340,118 342,120 327,132" fill="#D4832E"/>
+    <polygon points="340,118 355,118 353,120 342,120" fill="#E5A630"/>
+    <polygon points="355,118 370,130 368,132 353,120" fill="#D4832E"/>
+    <polygon points="370,130 370,150 368,148 368,132" fill="#B86D1F"/>
+    <polygon points="370,150 355,162 353,160 368,148" fill="#D4832E"/>
+    <polygon points="355,162 340,162 342,160 353,160" fill="#E5A630"/>
+    <polygon points="340,162 325,150 327,148 342,160" fill="#D4832E"/>
+    <polygon points="325,150 325,130 327,132 327,148" fill="#B86D1F"/>
+    <!-- Clock hands -->
+    <polygon points="347,140 349,140 349,125 347,125" fill="#8B4D3B"/>
+    <polygon points="347,139 349,141 360,138 359,136" fill="#6D3A2C"/>
+  </g>
+
+  <!-- Person figure (left side) -->
+  <g>
+    <!-- Head -->
+    <polygon points="60,135 66,128 74,128 80,135 77,143 63,143" fill="#e0d6cc"/>
+    <!-- Body -->
+    <polygon points="62,146 78,146 83,195 57,195" fill="#D4832E"/>
+    <!-- Arm pointing right -->
+    <polygon points="78,152 100,148 102,153 80,158" fill="#E5A630"/>
+    <!-- Legs -->
+    <polygon points="57,195 67,195 66,230 58,230" fill="#B86D1F"/>
+    <polygon points="73,195 83,195 82,230 74,230" fill="#D4832E"/>
+  </g>
+
+  <!-- Decorative leaves bottom-left -->
+  <g>
+    <polygon points="55,260 70,250 75,260" fill="#5a8a4a"/>
+    <polygon points="55,260 70,255 65,265" fill="#4a7a3a"/>
+    <polygon points="80,258 90,248 95,258" fill="#6a9a5a"/>
+    <polygon points="80,258 90,252 85,263" fill="#5a8a4a"/>
+  </g>
+
+  <!-- Decorative leaves bottom-right -->
+  <g>
+    <polygon points="325,260 310,250 305,260" fill="#5a8a4a"/>
+    <polygon points="325,260 310,255 315,265" fill="#4a7a3a"/>
+    <polygon points="300,258 290,248 285,258" fill="#6a9a5a"/>
+    <polygon points="300,258 290,252 295,263" fill="#5a8a4a"/>
+  </g>
+
+  <!-- Diamond top-left -->
+  <polygon points="45,30 55,22 65,30 55,38" fill="#E5A630"/>
+  <!-- Diamond top-right -->
+  <polygon points="335,30 345,22 355,30 345,38" fill="#D4832E"/>
+
+  <!-- Accent circles -->
+  <circle cx="50" cy="55" r="3" fill="#E5A630"/>
+  <circle cx="350" cy="55" r="3" fill="#D4832E"/>
+  <circle cx="348" cy="140" r="2" fill="#6D3A2C"/>
+</svg>

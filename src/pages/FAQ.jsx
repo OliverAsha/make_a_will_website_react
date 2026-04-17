@@ -126,7 +126,7 @@ function FAQ() {
           <div className="text-center mt-4" style={{ background: '#f8f9fa', padding: '40px', borderRadius: '12px' }}>
             <h3>Still have questions?</h3>
             <p>Our team is here to help you with any questions about making your will.</p>
-            <Link to="/contact" className="btn btn-primary">Contact Us</Link>
+            <Link to="/contact" className="btn btn-primary">Contact us</Link>
           </div>
         </div>
       </section>

@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
+  <rect width="400" height="320" fill="#faf8f6"/>
+  <ellipse cx="200" cy="175" rx="155" ry="135" fill="#f0ebe6"/>
+  <ellipse cx="200" cy="185" rx="115" ry="100" fill="#e0d6cc"/>
+  <polygon points="60,265 340,265 360,285 40,285" fill="#c4b5a5"/>
+  <polygon points="40,285 360,285 380,295 20,295" fill="#e0d6cc"/>
+
+  <!-- Left Document -->
+  <g id="doc-left">
+    <polygon points="95,115 130,110 130,240 95,245" fill="#f0ebe6"/>
+    <polygon points="130,110 160,115 160,245 130,240" fill="#e0d6cc"/>
+    <!-- Corner fold -->
+    <polygon points="145,110 160,115 160,128 148,124" fill="#c4b5a5"/>
+    <polygon points="145,110 148,124 143,125" fill="#e0d6cc"/>
+    <!-- Text lines -->
+    <polygon points="105,140 145,137 145,143 105,146" fill="#c4b5a5"/>
+    <polygon points="105,155 140,152 140,158 105,161" fill="#c4b5a5"/>
+    <polygon points="105,170 148,167 148,173 105,176" fill="#c4b5a5"/>
+    <polygon points="105,185 135,182 135,188 105,191" fill="#c4b5a5"/>
+    <polygon points="105,200 142,197 142,203 105,206" fill="#c4b5a5"/>
+  </g>
+
+  <!-- Right Document (mirrored) -->
+  <g id="doc-right">
+    <polygon points="240,115 275,110 275,240 240,245" fill="#f0ebe6"/>
+    <polygon points="275,110 305,115 305,245 275,240" fill="#e0d6cc"/>
+    <!-- Corner fold (mirrored) -->
+    <polygon points="240,115 255,110 252,124 240,128" fill="#c4b5a5"/>
+    <polygon points="255,110 252,124 257,125" fill="#e0d6cc"/>
+    <!-- Text lines -->
+    <polygon points="250,140 290,137 290,143 250,146" fill="#c4b5a5"/>
+    <polygon points="250,155 285,152 285,158 250,161" fill="#c4b5a5"/>
+    <polygon points="250,170 293,167 293,173 250,176" fill="#c4b5a5"/>
+    <polygon points="250,185 280,182 280,188 250,191" fill="#c4b5a5"/>
+    <polygon points="250,200 287,197 287,203 250,206" fill="#c4b5a5"/>
+  </g>
+
+  <!-- Double-headed arrow between documents -->
+  <g id="arrow">
+    <polygon points="170,178 195,172 195,182 170,188" fill="#D4832E"/>
+    <polygon points="195,172 230,178 230,188 195,182" fill="#E5A630"/>
+    <!-- Left arrowhead -->
+    <polygon points="170,178 170,188 158,183" fill="#B86D1F"/>
+    <!-- Right arrowhead -->
+    <polygon points="230,178 230,188 242,183" fill="#B86D1F"/>
+  </g>
+
+  <!-- Origami heart/ring above (partnership) -->
+  <g id="heart">
+    <!-- Left half of heart -->
+    <polygon points="192,80 200,75 200,95 195,100" fill="#D4832E"/>
+    <polygon points="185,85 192,80 195,100 190,98" fill="#E5A630"/>
+    <!-- Right half of heart -->
+    <polygon points="200,75 208,80 205,100 200,95" fill="#B86D1F"/>
+    <polygon points="208,80 215,85 210,98 205,100" fill="#D4832E"/>
+    <!-- Heart bottom point -->
+    <polygon points="190,98 200,112 210,98 205,100 200,95 195,100" fill="#8B4D3B"/>
+  </g>
+
+  <!-- Decorative elements -->
+  <g id="decorations">
+    <!-- Top-left diamond -->
+    <polygon points="80,50 90,40 100,50 90,60" fill="#E5A630"/>
+    <!-- Top-right diamond -->
+    <polygon points="310,50 320,40 330,50 320,60" fill="#D4832E"/>
+
+    <!-- Bottom-left leaf pair -->
+    <polygon points="70,258 85,243 90,253 80,263" fill="#5a8a4a"/>
+    <polygon points="90,253 100,246 95,260 85,263" fill="#4a7a3a"/>
+    <!-- Bottom-right leaf pair -->
+    <polygon points="315,258 325,243 335,253 325,263" fill="#5a8a4a"/>
+    <polygon points="325,253 340,246 335,260 325,263" fill="#6a9a5a"/>
+
+    <!-- Accent circles -->
+    <circle cx="200" cy="65" r="3" fill="#E5A630"/>
+    <circle cx="170" cy="250" r="3" fill="#D4832E"/>
+    <circle cx="230" cy="250" r="3" fill="#D4832E"/>
+  </g>
+</svg>

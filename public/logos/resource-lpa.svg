@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
+  <!-- Warm background -->
+  <rect width="400" height="320" fill="#faf8f6"/>
+  <ellipse cx="200" cy="175" rx="155" ry="135" fill="#f0ebe6"/>
+  <ellipse cx="200" cy="185" rx="115" ry="100" fill="#e0d6cc"/>
+  <!-- Ground surface -->
+  <polygon points="60,265 340,265 360,285 40,285" fill="#c4b5a5"/>
+  <polygon points="40,285 360,285 380,295 20,295" fill="#e0d6cc"/>
+
+  <!-- Origami shield -->
+  <g>
+    <!-- Shield left facet -->
+    <polygon points="115,105 175,95 175,200 145,235" fill="#2D6A8A"/>
+    <!-- Shield right facet -->
+    <polygon points="175,95 235,105 205,235 175,200" fill="#1d5a7a"/>
+    <!-- Shield top highlight -->
+    <polygon points="115,105 175,95 235,105 235,115 175,103 115,115" fill="#3d7a9a"/>
+    <!-- Shield bottom point facets -->
+    <polygon points="145,235 175,200 175,260" fill="#1d5a7a"/>
+    <polygon points="175,200 205,235 175,260" fill="#2D6A8A"/>
+    <!-- Shield emblem - inner chevron -->
+    <polygon points="148,140 175,128 202,140 175,170" fill="#3d7a9a"/>
+    <polygon points="175,128 202,140 175,155" fill="#2D6A8A"/>
+    <!-- Shield cross bar -->
+    <polygon points="135,165 215,165 215,172 135,172" fill="#3d7a9a"/>
+  </g>
+
+  <!-- Origami person (protected, behind shield slightly right) -->
+  <g>
+    <!-- Head -->
+    <polygon points="195,138 205,130 215,138 210,148 200,148" fill="#E5A630"/>
+    <polygon points="205,130 215,138 210,134" fill="#D4832E"/>
+    <!-- Body - torso left -->
+    <polygon points="195,150 210,148 208,195 192,198" fill="#D4832E"/>
+    <!-- Body - torso right -->
+    <polygon points="210,148 220,152 218,198 208,195" fill="#B86D1F"/>
+    <!-- Left arm -->
+    <polygon points="192,155 195,150 188,178 185,180" fill="#D4832E"/>
+    <!-- Right arm -->
+    <polygon points="220,152 223,158 226,182 222,180" fill="#B86D1F"/>
+    <!-- Left leg -->
+    <polygon points="192,198 202,195 200,255 190,258" fill="#8B4D3B"/>
+    <!-- Right leg -->
+    <polygon points="202,195 218,198 220,258 208,255" fill="#6D3A2C"/>
+  </g>
+
+  <!-- Origami document -->
+  <g>
+    <!-- Paper left facet -->
+    <polygon points="278,130 332,127 332,252 278,255" fill="#faf8f6"/>
+    <!-- Paper right facet -->
+    <polygon points="332,127 365,130 365,255 332,252" fill="#f0ebe6"/>
+    <!-- Fold corner -->
+    <polygon points="350,127 365,130 365,147" fill="#e0d6cc"/>
+    <!-- Text lines -->
+    <polygon points="288,155 327,153 327,158 288,160" fill="#e0d6cc"/>
+    <polygon points="288,170 330,168 330,173 288,175" fill="#e0d6cc"/>
+    <polygon points="288,185 322,183 322,188 288,190" fill="#e0d6cc"/>
+    <polygon points="288,200 328,198 328,203 288,205" fill="#e0d6cc"/>
+    <polygon points="288,215 320,213 320,218 288,220" fill="#e0d6cc"/>
+    <!-- Signature -->
+    <polygon points="300,235 340,233 340,235 300,237" fill="#8B4D3B"/>
+  </g>
+
+  <!-- Decorative leaf pair - bottom left -->
+  <g>
+    <polygon points="55,268 72,255 78,262 65,272" fill="#5a8a4a"/>
+    <polygon points="65,272 78,262 85,268 72,276" fill="#4a7a3a"/>
+    <polygon points="55,268 42,258 48,252 58,262" fill="#6a9a5a"/>
+    <polygon points="58,262 48,252 55,248 62,256" fill="#5a8a4a"/>
+  </g>
+
+  <!-- Decorative leaf pair - bottom right -->
+  <g>
+    <polygon points="335,268 322,255 316,262 329,272" fill="#5a8a4a"/>
+    <polygon points="329,272 316,262 310,268 322,276" fill="#4a7a3a"/>
+    <polygon points="335,268 348,258 342,252 332,262" fill="#6a9a5a"/>
+    <polygon points="332,262 342,252 335,248 328,256" fill="#5a8a4a"/>
+  </g>
+
+  <!-- Diamond accent - top left -->
+  <polygon points="45,35 55,50 45,65 35,50" fill="#E5A630"/>
+  <polygon points="45,35 55,50 45,50" fill="#D4832E"/>
+
+  <!-- Diamond accent - top right -->
+  <polygon points="355,30 365,45 355,60 345,45" fill="#E5A630"/>
+  <polygon points="355,30 365,45 355,45" fill="#D4832E"/>
+
+  <!-- Small accent circles -->
+  <circle cx="70" cy="42" r="3" fill="#2D6A8A"/>
+  <circle cx="330" cy="38" r="3" fill="#2D6A8A"/>
+  <circle cx="200" cy="28" r="2.5" fill="#E5A630"/>
+</svg>

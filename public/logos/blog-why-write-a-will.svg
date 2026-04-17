@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
+  <!-- Warm background -->
+  <rect width="400" height="320" fill="#faf8f6"/>
+  <ellipse cx="200" cy="175" rx="155" ry="135" fill="#f0ebe6"/>
+  <ellipse cx="200" cy="185" rx="115" ry="100" fill="#e0d6cc"/>
+  <!-- Ground surface -->
+  <polygon points="60,265 340,265 360,285 40,285" fill="#c4b5a5"/>
+  <polygon points="40,285 360,285 380,295 20,295" fill="#e0d6cc"/>
+
+  <!-- Origami document -->
+  <g>
+    <!-- Paper left facet -->
+    <polygon points="175,95 260,90 260,245 175,250" fill="#faf8f6"/>
+    <!-- Paper right facet -->
+    <polygon points="260,90 335,95 335,250 260,245" fill="#f0ebe6"/>
+    <!-- Fold corner -->
+    <polygon points="315,90 335,95 335,118" fill="#e0d6cc"/>
+    <!-- Text lines -->
+    <polygon points="190,125 250,123 250,129 190,131" fill="#e0d6cc"/>
+    <polygon points="190,141 255,139 255,145 190,147" fill="#e0d6cc"/>
+    <polygon points="190,157 240,155 240,161 190,163" fill="#e0d6cc"/>
+    <polygon points="190,173 252,171 252,177 190,179" fill="#e0d6cc"/>
+    <polygon points="190,189 235,187 235,193 190,195" fill="#e0d6cc"/>
+    <polygon points="190,205 248,203 248,209 190,211" fill="#e0d6cc"/>
+  </g>
+
+  <!-- Origami fountain pen -->
+  <g>
+    <!-- Pen barrel left facet -->
+    <polygon points="85,100 105,95 120,200 100,205" fill="#8B4D3B"/>
+    <!-- Pen barrel right facet -->
+    <polygon points="105,95 125,100 140,205 120,200" fill="#6D3A2C"/>
+    <!-- Pen cap band -->
+    <polygon points="87,130 123,125 125,135 89,140" fill="#E5A630"/>
+    <polygon points="123,125 141,130 143,140 125,135" fill="#D4832E"/>
+    <!-- Pen nib -->
+    <polygon points="100,205 120,200 112,230" fill="#E5A630"/>
+    <polygon points="120,200 140,205 112,230" fill="#D4832E"/>
+    <!-- Nib tip -->
+    <polygon points="112,230 115,225 112,245" fill="#B86D1F"/>
+    <!-- Pen clip -->
+    <polygon points="105,95 110,93 112,130 107,132" fill="#D4832E"/>
+  </g>
+
+  <!-- Ink drops as diamond shapes -->
+  <g>
+    <polygon points="130,248 135,240 140,248 135,256" fill="#2D6A8A"/>
+    <polygon points="135,240 140,248 137,244" fill="#1a5575"/>
+    <polygon points="148,238 152,232 156,238 152,244" fill="#2D6A8A"/>
+    <polygon points="152,232 156,238 154,235" fill="#1a5575"/>
+    <polygon points="155,255 158,250 161,255 158,260" fill="#2D6A8A"/>
+  </g>
+
+  <!-- Origami leaf left -->
+  <g>
+    <polygon points="70,232 85,207 95,232 85,257" fill="#5a8a4a"/>
+    <polygon points="85,207 95,232 90,220" fill="#4a7a3a"/>
+    <polygon points="70,232 85,207 77,220" fill="#6a9a5a"/>
+  </g>
+
+  <!-- Origami leaf right -->
+  <g>
+    <polygon points="318,230 333,205 343,230 333,255" fill="#5a8a4a"/>
+    <polygon points="333,205 343,230 338,218" fill="#4a7a3a"/>
+    <polygon points="318,230 333,205 326,218" fill="#6a9a5a"/>
+  </g>
+
+  <!-- Decorative diamonds -->
+  <polygon points="55,72 63,62 71,72 63,82" fill="#E5A630"/>
+  <polygon points="63,62 71,72 67,67" fill="#D4832E"/>
+  <polygon points="345,75 352,67 359,75 352,83" fill="#D4832E"/>
+  <polygon points="352,67 359,75 355,71" fill="#B86D1F"/>
+
+  <!-- Accent circles -->
+  <circle cx="48" cy="108" r="7" fill="#f0ebe6"/>
+  <circle cx="358" cy="118" r="5" fill="#e0d6cc"/>
+  <circle cx="45" cy="258" r="5" fill="#E5A630"/>
+</svg>

@@ -8,6 +8,34 @@ function Home() {
       <SEO />
       <Hero />
 
+      {/* Trust Bar */}
+      <section className="trust-bar">
+        <div className="container">
+          <div className="trust-bar-inner">
+            <div className="trust-bar-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Solicitor-checked</span>
+            </div>
+            <div className="trust-bar-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Fixed pricing</span>
+            </div>
+            <div className="trust-bar-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Legally valid</span>
+            </div>
+            <div className="trust-bar-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Lifetime updates</span>
+            </div>
+            <div className="trust-bar-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Money back guarantee</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Steps Section */}
       <section className="steps-section">
         <div className="container">
@@ -43,7 +71,7 @@ function Home() {
               <h3>Solicitor-Checked for Peace of Mind</h3>
               <p>Unlike other will services, every will we create is reviewed by a qualified solicitor. This ensures your will is legally valid and your wishes will be carried out exactly as you intend.</p>
               <p>Our team of legal experts catch potential issues before they become problems, giving you complete confidence in your will.</p>
-              <Link to="/resource/what-is-a-solicitor-checked-will" className="btn btn-primary">Learn About Solicitor-Checked Wills</Link>
+              <Link to="/resource/what-is-a-solicitor-checked-will" className="btn btn-primary">learn about solicitor-checked wills</Link>
             </div>
             <div className="feature-image">
               <div style={{
@@ -66,7 +94,7 @@ function Home() {
               <h3>Lifetime Updates Included</h3>
               <p>Life changes, and so should your will. With our lifetime updates feature, you can modify your will whenever your circumstances change - whether you get married, have children, or simply change your mind.</p>
               <p>No additional fees, no hassle. Just log in and make your changes.</p>
-              <Link to="/lifetime-updates" className="btn btn-primary">Learn About Lifetime Updates</Link>
+              <Link to="/lifetime-updates" className="btn btn-primary">learn about lifetime updates</Link>
             </div>
             <div className="feature-image">
               <div style={{
@@ -147,7 +175,7 @@ function Home() {
             Join thousands of people who have already created their will with Make a Will.
             It takes just 15 minutes and provides complete peace of mind.
           </p>
-          <a href="https://makeawillonline.co.uk/my-will" className="btn btn-primary btn-lg">Make Your Will Now</a>
+          <a href="https://makeawillonline.co.uk/my-will" className="btn btn-primary btn-lg">make your will now</a>
         </div>
       </section>
     </>

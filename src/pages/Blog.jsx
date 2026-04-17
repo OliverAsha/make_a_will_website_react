@@ -4,39 +4,76 @@ import SEO from '../components/SEO';
 function Blog() {
   const blogPosts = [
     {
+      title: "Probate Delays in 2026: How Long Will You Really Wait?",
+      excerpt: "Processing times have improved, but delays aren't over yet — and bigger challenges are coming. Here's what executors need to know.",
+      date: "2026-04-10",
+      category: "Executors and Probate",
+      path: "/probate-delays-what-to-expect",
+      image: "/logos/blog-probate-delays.svg"
+    },
+    {
+      title: "The Biggest Shake-Up in Will Law for Nearly 200 Years",
+      excerpt: "The Law Commission wants to replace the Wills Act 1837 with modern legislation covering electronic wills, capacity tests, and more.",
+      date: "2026-03-20",
+      category: "General Guidance",
+      path: "/will-law-reform-2026",
+      image: "/logos/blog-will-reform.svg"
+    },
+    {
+      title: "Inheritance Tax Changes in 2026: What You Need to Know",
+      excerpt: "Farm relief capped, AIM shares hit, and pensions coming into the IHT net from 2027. Here's what changed and what to do about it.",
+      date: "2026-02-12",
+      category: "General Guidance",
+      path: "/inheritance-tax-changes-2026",
+      image: "/logos/blog-inheritance-tax.svg"
+    },
+    {
+      title: "Digital Assets in Your Will: What the New Law Means for You",
+      excerpt: "The Property (Digital Assets etc) Act 2025 officially recognises crypto, NFTs, and digital tokens as property. Here's how to include them in your will.",
+      date: "2026-01-15",
+      category: "General Guidance",
+      path: "/digital-assets-in-your-will",
+      image: "/logos/blog-digital-assets.svg"
+    },
+    {
       title: "Have you thought about these 5 reasons to update your will?",
       excerpt: "Life changes constantly, and your will should reflect those changes. Here are five important reasons you might need to update your will.",
       date: "2025-10-20",
       category: "General Guidance",
-      path: "/5-reasons-to-update-your-will"
+      path: "/5-reasons-to-update-your-will",
+      image: "/logos/blog-5-reasons-update-will.svg"
     },
     {
       title: "Why make a will?",
       excerpt: "Making a will is one of the most important things you can do to protect your family and ensure your wishes are carried out.",
       date: "2025-10-12",
       category: "General Guidance",
-      path: "/why-make-a-will"
+      path: "/why-make-a-will",
+      image: "/logos/blog-why-make-a-will.svg"
     },
     {
       title: "What is Probate and do I need it?",
       excerpt: "Understanding probate is essential if you're dealing with someone's estate. Learn what probate is and when it's required.",
       date: "2025-09-28",
       category: "Executors and Probate",
-      path: "/do-I-need-probate"
+      path: "/do-I-need-probate",
+      image: "/logos/blog-do-i-need-probate.svg"
     },
     {
       title: "What happens if you die without a will?",
       excerpt: "Dying without a will means your estate will be distributed according to intestacy rules, which may not reflect your wishes.",
       date: "2025-09-15",
       category: "General Guidance",
-      path: "/dying-without-a-will-intestacy"
+      path: "/dying-without-a-will-intestacy",
+      image: "/logos/blog-dying-without-a-will.svg"
     },
     {
       title: "Children and gifts in wills: 5 ways to get peace of mind",
       excerpt: "When you have children, making a will becomes even more important. Here's how to ensure your children are protected.",
       date: "2025-08-22",
       category: "Family Situations",
-      path: "/children-and-gifts-in-wills"
+      path: "/children-and-gifts-in-wills",
+      image: "/logos/blog-children-gifts-wills.svg"
     },
     {
       title: "What is a Lasting Power of Attorney?",
@@ -50,21 +87,24 @@ function Blog() {
       excerpt: "Unmarried couples have very different rights from married couples when it comes to inheritance. Here's what you need to know.",
       date: "2025-07-25",
       category: "Family Situations",
-      path: "/do-you-cohabit"
+      path: "/do-you-cohabit",
+      image: "/logos/blog-do-you-cohabit.svg"
     },
     {
       title: "Wills for British Ex-Pats",
       excerpt: "Living abroad as a British citizen? Understanding how different jurisdictions affect your will is crucial.",
       date: "2025-07-11",
       category: "Wills for British Expats",
-      path: "/uk-expat-wills"
+      path: "/uk-expat-wills",
+      image: "/logos/blog-uk-expat-wills.svg"
     },
     {
       title: "Charity Gifts in Wills: how and why",
       excerpt: "Leaving a gift to charity in your will can make a lasting difference and may even reduce inheritance tax on your estate.",
       date: "2025-06-18",
       category: "General Guidance",
-      path: "/charity-gifts-in-wills-how-and-why"
+      path: "/charity-gifts-in-wills-how-and-why",
+      image: "/logos/blog-charity-gifts-wills.svg"
     }
   ];
 
@@ -101,12 +141,16 @@ function Blog() {
                 {blogPosts.map((post, index) => (
                   <Link key={index} to={post.path} className="blog-card" style={{ textDecoration: 'none', color: 'inherit' }}>
                     <div className="blog-card-image">
-                      <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                        <polyline points="14 2 14 8 20 8"/>
-                        <line x1="16" y1="13" x2="8" y2="13"/>
-                        <line x1="16" y1="17" x2="8" y2="17"/>
-                      </svg>
+                      {post.image ? (
+                        <img src={post.image} alt={post.title} width={400} height={320} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                      ) : (
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                          <polyline points="14 2 14 8 20 8"/>
+                          <line x1="16" y1="13" x2="8" y2="13"/>
+                          <line x1="16" y1="17" x2="8" y2="17"/>
+                        </svg>
+                      )}
                     </div>
                     <div className="blog-card-content">
                       <div className="blog-card-meta">
@@ -140,7 +184,7 @@ function Blog() {
                 <h4>Ready to Make Your Will?</h4>
                 <p>Create your solicitor-checked will in just 15 minutes.</p>
                 <a href="https://makeawillonline.co.uk/my-will" className="btn btn-primary" style={{ width: '100%', marginTop: '10px' }}>
-                  Get Started
+                  Get started
                 </a>
               </div>
             </aside>

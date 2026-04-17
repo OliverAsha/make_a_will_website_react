@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
+  <rect width="400" height="320" fill="#faf8f6"/>
+  <ellipse cx="200" cy="175" rx="155" ry="135" fill="#f0ebe6"/>
+  <ellipse cx="200" cy="185" rx="115" ry="100" fill="#e0d6cc"/>
+  <polygon points="60,265 340,265 360,285 40,285" fill="#c4b5a5"/>
+  <polygon points="40,285 360,285 380,295 20,295" fill="#e0d6cc"/>
+
+  <!-- Origami Document -->
+  <g id="document">
+    <!-- Main document body - left facet (lighter) -->
+    <polygon points="170,100 200,95 200,220 170,225" fill="#f0ebe6"/>
+    <!-- Main document body - right facet (darker) -->
+    <polygon points="200,95 235,100 235,225 200,220" fill="#e0d6cc"/>
+    <!-- Document top fold -->
+    <polygon points="170,100 200,95 215,98 185,103" fill="#faf8f6"/>
+    <!-- Document corner fold -->
+    <polygon points="215,98 235,100 235,115 220,110" fill="#c4b5a5"/>
+    <polygon points="215,98 220,110 215,112" fill="#e0d6cc"/>
+    <!-- Text line polygons on document -->
+    <polygon points="180,130 220,127 220,133 180,136" fill="#c4b5a5"/>
+    <polygon points="180,145 215,142 215,148 180,151" fill="#c4b5a5"/>
+    <polygon points="180,160 225,157 225,163 180,166" fill="#c4b5a5"/>
+    <polygon points="180,175 210,172 210,178 180,181" fill="#c4b5a5"/>
+    <polygon points="180,190 218,187 218,193 180,196" fill="#c4b5a5"/>
+  </g>
+
+  <!-- Circular refresh arrows -->
+  <g id="refresh-arrows">
+    <!-- Top arrow (right-going arc) -->
+    <polygon points="245,130 275,115 280,125 250,138" fill="#D4832E"/>
+    <polygon points="275,115 300,120 295,132 280,125" fill="#E5A630"/>
+    <polygon points="300,120 310,140 300,145 295,132" fill="#B86D1F"/>
+    <!-- Top arrowhead -->
+    <polygon points="310,140 320,130 315,150 305,145" fill="#D4832E"/>
+
+    <!-- Bottom arrow (left-going arc) -->
+    <polygon points="160,195 130,210 125,200 155,187" fill="#D4832E"/>
+    <polygon points="130,210 105,205 110,193 125,200" fill="#E5A630"/>
+    <polygon points="105,205 95,185 105,180 110,193" fill="#B86D1F"/>
+    <!-- Bottom arrowhead -->
+    <polygon points="95,185 85,195 90,175 100,180" fill="#D4832E"/>
+  </g>
+
+  <!-- Decorative elements -->
+  <g id="decorations">
+    <!-- Top-left diamond -->
+    <polygon points="75,55 85,45 95,55 85,65" fill="#E5A630"/>
+    <!-- Top-right diamond -->
+    <polygon points="315,50 325,40 335,50 325,60" fill="#D4832E"/>
+
+    <!-- Bottom-left leaf pair -->
+    <polygon points="65,260 80,245 85,255 75,265" fill="#5a8a4a"/>
+    <polygon points="85,255 95,248 90,262 80,265" fill="#4a7a3a"/>
+    <!-- Bottom-right leaf pair -->
+    <polygon points="320,258 330,245 340,255 330,265" fill="#5a8a4a"/>
+    <polygon points="330,255 345,248 340,262 330,265" fill="#6a9a5a"/>
+
+    <!-- Accent circles -->
+    <circle cx="110" cy="120" r="4" fill="#E5A630"/>
+    <circle cx="295" cy="200" r="4" fill="#D4832E"/>
+    <circle cx="200" cy="75" r="3" fill="#B86D1F"/>
+  </g>
+</svg>

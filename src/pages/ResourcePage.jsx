@@ -1,17 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import Breadcrumb from '../components/Breadcrumb';
 import SEO from '../components/SEO';
-import {
-  MakingWillIllustration,
-  ExecutorsProbateIllustration,
-  LPAIllustration,
-  FamilyIllustration,
-  AfterDeathIllustration,
-  WitnessesIllustration,
-  SigningIllustration,
-  MarriageWillsIllustration,
-  GlossaryIllustration
-} from '../components/Illustrations';
 
 // External authority links for further reading
 const externalResources = {
@@ -83,56 +72,56 @@ const resourceToCategory = {
 // Map resource slugs to illustration components
 const resourceToIllustration = {
   // Making a will resources
-  'do-i-need-to-make-a-will': MakingWillIllustration,
-  'are-online-wills-legal': MakingWillIllustration,
-  'make-an-online-will-in-five-easy-steps': MakingWillIllustration,
-  'what-is-a-solicitor-checked-will': MakingWillIllustration,
-  'will-writing-glossary': GlossaryIllustration,
+  'do-i-need-to-make-a-will': '/logos/resource-making-will.svg',
+  'are-online-wills-legal': '/logos/resource-making-will.svg',
+  'make-an-online-will-in-five-easy-steps': '/logos/resource-making-will.svg',
+  'what-is-a-solicitor-checked-will': '/logos/resource-making-will.svg',
+  'will-writing-glossary': '/logos/resource-glossary.svg',
 
   // Witnesses and signing
-  'who-can-witness-a-will': WitnessesIllustration,
-  'how-to-sign-execute-a-will': SigningIllustration,
+  'who-can-witness-a-will': '/logos/resource-witnesses.svg',
+  'how-to-sign-execute-a-will': '/logos/resource-signing.svg',
 
   // Executors and probate
-  'executors': ExecutorsProbateIllustration,
-  'choosing-executors-for-your-will': ExecutorsProbateIllustration,
-  'do-i-need-probate': ExecutorsProbateIllustration,
-  'apply-for-probate': ExecutorsProbateIllustration,
-  'probate-directory': ExecutorsProbateIllustration,
-  'preparing-estate-accounts': ExecutorsProbateIllustration,
+  'executors': '/logos/resource-executors-probate.svg',
+  'choosing-executors-for-your-will': '/logos/resource-executors-probate.svg',
+  'do-i-need-probate': '/logos/resource-executors-probate.svg',
+  'apply-for-probate': '/logos/resource-executors-probate.svg',
+  'probate-directory': '/logos/resource-executors-probate.svg',
+  'preparing-estate-accounts': '/logos/resource-executors-probate.svg',
 
   // LPA resources
-  'lasting-power-of-attorney': LPAIllustration,
-  'do-i-need-an-lpa': LPAIllustration,
-  'make-an-lpa': LPAIllustration,
-  'attorneys': LPAIllustration,
-  'choosing-attorneys': LPAIllustration,
-  'lpa-cost': LPAIllustration,
+  'lasting-power-of-attorney': '/logos/resource-lpa.svg',
+  'do-i-need-an-lpa': '/logos/resource-lpa.svg',
+  'make-an-lpa': '/logos/resource-lpa.svg',
+  'attorneys': '/logos/resource-lpa.svg',
+  'choosing-attorneys': '/logos/resource-lpa.svg',
+  'lpa-cost': '/logos/resource-lpa.svg',
 
   // Family situations
-  'dying-without-a-will-intestacy': FamilyIllustration,
-  'legal-guardians': FamilyIllustration,
-  'blended-families': FamilyIllustration,
-  'wills-and-stepchildren': FamilyIllustration,
+  'dying-without-a-will-intestacy': '/logos/resource-family.svg',
+  'legal-guardians': '/logos/resource-family.svg',
+  'blended-families': '/logos/resource-family.svg',
+  'wills-and-stepchildren': '/logos/resource-family.svg',
 
   // Marriage and relationships
-  'i-am-getting-married-do-i-need-a-will': MarriageWillsIllustration,
-  'separated-from-partner-divorce-wills': MarriageWillsIllustration,
+  'i-am-getting-married-do-i-need-a-will': '/logos/resource-marriage.svg',
+  'separated-from-partner-divorce-wills': '/logos/resource-marriage.svg',
 
   // After death resources
-  'register-a-death': AfterDeathIllustration,
-  'death-of-a-spouse': AfterDeathIllustration,
-  'arranging-a-funeral': AfterDeathIllustration,
-  'personal-belongings': AfterDeathIllustration,
+  'register-a-death': '/logos/resource-after-death.svg',
+  'death-of-a-spouse': '/logos/resource-after-death.svg',
+  'arranging-a-funeral': '/logos/resource-after-death.svg',
+  'personal-belongings': '/logos/resource-after-death.svg',
 
   // New resource pages
-  'cost-of-making-a-will': MakingWillIllustration,
-  'inheritance-tax-guide': MakingWillIllustration,
-  'trusts-in-wills': MakingWillIllustration,
-  'how-to-change-your-will': MakingWillIllustration,
-  'will-template-uk': MakingWillIllustration,
-  'lpa-vs-will': LPAIllustration,
-  'what-to-do-when-someone-dies': AfterDeathIllustration
+  'cost-of-making-a-will': '/logos/resource-making-will.svg',
+  'inheritance-tax-guide': '/logos/resource-making-will.svg',
+  'trusts-in-wills': '/logos/resource-making-will.svg',
+  'how-to-change-your-will': '/logos/resource-making-will.svg',
+  'will-template-uk': '/logos/resource-making-will.svg',
+  'lpa-vs-will': '/logos/resource-lpa.svg',
+  'what-to-do-when-someone-dies': '/logos/resource-after-death.svg'
 };
 
 // Resource content database - this would typically come from a CMS or API
@@ -1944,7 +1933,7 @@ function ResourcePage() {
             <div className="content-wrapper">
               <h2>Resource Not Found</h2>
               <p>Sorry, we couldn't find the resource you're looking for.</p>
-              <Link to="/resource" className="btn btn-primary">Browse All Resources</Link>
+              <Link to="/resource" className="btn btn-primary">Browse all resources</Link>
             </div>
           </div>
         </section>
@@ -1993,20 +1982,15 @@ function ResourcePage() {
               <div className="text-center mt-4" style={{ background: '#f8f9fa', padding: '40px', borderRadius: '8px' }}>
                 <h3>Ready to Make Your Will?</h3>
                 <p>Create your solicitor-checked will in just 15 minutes.</p>
-                <a href="https://makeawillonline.co.uk/my-will" className="btn btn-primary btn-lg">Get Started</a>
+                <a href="https://makeawillonline.co.uk/my-will" className="btn btn-primary btn-lg">Get started</a>
               </div>
             </div>
 
             <aside className="sidebar">
               {/* Resource illustration */}
-              {(() => {
-                const IllustrationComponent = resourceToIllustration[slug] || MakingWillIllustration;
-                return (
-                  <div className="sidebar-widget" style={{ textAlign: 'center' }}>
-                    <IllustrationComponent />
-                  </div>
-                );
-              })()}
+              <div className="sidebar-widget" style={{ textAlign: 'center' }}>
+                <img src={resourceToIllustration[slug] || '/logos/resource-making-will.svg'} alt="Resource illustration" width={400} height={320} style={{ maxWidth: '100%', height: 'auto' }} />
+              </div>
 
               <div className="sidebar-widget">
                 <h4>Related Resources</h4>
@@ -2030,7 +2014,7 @@ function ResourcePage() {
               <div className="sidebar-widget">
                 <h4>Need Help?</h4>
                 <p>Our team is here to answer any questions.</p>
-                <Link to="/contact" className="btn btn-secondary" style={{ width: '100%' }}>Contact Us</Link>
+                <Link to="/contact" className="btn btn-secondary" style={{ width: '100%' }}>Contact us</Link>
               </div>
             </aside>
           </div>

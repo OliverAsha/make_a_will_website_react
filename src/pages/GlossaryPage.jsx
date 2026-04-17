@@ -1,5 +1,4 @@
 import { useLocation, Link } from 'react-router-dom';
-import { GlossaryIllustration } from '../components/Illustrations';
 import SEO from '../components/SEO';
 
 // Glossary terms content
@@ -182,7 +181,7 @@ function GlossaryPage() {
             <div className="content-wrapper">
               <h2>Term Not Found</h2>
               <p>Sorry, we couldn't find that glossary term.</p>
-              <Link to="/resource/will-writing-glossary" className="btn btn-primary">View Full Glossary</Link>
+              <Link to="/resource/will-writing-glossary" className="btn btn-primary">View full glossary</Link>
             </div>
           </div>
         </section>
@@ -207,7 +206,7 @@ function GlossaryPage() {
               <div dangerouslySetInnerHTML={{ __html: term.content }} />
 
               <div className="text-center mt-4" style={{ background: '#f8f9fa', padding: '30px', borderRadius: '8px' }}>
-                <Link to="/resource/will-writing-glossary" className="btn btn-secondary">View Full Glossary</Link>
+                <Link to="/resource/will-writing-glossary" className="btn btn-secondary">View full glossary</Link>
               </div>
             </div>
 
@@ -233,13 +232,13 @@ function GlossaryPage() {
               </div>
 
               <div className="sidebar-widget" style={{ textAlign: 'center' }}>
-                <GlossaryIllustration />
+                <img src="/logos/glossary.svg" alt="Glossary illustration" width={400} height={320} style={{ maxWidth: '100%', height: 'auto' }} />
               </div>
 
               <div className="sidebar-widget">
                 <h4>Ready to Make Your Will?</h4>
                 <p>Create your solicitor-checked will in just 15 minutes.</p>
-                <a href="https://makeawillonline.co.uk/my-will" className="btn btn-primary" style={{ width: '100%' }}>Get Started</a>
+                <a href="https://makeawillonline.co.uk/my-will" className="btn btn-primary" style={{ width: '100%' }}>Get started</a>
               </div>
             </aside>
           </div>

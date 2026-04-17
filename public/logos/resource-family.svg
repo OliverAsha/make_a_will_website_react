@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
+  <!-- Warm background -->
+  <rect width="400" height="320" fill="#faf8f6"/>
+  <ellipse cx="200" cy="175" rx="155" ry="135" fill="#f0ebe6"/>
+  <ellipse cx="200" cy="185" rx="115" ry="100" fill="#e0d6cc"/>
+  <!-- Ground surface -->
+  <polygon points="60,265 340,265 360,285 40,285" fill="#c4b5a5"/>
+  <polygon points="40,285 360,285 380,295 20,295" fill="#e0d6cc"/>
+
+  <!-- Origami house -->
+  <g>
+    <!-- Roof left facet -->
+    <polygon points="200,80 120,145 200,135" fill="#D4832E"/>
+    <!-- Roof right facet -->
+    <polygon points="200,80 280,145 200,135" fill="#B86D1F"/>
+    <!-- Roof peak highlight -->
+    <polygon points="192,84 200,80 208,84 200,90" fill="#E5A630"/>
+    <!-- Wall left facet -->
+    <polygon points="130,142 200,133 200,255 130,260" fill="#faf8f6"/>
+    <!-- Wall right facet -->
+    <polygon points="200,133 270,142 270,260 200,255" fill="#f0ebe6"/>
+    <!-- Door -->
+    <polygon points="185,200 215,198 215,255 185,258" fill="#8B4D3B"/>
+    <polygon points="185,200 200,198 200,255 185,258" fill="#6D3A2C"/>
+    <!-- Door handle -->
+    <polygon points="207,225 210,223 211,228 208,230" fill="#E5A630"/>
+    <!-- Window left -->
+    <polygon points="142,162 168,160 168,185 142,187" fill="#2D6A8A"/>
+    <polygon points="142,162 155,160 155,185 142,187" fill="#3d7a9a"/>
+    <!-- Window cross -->
+    <polygon points="142,172 168,170 168,173 142,175" fill="#f0ebe6"/>
+    <polygon points="154,160 156,160 156,187 154,187" fill="#f0ebe6"/>
+    <!-- Window right -->
+    <polygon points="232,162 258,160 258,185 232,187" fill="#2D6A8A"/>
+    <polygon points="232,162 245,160 245,185 232,187" fill="#3d7a9a"/>
+    <!-- Chimney -->
+    <polygon points="240,85 258,83 260,130 242,133" fill="#8B4D3B"/>
+    <polygon points="258,83 268,86 270,133 260,130" fill="#6D3A2C"/>
+  </g>
+
+  <!-- Origami heart above house -->
+  <g>
+    <polygon points="200,48 188,38 180,42 182,55 200,68" fill="#D4832E"/>
+    <polygon points="200,48 212,38 220,42 218,55 200,68" fill="#B86D1F"/>
+    <polygon points="200,48 188,38 195,36 200,42" fill="#E5A630"/>
+    <polygon points="200,48 212,38 205,36 200,42" fill="#D4832E"/>
+  </g>
+
+  <!-- Adult figure 1 (left, taller) -->
+  <g>
+    <!-- Head -->
+    <polygon points="88,172 96,165 104,172 100,180 92,180" fill="#E5A630"/>
+    <polygon points="96,165 104,172 100,168" fill="#D4832E"/>
+    <!-- Torso -->
+    <polygon points="88,182 104,182 102,225 86,228" fill="#D4832E"/>
+    <polygon points="104,182 112,185 110,228 102,225" fill="#B86D1F"/>
+    <!-- Legs -->
+    <polygon points="86,228 96,225 95,260 85,262" fill="#8B4D3B"/>
+    <polygon points="96,225 110,228 112,262 100,260" fill="#6D3A2C"/>
+  </g>
+
+  <!-- Adult figure 2 (right, taller) -->
+  <g>
+    <!-- Head -->
+    <polygon points="298,172 306,165 314,172 310,180 302,180" fill="#E5A630"/>
+    <polygon points="306,165 314,172 310,168" fill="#D4832E"/>
+    <!-- Torso -->
+    <polygon points="295,182 312,182 310,225 293,228" fill="#2D6A8A"/>
+    <polygon points="312,182 320,185 318,228 310,225" fill="#1d5a7a"/>
+    <!-- Legs -->
+    <polygon points="293,228 303,225 302,260 292,262" fill="#8B4D3B"/>
+    <polygon points="303,225 318,228 320,262 308,260" fill="#6D3A2C"/>
+  </g>
+
+  <!-- Child figure 1 (centre-left, shorter) -->
+  <g>
+    <!-- Head -->
+    <polygon points="155,210 161,205 167,210 164,216 158,216" fill="#E5A630"/>
+    <polygon points="161,205 167,210 164,207" fill="#D4832E"/>
+    <!-- Torso -->
+    <polygon points="153,218 167,218 166,242 152,244" fill="#5a8a4a"/>
+    <polygon points="167,218 173,220 172,244 166,242" fill="#4a7a3a"/>
+    <!-- Legs -->
+    <polygon points="152,244 160,242 159,262 151,263" fill="#8B4D3B"/>
+    <polygon points="160,242 172,244 173,263 163,262" fill="#6D3A2C"/>
+  </g>
+
+  <!-- Child figure 2 (centre-right, shorter) -->
+  <g>
+    <!-- Head -->
+    <polygon points="230,210 236,205 242,210 239,216 233,216" fill="#E5A630"/>
+    <polygon points="236,205 242,210 239,207" fill="#D4832E"/>
+    <!-- Torso -->
+    <polygon points="228,218 242,218 241,242 227,244" fill="#D4832E"/>
+    <polygon points="242,218 248,220 247,244 241,242" fill="#B86D1F"/>
+    <!-- Legs -->
+    <polygon points="227,244 235,242 234,262 226,263" fill="#8B4D3B"/>
+    <polygon points="235,242 247,244 248,263 238,262" fill="#6D3A2C"/>
+  </g>
+
+  <!-- Decorative leaf pair - bottom left -->
+  <g>
+    <polygon points="55,268 72,255 78,262 65,272" fill="#5a8a4a"/>
+    <polygon points="65,272 78,262 85,268 72,276" fill="#4a7a3a"/>
+    <polygon points="55,268 42,258 48,252 58,262" fill="#6a9a5a"/>
+    <polygon points="58,262 48,252 55,248 62,256" fill="#5a8a4a"/>
+  </g>
+
+  <!-- Decorative leaf pair - bottom right -->
+  <g>
+    <polygon points="335,268 322,255 316,262 329,272" fill="#5a8a4a"/>
+    <polygon points="329,272 316,262 310,268 322,276" fill="#4a7a3a"/>
+    <polygon points="335,268 348,258 342,252 332,262" fill="#6a9a5a"/>
+    <polygon points="332,262 342,252 335,248 328,256" fill="#5a8a4a"/>
+  </g>
+
+  <!-- Diamond accent - top left -->
+  <polygon points="45,35 55,50 45,65 35,50" fill="#E5A630"/>
+  <polygon points="45,35 55,50 45,50" fill="#D4832E"/>
+
+  <!-- Diamond accent - top right -->
+  <polygon points="355,30 365,45 355,60 345,45" fill="#E5A630"/>
+  <polygon points="355,30 365,45 355,45" fill="#D4832E"/>
+
+  <!-- Small accent circles -->
+  <circle cx="70" cy="42" r="3" fill="#D4832E"/>
+  <circle cx="330" cy="38" r="3" fill="#D4832E"/>
+  <circle cx="30" cy="160" r="2.5" fill="#E5A630"/>
+</svg>

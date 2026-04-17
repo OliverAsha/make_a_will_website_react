@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
+  <!-- Warm background -->
+  <rect width="400" height="320" fill="#faf8f6"/>
+  <ellipse cx="200" cy="175" rx="155" ry="135" fill="#f0ebe6"/>
+  <ellipse cx="200" cy="185" rx="115" ry="100" fill="#e0d6cc"/>
+  <!-- Ground surface -->
+  <polygon points="60,265 340,265 360,285 40,285" fill="#c4b5a5"/>
+  <polygon points="40,285 360,285 380,295 20,295" fill="#e0d6cc"/>
+
+  <!-- Origami candle -->
+  <g>
+    <!-- Candle body left facet -->
+    <polygon points="120,170 148,168 148,258 120,260" fill="#faf8f6"/>
+    <!-- Candle body right facet -->
+    <polygon points="148,168 170,170 170,260 148,258" fill="#f0ebe6"/>
+    <!-- Candle body base -->
+    <polygon points="115,255 175,253 178,265 112,267" fill="#e0d6cc"/>
+    <!-- Candle top rim -->
+    <polygon points="118,168 172,166 174,174 116,176" fill="#e0d6cc"/>
+    <!-- Wick -->
+    <polygon points="143,168 148,166 150,148 145,148" fill="#6D3A2C"/>
+    <!-- Flame outer - left -->
+    <polygon points="147,148 135,118 147,105 148,130" fill="#E5A630"/>
+    <!-- Flame outer - right -->
+    <polygon points="148,130 147,105 160,118 148,148" fill="#D4832E"/>
+    <!-- Flame inner glow -->
+    <polygon points="147,142 141,125 147,112 148,125" fill="#faf8f6"/>
+    <polygon points="148,125 147,112 154,125 148,142" fill="#E5A630"/>
+    <!-- Flame tip -->
+    <polygon points="145,108 147,95 150,108" fill="#D4832E"/>
+    <!-- Wax drip -->
+    <polygon points="130,168 135,165 136,180 131,178" fill="#e0d6cc"/>
+  </g>
+
+  <!-- Origami flower/wreath -->
+  <g>
+    <!-- Wreath ring built from triangular petals/segments -->
+    <!-- Top petals -->
+    <polygon points="240,110 250,95 260,110" fill="#5a8a4a"/>
+    <polygon points="250,95 265,100 260,110" fill="#4a7a3a"/>
+    <polygon points="235,100 240,110 250,95" fill="#6a9a5a"/>
+    <!-- Right petals -->
+    <polygon points="270,115 285,125 272,135" fill="#5a8a4a"/>
+    <polygon points="285,125 288,140 272,135" fill="#4a7a3a"/>
+    <polygon points="260,110 270,115 272,135" fill="#6a9a5a"/>
+    <!-- Bottom-right -->
+    <polygon points="288,140 285,158 272,155" fill="#5a8a4a"/>
+    <polygon points="285,158 275,168 270,160" fill="#4a7a3a"/>
+    <polygon points="272,155 272,135 288,140" fill="#6a9a5a"/>
+    <!-- Bottom petals -->
+    <polygon points="270,160 260,175 250,168" fill="#5a8a4a"/>
+    <polygon points="260,175 245,172 250,168" fill="#4a7a3a"/>
+    <polygon points="240,175 245,172 260,175" fill="#6a9a5a"/>
+    <!-- Left-bottom -->
+    <polygon points="230,170 225,155 238,158" fill="#5a8a4a"/>
+    <polygon points="225,155 222,140 235,142" fill="#4a7a3a"/>
+    <polygon points="238,158 240,175 230,170" fill="#6a9a5a"/>
+    <!-- Left petals -->
+    <polygon points="222,140 225,125 238,128" fill="#5a8a4a"/>
+    <polygon points="225,125 235,115 240,128" fill="#4a7a3a"/>
+    <polygon points="235,115 240,110 238,128" fill="#6a9a5a"/>
+    <!-- Flower centres - small coloured polygons -->
+    <polygon points="248,125 255,120 260,128 255,133 248,130" fill="#D4832E"/>
+    <polygon points="245,148 252,143 258,150 252,156 245,152" fill="#E5A630"/>
+    <polygon points="262,140 268,135 272,142 268,148 262,145" fill="#D4832E"/>
+  </g>
+
+  <!-- Origami document -->
+  <g>
+    <!-- Paper left facet -->
+    <polygon points="300,140 348,137 348,255 300,258" fill="#faf8f6"/>
+    <!-- Paper right facet -->
+    <polygon points="348,137 378,140 378,258 348,255" fill="#f0ebe6"/>
+    <!-- Fold corner -->
+    <polygon points="363,137 378,140 378,155" fill="#e0d6cc"/>
+    <!-- Text lines -->
+    <polygon points="310,162 343,160 343,165 310,167" fill="#e0d6cc"/>
+    <polygon points="310,177 345,175 345,180 310,182" fill="#e0d6cc"/>
+    <polygon points="310,192 338,190 338,195 310,197" fill="#e0d6cc"/>
+    <polygon points="310,207 343,205 343,210 310,212" fill="#e0d6cc"/>
+    <polygon points="310,222 335,220 335,225 310,227" fill="#e0d6cc"/>
+    <!-- Seal -->
+    <polygon points="328,236 336,231 344,236 344,246 336,251 328,246" fill="#D4832E"/>
+    <polygon points="336,231 344,236 340,234" fill="#B86D1F"/>
+  </g>
+
+  <!-- Decorative leaf pair - bottom left -->
+  <g>
+    <polygon points="55,268 72,255 78,262 65,272" fill="#5a8a4a"/>
+    <polygon points="65,272 78,262 85,268 72,276" fill="#4a7a3a"/>
+    <polygon points="55,268 42,258 48,252 58,262" fill="#6a9a5a"/>
+    <polygon points="58,262 48,252 55,248 62,256" fill="#5a8a4a"/>
+  </g>
+
+  <!-- Decorative leaf pair - bottom right -->
+  <g>
+    <polygon points="335,268 322,255 316,262 329,272" fill="#5a8a4a"/>
+    <polygon points="329,272 316,262 310,268 322,276" fill="#4a7a3a"/>
+    <polygon points="335,268 348,258 342,252 332,262" fill="#6a9a5a"/>
+    <polygon points="332,262 342,252 335,248 328,256" fill="#5a8a4a"/>
+  </g>
+
+  <!-- Diamond accent - top left -->
+  <polygon points="45,35 55,50 45,65 35,50" fill="#E5A630"/>
+  <polygon points="45,35 55,50 45,50" fill="#D4832E"/>
+
+  <!-- Diamond accent - top right -->
+  <polygon points="355,30 365,45 355,60 345,45" fill="#E5A630"/>
+  <polygon points="355,30 365,45 355,45" fill="#D4832E"/>
+
+  <!-- Small accent circles -->
+  <circle cx="70" cy="42" r="3" fill="#D4832E"/>
+  <circle cx="330" cy="38" r="3" fill="#D4832E"/>
+  <circle cx="200" cy="28" r="2.5" fill="#E5A630"/>
+</svg>

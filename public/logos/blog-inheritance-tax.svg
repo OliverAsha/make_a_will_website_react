@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
+  <!-- Warm background -->
+  <rect width="400" height="320" fill="#faf8f6"/>
+  <ellipse cx="200" cy="175" rx="155" ry="135" fill="#f0ebe6"/>
+  <ellipse cx="200" cy="185" rx="115" ry="100" fill="#e0d6cc"/>
+  <!-- Ground surface -->
+  <polygon points="60,265 340,265 360,285 40,285" fill="#c4b5a5"/>
+  <polygon points="40,285 360,285 380,295 20,295" fill="#e0d6cc"/>
+
+  <!-- Origami house (centre) -->
+  <g>
+    <!-- Wall left facet -->
+    <polygon points="140,130 200,125 200,220 140,225" fill="#faf8f6"/>
+    <!-- Wall right facet -->
+    <polygon points="200,125 260,130 260,225 200,220" fill="#f0ebe6"/>
+    <!-- Roof left -->
+    <polygon points="130,130 200,75 200,125 140,130" fill="#D4832E"/>
+    <!-- Roof right -->
+    <polygon points="200,75 270,130 260,130 200,125" fill="#B86D1F"/>
+    <!-- Roof peak highlight -->
+    <polygon points="200,75 165,103 200,95" fill="#E5A630"/>
+    <!-- Door -->
+    <polygon points="185,175 215,173 215,225 185,227" fill="#8B4D3B"/>
+    <polygon points="200,173 215,173 215,225 200,225" fill="#6D3A2C"/>
+    <!-- Door knob -->
+    <polygon points="206,198 210,195 213,198 210,202" fill="#E5A630"/>
+    <!-- Window left -->
+    <polygon points="148,148 170,146 170,168 148,170" fill="#2D6A8A"/>
+    <polygon points="159,146 170,146 170,168 159,168" fill="#3a7a9a"/>
+    <!-- Window right -->
+    <polygon points="230,146 252,148 252,170 230,168" fill="#2D6A8A"/>
+    <polygon points="241,146 252,148 252,170 241,168" fill="#3a7a9a"/>
+  </g>
+
+  <!-- Origami coin stack (right) -->
+  <g>
+    <!-- Bottom coin -->
+    <polygon points="285,195 310,190 335,195 335,205 310,210 285,205" fill="#B86D1F"/>
+    <polygon points="310,190 335,195 335,205 310,200" fill="#D4832E"/>
+    <!-- Middle coin -->
+    <polygon points="285,185 310,180 335,185 335,195 310,200 285,195" fill="#D4832E"/>
+    <polygon points="310,180 335,185 335,195 310,190" fill="#E5A630"/>
+    <!-- Top coin -->
+    <polygon points="285,175 310,170 335,175 335,185 310,190 285,185" fill="#E5A630"/>
+    <polygon points="310,170 335,175 335,185 310,180" fill="#D4832E"/>
+    <!-- Top face -->
+    <polygon points="285,175 310,170 335,175 310,180" fill="#E5A630"/>
+  </g>
+
+  <!-- Origami calculator (left) -->
+  <g>
+    <!-- Body left -->
+    <polygon points="55,140 90,136 90,215 55,220" fill="#8B4D3B"/>
+    <!-- Body right -->
+    <polygon points="90,136 115,140 115,220 90,215" fill="#6D3A2C"/>
+    <!-- Screen -->
+    <polygon points="62,150 88,147 88,168 62,170" fill="#5a8a4a"/>
+    <polygon points="88,147 108,150 108,170 88,168" fill="#4a7a3a"/>
+    <!-- Button row 1 -->
+    <polygon points="62,178 72,177 72,186 62,187" fill="#D4832E"/>
+    <polygon points="76,177 86,176 86,185 76,186" fill="#c4b5a5"/>
+    <polygon points="90,177 100,176 100,186 90,186" fill="#c4b5a5"/>
+    <!-- Button row 2 -->
+    <polygon points="62,192 72,191 72,200 62,201" fill="#c4b5a5"/>
+    <polygon points="76,191 86,190 86,199 76,200" fill="#c4b5a5"/>
+    <polygon points="90,191 100,190 100,200 90,200" fill="#D4832E"/>
+    <!-- Button row 3 -->
+    <polygon points="62,206 86,204 86,213 62,215" fill="#c4b5a5"/>
+    <polygon points="90,204 100,204 100,214 90,213" fill="#D4832E"/>
+  </g>
+
+  <!-- Origami banknote (bottom centre) -->
+  <g>
+    <polygon points="155,238 245,232 248,258 158,264" fill="#E5A630"/>
+    <polygon points="200,232 248,232 248,258 200,258" fill="#D4832E"/>
+    <!-- Note detail -->
+    <polygon points="185,244 215,242 215,248 185,250" fill="#B86D1F"/>
+  </g>
+
+  <!-- Origami leaf left -->
+  <g>
+    <polygon points="70,235 85,210 95,235 85,260" fill="#5a8a4a"/>
+    <polygon points="85,210 95,235 90,222" fill="#4a7a3a"/>
+    <polygon points="70,235 85,210 78,222" fill="#6a9a5a"/>
+  </g>
+
+  <!-- Origami leaf right -->
+  <g>
+    <polygon points="325,232 340,208 350,232 340,256" fill="#5a8a4a"/>
+    <polygon points="340,208 350,232 345,220" fill="#4a7a3a"/>
+    <polygon points="325,232 340,208 332,220" fill="#6a9a5a"/>
+  </g>
+
+  <!-- Decorative origami diamonds -->
+  <polygon points="55,80 63,70 71,80 63,90" fill="#E5A630"/>
+  <polygon points="63,70 71,80 67,75" fill="#D4832E"/>
+
+  <polygon points="345,75 352,67 359,75 352,83" fill="#D4832E"/>
+  <polygon points="352,67 359,75 355,71" fill="#B86D1F"/>
+
+  <!-- Heart -->
+  <polygon points="340,50 345,43 350,50 345,57" fill="#D4832E"/>
+  <polygon points="345,43 350,50 347,46" fill="#B86D1F"/>
+
+  <!-- Accent circles -->
+  <circle cx="45" cy="110" r="7" fill="#f0ebe6"/>
+  <circle cx="360" cy="120" r="5" fill="#e0d6cc"/>
+  <circle cx="50" cy="260" r="4" fill="#E5A630"/>
+</svg>

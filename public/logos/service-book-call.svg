@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
+  <rect width="400" height="320" fill="#faf8f6"/>
+  <ellipse cx="200" cy="175" rx="155" ry="135" fill="#f0ebe6"/>
+  <ellipse cx="200" cy="185" rx="115" ry="100" fill="#e0d6cc"/>
+  <polygon points="60,265 340,265 360,285 40,285" fill="#c4b5a5"/>
+  <polygon points="40,285 360,285 380,295 20,295" fill="#e0d6cc"/>
+
+  <!-- Origami Calendar -->
+  <g id="calendar">
+    <!-- Calendar body - left facet -->
+    <polygon points="90,100 165,95 165,235 90,240" fill="#f0ebe6"/>
+    <!-- Calendar body - right facet -->
+    <polygon points="165,95 230,100 230,240 165,235" fill="#e0d6cc"/>
+    <!-- Calendar top bar -->
+    <polygon points="90,100 230,100 230,120 90,120" fill="#8B4D3B"/>
+    <polygon points="90,100 165,95 230,100 165,97" fill="#6D3A2C"/>
+    <!-- Calendar binding bumps -->
+    <polygon points="115,95 120,88 125,95" fill="#6D3A2C"/>
+    <polygon points="185,95 190,88 195,95" fill="#6D3A2C"/>
+    <!-- Day grid - row 1 -->
+    <polygon points="100,128 125,128 125,148 100,148" fill="#faf8f6"/>
+    <polygon points="132,128 157,128 157,148 132,148" fill="#faf8f6"/>
+    <polygon points="164,128 189,128 189,148 164,148" fill="#faf8f6"/>
+    <polygon points="196,128 221,128 221,148 196,148" fill="#faf8f6"/>
+    <!-- Day grid - row 2 -->
+    <polygon points="100,155 125,155 125,175 100,175" fill="#faf8f6"/>
+    <polygon points="132,155 157,155 157,175 132,175" fill="#faf8f6"/>
+    <polygon points="164,155 189,155 189,175 164,175" fill="#faf8f6"/>
+    <polygon points="196,155 221,155 221,175 196,175" fill="#faf8f6"/>
+    <!-- Day grid - row 3 -->
+    <polygon points="100,182 125,182 125,202 100,202" fill="#faf8f6"/>
+    <polygon points="132,182 157,182 157,202 132,202" fill="#faf8f6"/>
+    <polygon points="164,182 189,182 189,202 164,202" fill="#E5A630"/>
+    <polygon points="196,182 221,182 221,202 196,202" fill="#faf8f6"/>
+    <!-- Day grid - row 4 -->
+    <polygon points="100,209 125,209 125,229 100,229" fill="#faf8f6"/>
+    <polygon points="132,209 157,209 157,229 132,229" fill="#faf8f6"/>
+    <polygon points="164,209 189,209 189,229 164,229" fill="#faf8f6"/>
+    <polygon points="196,209 221,209 221,229 196,229" fill="#faf8f6"/>
+  </g>
+
+  <!-- Origami Phone Handset -->
+  <g id="phone">
+    <!-- Earpiece -->
+    <polygon points="270,105 295,100 300,108 275,113" fill="#6D3A2C"/>
+    <polygon points="275,113 300,108 302,118 277,123" fill="#8B4D3B"/>
+    <!-- Handle/neck -->
+    <polygon points="277,123 290,120 292,175 279,178" fill="#8B4D3B"/>
+    <polygon points="290,120 302,118 304,173 292,175" fill="#6D3A2C"/>
+    <!-- Mouthpiece -->
+    <polygon points="279,178 304,173 308,183 283,188" fill="#6D3A2C"/>
+    <polygon points="283,188 308,183 310,193 285,198" fill="#8B4D3B"/>
+    <!-- Phone facet highlight -->
+    <polygon points="270,105 280,103 275,113" fill="#B86D1F"/>
+  </g>
+
+  <!-- Origami Clock -->
+  <g id="clock">
+    <!-- Clock face - octagonal approximation with polygons -->
+    <polygon points="295,220 310,212 325,220 328,235 325,250 310,258 295,250 292,235" fill="#f0ebe6"/>
+    <polygon points="310,212 325,220 328,235 310,225" fill="#e0d6cc"/>
+    <polygon points="310,225 328,235 325,250 310,258 295,250 292,235 295,220 310,212" fill="none"/>
+    <!-- Clock hands -->
+    <polygon points="308,235 312,235 311,218 309,218" fill="#8B4D3B"/>
+    <polygon points="308,233 312,233 322,230 320,228" fill="#D4832E"/>
+    <!-- Clock center -->
+    <polygon points="307,232 313,232 313,238 307,238" fill="#6D3A2C"/>
+  </g>
+
+  <!-- Decorative elements -->
+  <g id="decorations">
+    <!-- Top-left diamond -->
+    <polygon points="75,55 85,45 95,55 85,65" fill="#E5A630"/>
+    <!-- Top-right diamond -->
+    <polygon points="325,50 335,40 345,50 335,60" fill="#D4832E"/>
+
+    <!-- Bottom-left leaf pair -->
+    <polygon points="65,258 80,243 85,253 75,263" fill="#5a8a4a"/>
+    <polygon points="85,253 95,246 90,260 80,263" fill="#4a7a3a"/>
+    <!-- Bottom-right leaf pair -->
+    <polygon points="320,258 330,243 340,253 330,263" fill="#5a8a4a"/>
+    <polygon points="330,253 345,246 340,260 330,263" fill="#6a9a5a"/>
+
+    <!-- Accent circles -->
+    <circle cx="310" cy="235" r="2" fill="#D4832E"/>
+    <circle cx="160" cy="90" r="3" fill="#E5A630"/>
+    <circle cx="260" cy="210" r="3" fill="#B86D1F"/>
+  </g>
+</svg>

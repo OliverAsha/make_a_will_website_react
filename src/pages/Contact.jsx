@@ -49,12 +49,12 @@ function Contact() {
                   <h3>Other Ways to Reach Us</h3>
 
                   <div style={{ marginTop: '20px' }}>
-                    <h4>Book a Call</h4>
+                    <h4>Book a call</h4>
                     <p>
                       Prefer to speak with someone? You can book a video or voice call
                       with one of our advisors to discuss your will.
                     </p>
-                    <a href="/book-a-call" className="btn btn-secondary">Book a Call</a>
+                    <a href="/book-a-call" className="btn btn-secondary">Book a call</a>
                   </div>
                 </div>
               </div>
@@ -114,7 +114,7 @@ function Contact() {
                     />
                   </div>
 
-                  <button type="submit" className="btn btn-primary">Send Message</button>
+                  <button type="submit" className="btn btn-primary">Send message</button>
                 </form>
               </div>
             </div>

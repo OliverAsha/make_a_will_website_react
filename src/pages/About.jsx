@@ -77,7 +77,7 @@ function About() {
             </p>
 
             <div className="text-center mt-4">
-              <Link to="/contact" className="btn btn-primary">Get in Touch</Link>
+              <Link to="/contact" className="btn btn-primary">Get in touch</Link>
             </div>
           </div>
         </div>

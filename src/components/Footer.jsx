@@ -62,19 +62,6 @@ function Footer() {
           </div>
         </div>
 
-        {/* External Authority Links */}
-        <div className="footer-authority">
-          <p className="footer-heading">Useful External Resources</p>
-          <ul className="authority-links">
-            <li><a href="https://www.gov.uk/make-will" target="_blank" rel="noopener noreferrer">GOV.UK - Wills</a></li>
-            <li><a href="https://www.gov.uk/applying-for-probate" target="_blank" rel="noopener noreferrer">GOV.UK - Probate</a></li>
-            <li><a href="https://www.gov.uk/power-of-attorney" target="_blank" rel="noopener noreferrer">GOV.UK - LPA</a></li>
-            <li><a href="https://www.citizensadvice.org.uk/family/death-and-wills/" target="_blank" rel="noopener noreferrer">Citizens Advice</a></li>
-            <li><a href="https://www.lawsociety.org.uk/public/for-public-visitors/common-legal-issues/making-a-will" target="_blank" rel="noopener noreferrer">Law Society</a></li>
-            <li><a href="https://www.ageuk.org.uk/information-advice/money-legal/legal-issues/" target="_blank" rel="noopener noreferrer">Age UK</a></li>
-          </ul>
-        </div>
-
         <div className="footer-bottom">
           <p>&copy; {new Date().getFullYear()} Make a Will. All rights reserved.</p>
           <p>Make a Will is a trading name of Capacity Vault Ltd. Solicitor-checked wills for England &amp; Wales.</p>

@@ -1,27 +1,18 @@
 import { useLocation, Link } from 'react-router-dom';
 import SEO from '../components/SEO';
-import {
-  LifetimeUpdatesIllustration,
-  MirrorWillsIllustration,
-  BookCallIllustration,
-  PolicyIllustration,
-  TrainingIllustration,
-  CharitiesIllustration
-} from '../components/Illustrations';
-
-// Map pages to their illustrations
+// Map pages to their illustration SVG paths
 const pageIllustrations = {
-  'lifetime-updates': LifetimeUpdatesIllustration,
-  'a-pair-of-wills-or-mirror-wills': MirrorWillsIllustration,
-  'book-a-call': BookCallIllustration,
-  'data-handling-policy': PolicyIllustration,
-  'disclaimer': PolicyIllustration,
-  'money-back-guarantee': PolicyIllustration,
-  'our-competition-and-markets-authority-statement': PolicyIllustration,
-  'fundraising-online-wills': CharitiesIllustration,
-  'charities-and-fundraising-for-gifts-in-wills': CharitiesIllustration,
-  'solicitor-checked-wills-for-charity-supporters': CharitiesIllustration,
-  'gifts-in-wills-training-with-richard-radcliffe': TrainingIllustration
+  'lifetime-updates': '/logos/service-lifetime-updates.svg',
+  'a-pair-of-wills-or-mirror-wills': '/logos/service-mirror-wills.svg',
+  'book-a-call': '/logos/service-book-call.svg',
+  'data-handling-policy': '/logos/service-policy.svg',
+  'disclaimer': '/logos/service-policy.svg',
+  'money-back-guarantee': '/logos/service-policy.svg',
+  'our-competition-and-markets-authority-statement': '/logos/service-policy.svg',
+  'fundraising-online-wills': '/logos/charities.svg',
+  'charities-and-fundraising-for-gifts-in-wills': '/logos/charities.svg',
+  'solicitor-checked-wills-for-charity-supporters': '/logos/charities.svg',
+  'gifts-in-wills-training-with-richard-radcliffe': '/logos/service-training.svg'
 };
 
 // Service and policy page content
@@ -498,7 +489,7 @@ function ServicePage() {
           <div className="container">
             <div className="content-wrapper">
               <p>Sorry, we couldn't find the page you're looking for.</p>
-              <Link to="/" className="btn btn-primary">Return Home</Link>
+              <Link to="/" className="btn btn-primary">Return home</Link>
             </div>
           </div>
         </section>
@@ -507,7 +498,7 @@ function ServicePage() {
   }
 
   // Get the appropriate illustration for this page
-  const IllustrationComponent = pageIllustrations[slug] || PolicyIllustration;
+  const illustrationSrc = pageIllustrations[slug] || '/logos/service-policy.svg';
 
   return (
     <>
@@ -525,14 +516,14 @@ function ServicePage() {
             <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: '40px', alignItems: 'start', marginBottom: '30px' }}>
               <div dangerouslySetInnerHTML={{ __html: page.content }} />
               <div style={{ position: 'sticky', top: '100px' }}>
-                <IllustrationComponent />
+                <img src={illustrationSrc} alt={page.title} width={400} height={320} style={{ maxWidth: '280px', height: 'auto' }} />
               </div>
             </div>
 
             <div className="text-center mt-4" style={{ background: '#f8f9fa', padding: '40px', borderRadius: '8px' }}>
               <h3>Ready to Make Your Will?</h3>
               <p>Create your solicitor-checked will in just 15 minutes.</p>
-              <a href="https://makeawillonline.co.uk/my-will" className="btn btn-primary btn-lg">Get Started</a>
+              <a href="https://makeawillonline.co.uk/my-will" className="btn btn-primary btn-lg">Get started</a>
             </div>
           </div>
         </div>

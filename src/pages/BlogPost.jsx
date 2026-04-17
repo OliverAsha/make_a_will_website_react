@@ -1,29 +1,6 @@
 import { useParams, useLocation, Link } from 'react-router-dom';
 import Breadcrumb from '../components/Breadcrumb';
 import SEO from '../components/SEO';
-import {
-  GeneralGuidanceIllustration,
-  FamilyIllustration,
-  ExecutorsProbateIllustration,
-  ExpatsIllustration,
-  CohabitingIllustration,
-  ProbateBlogIllustration
-} from '../components/Illustrations';
-
-// Map blog categories to illustration components
-const categoryToIllustration = {
-  'General Guidance': GeneralGuidanceIllustration,
-  'Family Situations': FamilyIllustration,
-  'Executors and Probate': ProbateBlogIllustration,
-  'Wills for British Expats': ExpatsIllustration
-};
-
-// Map specific blog posts to illustrations (for more specific matching)
-const postToIllustration = {
-  'do-you-cohabit': CohabitingIllustration,
-  'do-I-need-probate': ProbateBlogIllustration,
-  'dying-without-a-will-intestacy': FamilyIllustration
-};
 
 // External authority links for further reading by category
 const externalResourcesByCategory = {
@@ -38,7 +15,8 @@ const externalResourcesByCategory = {
   ],
   'Executors and Probate': [
     { url: 'https://www.gov.uk/applying-for-probate', title: 'Applying for Probate - GOV.UK', description: 'Official guide to the probate process' },
-    { url: 'https://www.gov.uk/wills-probate-inheritance/being-an-executor', title: 'Being an Executor - GOV.UK', description: 'Official guide to executor duties' }
+    { url: 'https://www.gov.uk/wills-probate-inheritance/being-an-executor', title: 'Being an Executor - GOV.UK', description: 'Official guide to executor duties' },
+    { url: 'https://www.gov.uk/government/news/probate-waiting-times-halved-thanks-to-government-push', title: 'Probate Waiting Times Update - GOV.UK', description: 'Latest government update on probate processing times' }
   ],
   'Wills for British Expats': [
     { url: 'https://www.gov.uk/make-will', title: 'Making a Will - GOV.UK', description: 'Official UK Government guidance on making a will' },
@@ -52,6 +30,7 @@ const blogContent = {
     title: 'Why Make a Will?',
     date: '2025-10-12',
     category: 'General Guidance',
+    image: '/logos/blog-why-make-a-will.svg',
     content: `
       <p>Making a will is one of the most important things you can do to protect your family and ensure your wishes are carried out after you die. Yet surveys consistently show that around half of adults in the UK don't have one. Here's why you should.</p>
 
@@ -106,6 +85,7 @@ const blogContent = {
     title: 'Why Write a Will?',
     date: '2025-10-12',
     category: 'General Guidance',
+    image: '/logos/blog-why-write-a-will.svg',
     content: `
       <p>If you've ever wondered whether you really need to write a will, the answer is almost certainly yes. Here's a comprehensive look at why writing a will matters and what can happen if you don't.</p>
 
@@ -164,6 +144,7 @@ const blogContent = {
     title: 'Have You Thought About These 5 Reasons to Update Your Will?',
     date: '2025-10-20',
     category: 'General Guidance',
+    image: '/logos/blog-5-reasons-update-will.svg',
     content: `
       <p>Making a will isn't a one-time event. Your circumstances change over time, and your will should change with them. Here are five key reasons why you might need to update your will.</p>
 
@@ -218,6 +199,7 @@ const blogContent = {
     title: 'Children and Gifts in Wills: 5 Ways to Get Peace of Mind',
     date: '2025-08-22',
     category: 'Family Situations',
+    image: '/logos/blog-children-gifts-wills.svg',
     content: `
       <p>When you have children, making a will becomes even more important. Here are five key ways your will can protect your children and give you peace of mind.</p>
 
@@ -265,6 +247,7 @@ const blogContent = {
     title: 'Do You Cohabit? Your Key Questions Answered',
     date: '2025-07-25',
     category: 'Family Situations',
+    image: '/logos/blog-do-you-cohabit.svg',
     content: `
       <p>More and more couples are choosing to live together without getting married. If you're one of them, you might be surprised to learn how little legal protection cohabitation provides - especially when it comes to inheritance.</p>
 
@@ -316,6 +299,7 @@ const blogContent = {
     title: 'Wills for British Ex-Pats',
     date: '2025-07-11',
     category: 'Wills for British Expats',
+    image: '/logos/blog-uk-expat-wills.svg',
     content: `
       <p>If you're a British citizen living abroad, or you have assets in multiple countries, your will situation is more complicated than most. Here's what you need to know.</p>
 
@@ -428,6 +412,7 @@ const blogContent = {
     title: 'What is Probate and Do I Need It?',
     date: '2025-09-28',
     category: 'Executors and Probate',
+    image: '/logos/blog-do-i-need-probate.svg',
     content: `
       <p>Probate is a word that causes confusion and anxiety. Here's a plain-English explanation of what it is, when you need it, and how the process works. You can also read <a href="/resource/do-i-need-probate">our full guide to probate</a> for more detail.</p>
 
@@ -490,6 +475,7 @@ const blogContent = {
     title: 'What Happens if You Die Without a Will?',
     date: '2025-09-15',
     category: 'General Guidance',
+    image: '/logos/blog-dying-without-a-will.svg',
     content: `
       <p>When someone dies without a valid will, they're said to have died "intestate". Instead of their wishes determining who inherits, strict legal rules take over. The results often come as a shock to families. See <a href="/resource/dying-without-a-will-intestacy">our full guide to intestacy</a> for a detailed breakdown.</p>
 
@@ -548,6 +534,268 @@ const blogContent = {
       <h2>The solution</h2>
       <p><a href="/resource/do-i-need-to-make-a-will">Making a will</a> is the only way to ensure your estate goes where you want it to go. It doesn't take long, doesn't cost much, and gives you complete control. Don't leave your family to deal with the consequences of intestacy.</p>
     `
+  },
+  'digital-assets-in-your-will': {
+    title: 'Digital Assets in Your Will: What the New Law Means for You',
+    date: '2026-01-15',
+    category: 'General Guidance',
+    image: '/logos/blog-digital-assets.svg',
+    content: `
+      <p>If you own cryptocurrency, NFTs, or even just valuable online accounts, there's an important legal change you need to know about. The <strong>Property (Digital Assets etc) Act 2025</strong>, which came into force on 2 December 2025, has for the first time officially recognised digital assets as property under English law.</p>
+      <p>This is a landmark change — and it has real implications for your will.</p>
+
+      <h2>What changed?</h2>
+      <p>Before this Act, there was legal uncertainty about whether things like Bitcoin, Ethereum, NFTs, and other digital tokens could be treated as "property" in the traditional legal sense. Courts had sometimes ruled in favour, but there was no clear statute backing it up.</p>
+      <p>The new Act confirms that digital assets can be a <strong>third category of personal property</strong> — alongside physical things (like your car) and legal rights (like a bank debt owed to you). This means they can now be:</p>
+      <ul>
+        <li>Included in your will with full legal certainty</li>
+        <li>Inherited by your beneficiaries</li>
+        <li>Managed and distributed by your <a href="/resource/executors">executors</a></li>
+        <li>Protected if stolen or misused</li>
+      </ul>
+
+      <h2>What counts as a "digital asset"?</h2>
+      <p>The term is deliberately broad. It includes:</p>
+      <ul>
+        <li><strong>Cryptocurrency</strong> — Bitcoin, Ethereum, and other crypto tokens</li>
+        <li><strong>NFTs</strong> — digital artwork, collectibles, and tokens</li>
+        <li><strong>Domain names</strong> — website addresses you own</li>
+        <li><strong>Digital carbon credits</strong></li>
+        <li><strong>In-game assets</strong> — valuable items in online games</li>
+        <li><strong>Online accounts</strong> — email, social media, cloud storage</li>
+      </ul>
+
+      <h2>Why does this matter for your will?</h2>
+      <p>Here's the important catch: even though digital assets are now legally property, they <strong>don't automatically fall under a general "personal possessions" clause</strong> in your will. If your will says "I leave all my personal possessions to my spouse," your Bitcoin probably isn't included.</p>
+      <p>You need to <strong>specifically mention digital assets</strong> in your will, or include a clause that covers them. Without this, your executors may not have the legal authority to access or distribute them.</p>
+
+      <h2>Practical steps to take now</h2>
+      <h3>1. Make a list of your digital assets</h3>
+      <p>Write down everything: crypto wallets, exchange accounts, NFTs, domain names, valuable online accounts. Include the platform or service used for each.</p>
+
+      <h3>2. Record access information — but not in your will</h3>
+      <p>Your will becomes a public document after probate. <strong>Never include passwords, private keys, or seed phrases in your will.</strong> Instead, store them securely (in a password manager, a sealed envelope, or a secure digital vault) and reference the location in your will.</p>
+
+      <h3>3. Consider a "digital executor"</h3>
+      <p>You can appoint someone specifically to handle your digital assets — perhaps someone who understands crypto better than your main executor. They can work alongside your main <a href="/resource/choosing-executors-for-your-will">executor</a> to ensure nothing is lost.</p>
+
+      <h3>4. Update your will</h3>
+      <p>If your current will doesn't mention digital assets, it's time to update it. With Make a Will, <a href="/lifetime-updates">lifetime updates are included</a> at no extra cost, so you can add digital asset provisions whenever you need to.</p>
+
+      <h2>What happens if you don't act?</h2>
+      <p>Without proper planning, your digital assets could be:</p>
+      <ul>
+        <li><strong>Lost forever</strong> — cryptocurrency wallets cannot be accessed without private keys</li>
+        <li><strong>Locked by platforms</strong> — some services permanently lock accounts after death</li>
+        <li><strong>Subject to dispute</strong> — family members may disagree about who owns what</li>
+        <li><strong>Missed entirely</strong> — executors may not even know they exist</li>
+      </ul>
+
+      <h2>The bottom line</h2>
+      <p>The law has caught up with the digital age. If you hold any digital assets of value, make sure your will reflects this. It's one of the simplest things you can do to protect your digital legacy.</p>
+
+      <h2>Sources</h2>
+      <ul>
+        <li><a href="https://lawcom.gov.uk/news/the-property-digital-assets-etc-act-2025-has-received-royal-assent/" target="_blank" rel="noopener noreferrer">The Property (Digital Assets etc) Act 2025 has received Royal Assent — Law Commission</a></li>
+        <li><a href="https://www.thegazette.co.uk/all-notices/content/104332" target="_blank" rel="noopener noreferrer">What testators and executors need to know about the Property (Digital Assets etc) Act 2025 — The Gazette</a></li>
+        <li><a href="https://todayswillsandprobate.co.uk/the-property-digital-assets-etc-act-2025-a-foundational-change-to-english-property-law/" target="_blank" rel="noopener noreferrer">The Property (Digital Assets etc) Act 2025: A foundational change to English property law — Today's Wills and Probate</a></li>
+        <li><a href="https://www.lyonsbowe.co.uk/blog/dealing-with-digital-assets-in-wills" target="_blank" rel="noopener noreferrer">Dealing With Digital Assets in Wills: A Modern Guide — Lyons Bowe Solicitors</a></li>
+        <li><a href="https://www.slaterheelis.co.uk/articles/wills-probate/digital-assets-practical-considerations-for-estate-planning/" target="_blank" rel="noopener noreferrer">Digital Assets: Practical Considerations for Estate Planning — Slater Heelis</a></li>
+      </ul>
+    `
+  },
+  'inheritance-tax-changes-2026': {
+    title: 'Inheritance Tax Changes in 2026: What You Need to Know',
+    date: '2026-02-12',
+    category: 'General Guidance',
+    image: '/logos/blog-inheritance-tax.svg',
+    content: `
+      <p>April 2026 brought some of the most significant changes to inheritance tax (IHT) in years. If you own a farm, run a business, or hold AIM-listed shares, these changes could have a major impact on your estate. Here's what's changed and what you should do about it.</p>
+
+      <h2>What's changed from April 2026?</h2>
+
+      <h3>Agricultural and business property relief</h3>
+      <p>Previously, farms and qualifying businesses could pass to the next generation completely free of inheritance tax, regardless of value. That unlimited 100% relief has now been capped.</p>
+      <p>From April 2026:</p>
+      <ul>
+        <li><strong>100% relief</strong> applies to the first <strong>£1 million</strong> of combined agricultural and business property</li>
+        <li>Above £1 million, relief drops to <strong>50%</strong>, meaning a 20% effective IHT rate on the excess</li>
+        <li>Married couples and civil partners can <strong>transfer the allowance</strong>, giving a combined £2 million at 100% relief</li>
+      </ul>
+      <p>For a family farm worth £2.5 million, this could mean an IHT bill of up to <strong>£300,000</strong> — money that would previously have been entirely exempt.</p>
+
+      <h3>AIM-listed shares</h3>
+      <p>Shares listed on the Alternative Investment Market (AIM) previously qualified for 100% business property relief. From April 2026, this has been <strong>cut to 50% for all investors</strong>, creating a 20% effective tax rate on death regardless of how long you've held the shares.</p>
+
+      <h3>Frozen thresholds — until 2031</h3>
+      <p>The government has confirmed that the main IHT thresholds remain frozen until at least April 2031:</p>
+      <ul>
+        <li><strong>Nil-rate band:</strong> £325,000 (frozen since 2009)</li>
+        <li><strong>Residence nil-rate band:</strong> £175,000</li>
+      </ul>
+      <p>With property prices continuing to rise, more estates are being drawn into the IHT net each year. A married couple can still pass on up to £1 million tax-free (combining both allowances), but anything above that is taxed at 40%.</p>
+
+      <h2>What's coming in April 2027?</h2>
+      <p>Perhaps the biggest change is still ahead. From <strong>April 2027, unused pension funds will be brought into the IHT net</strong> for the first time.</p>
+      <p>Currently, pensions are one of the most tax-efficient ways to pass on wealth because they sit outside your estate for IHT purposes. That's about to change. The government estimates this will affect around 10,500 additional estates per year.</p>
+      <p>For those with large pension pots, the combined impact of IHT (40%) and income tax on drawdowns (up to 45%) could create an effective tax rate of <strong>64% to 67%</strong> on inherited pension funds.</p>
+
+      <h2>What should you do?</h2>
+
+      <h3>Review your will</h3>
+      <p>If your will was written before these changes, it may no longer achieve what you intended. Tax-planning provisions that relied on unlimited business or agricultural relief may need updating.</p>
+
+      <h3>Consider your pension strategy</h3>
+      <p>With pensions coming into the IHT net from 2027, the old advice to "spend other assets first and leave your pension" may no longer make sense. Speak to a financial adviser about whether to adjust your drawdown strategy.</p>
+
+      <h3>Use your allowances</h3>
+      <p>Make sure you're taking advantage of:</p>
+      <ul>
+        <li>Annual gift exemptions (£3,000 per year)</li>
+        <li>Small gifts (£250 per person per year)</li>
+        <li>Gifts from surplus income</li>
+        <li>Potentially exempt transfers (gifts that become tax-free after 7 years)</li>
+        <li><a href="/charity-gifts-in-wills-how-and-why">Charitable gifts</a> (which reduce the IHT rate from 40% to 36% if you leave at least 10% of your estate to charity)</li>
+      </ul>
+
+      <h3>Get professional advice</h3>
+      <p>These changes are complex, and the right strategy depends on your specific circumstances. A solicitor or financial adviser can help you plan effectively. In the meantime, make sure your <a href="/resource/do-i-need-to-make-a-will">will is up to date</a> to reflect the new tax landscape.</p>
+
+      <h2>Sources</h2>
+      <ul>
+        <li><a href="https://commonslibrary.parliament.uk/research-briefings/cbp-10181/" target="_blank" rel="noopener noreferrer">Changes to agricultural and business property reliefs for inheritance tax — House of Commons Library</a></li>
+        <li><a href="https://www.sillslegal.co.uk/news/2026/04/inheritance-tax-changes-in-2026-what-they-mean-for-you" target="_blank" rel="noopener noreferrer">Inheritance Tax Changes in 2026: What They Mean for You — Sills &amp; Betteridge LLP</a></li>
+        <li><a href="https://www.wardgoodman.co.uk/blog/inheritance-tax-changes-2026-2027/" target="_blank" rel="noopener noreferrer">Inheritance Tax Changes in 2026–2027: What You Need to Know — Ward Goodman</a></li>
+        <li><a href="https://www.womblebonddickinson.com/uk/insights/articles-and-briefings/major-changes-pensions-and-inheritance-tax-april-2027-implications" target="_blank" rel="noopener noreferrer">Major changes to pensions and inheritance tax from April 2027 — Womble Bond Dickinson</a></li>
+        <li><a href="https://www.standardlife.co.uk/adviser/business-support/insight-opinion/article-page/pensions-and-inheritance-tax-from-april-2027" target="_blank" rel="noopener noreferrer">From exempt to exposed: April 2027 pension and IHT changes — Standard Life</a></li>
+        <li><a href="https://www.blbsolicitors.co.uk/blog/inheritance-tax-changes-2026-what-you-need-to-know/" target="_blank" rel="noopener noreferrer">Inheritance Tax 2026 UK: Key Changes &amp; New Rules Guide — BLB Solicitors</a></li>
+      </ul>
+    `
+  },
+  'will-law-reform-2026': {
+    title: 'The Biggest Shake-Up in Will Law for Nearly 200 Years — Are You Ready?',
+    date: '2026-03-20',
+    category: 'General Guidance',
+    image: '/logos/blog-will-reform.svg',
+    content: `
+      <p>The law governing how wills are made in England and Wales hasn't fundamentally changed since <strong>1837</strong> — the year Queen Victoria came to the throne. But that could be about to change.</p>
+      <p>In May 2025, the <strong>Law Commission published its landmark report on Modernising Wills Law</strong>, accompanied by a draft Bill that would replace the Wills Act 1837 entirely. The proposals are dramatic. Here's what you need to know.</p>
+
+      <h2>Electronic wills could become legal</h2>
+      <p>The most headline-grabbing proposal is the introduction of <strong>electronic wills</strong>. Under the current law, a will must be a physical document, signed by hand and witnessed by two people in the room.</p>
+      <p>The Law Commission proposes that wills created and signed electronically should be legally valid, provided they use a "reliable system" that:</p>
+      <ul>
+        <li>Verifies the identity of the person signing</li>
+        <li>Protects the will from unauthorised changes</li>
+        <li>Clearly distinguishes the original from copies</li>
+      </ul>
+      <p>This would be a fundamental change. During the COVID-19 pandemic, temporary measures allowed remote witnessing of wills via video call, and the Law Commission's proposals would put something similar on a permanent footing.</p>
+
+      <h2>Marriage would no longer cancel your will</h2>
+      <p>Under the current law, <a href="/resource/i-am-getting-married-do-i-need-a-will">getting married automatically revokes your will</a>. Many people don't know this, and it catches families out every year. The Law Commission recommends <strong>abolishing this rule entirely</strong>.</p>
+      <p>This is a common-sense change. If you made a careful, considered will and then got married, there's no good reason for that will to be automatically cancelled.</p>
+
+      <h2>A new mental capacity test</h2>
+      <p>The current test for whether someone has the mental capacity to make a will — called the "Banks v Goodfellow" test — dates from <strong>1870</strong>. The Law Commission recommends replacing it with the modern test from the <strong>Mental Capacity Act 2005</strong>, which is already used everywhere else in law.</p>
+      <p>This is particularly important as our population ages. The modern test is better understood by doctors, social workers, and care professionals, making it easier to assess capacity and harder for disappointed relatives to challenge a will on capacity grounds.</p>
+
+      <h2>Stronger protection against undue influence</h2>
+      <p>Currently, if someone suspects a will was made because of undue influence (for example, a carer pressuring an elderly person to change their will), the burden of proof is entirely on the person making the claim. This makes these cases very difficult to win.</p>
+      <p>The Law Commission proposes that where there are <strong>reasonable grounds to suspect undue influence</strong>, the burden should shift to the person trying to enforce the will. This would make it much easier to protect vulnerable people.</p>
+
+      <h2>Wills from age 16</h2>
+      <p>Currently, you must be 18 to make a will (with limited exceptions for military personnel). The Law Commission recommends <strong>lowering this to 16</strong>, recognising that many 16-year-olds have jobs, savings, and property they should be able to plan for.</p>
+
+      <h2>A "dispensation" power for courts</h2>
+      <p>Perhaps the most significant practical change: the report proposes giving courts the power to <strong>validate a will that doesn't meet all the formal requirements</strong>, as long as the court is satisfied it represents the person's genuine wishes.</p>
+      <p>This "dispensation power" exists in Australia and New Zealand and has been used to validate everything from unsigned wills to text messages and even sticky notes — where the evidence clearly shows what the person intended.</p>
+
+      <h2>When will these changes happen?</h2>
+      <p>That's the uncertain part. The Law Commission published its report in May 2025, but the government has not yet committed to introducing the Bill. The <a href="https://www.lawsociety.org.uk/contact-or-visit-us/press-office/press-releases/no-will-to-act-on-wills-reform" target="_blank" rel="noopener noreferrer">Law Society has publicly called on the government to act</a>, warning that the current law is failing families.</p>
+      <p>For now, the existing rules still apply. Your will must be a physical document, signed by you, and witnessed by two people present at the same time.</p>
+
+      <h2>What should you do now?</h2>
+      <p>Don't wait for the law to change. The current rules are clear, and making a will now protects your family immediately. If and when the law changes, you can always update your will — and with Make a Will, <a href="/lifetime-updates">lifetime updates are included</a> at no extra cost.</p>
+
+      <h2>Sources</h2>
+      <ul>
+        <li><a href="https://www.macfarlanes.com/what-we-think/102eli5/modernising-wills-the-law-commission-publishes-its-final-report-102kbjb/" target="_blank" rel="noopener noreferrer">Modernising wills: the Law Commission publishes its final report — Macfarlanes</a></li>
+        <li><a href="https://www.lawsociety.org.uk/contact-or-visit-us/press-office/press-releases/no-will-to-act-on-wills-reform" target="_blank" rel="noopener noreferrer">No will to act on wills reform — The Law Society</a></li>
+        <li><a href="https://www.russell-cooke.co.uk/news-and-insights/news/modernising-the-law-of-wills-the-law-commission-report-2025-and-what-it-means-for-you" target="_blank" rel="noopener noreferrer">Modernising the law of wills: The Law Commission Report 2025 — Russell-Cooke</a></li>
+        <li><a href="https://www.hja.net/expert-comments/opinion/wills-probate/the-law-commissions-report-on-modernising-wills-law/" target="_blank" rel="noopener noreferrer">The Law Commission's Report on Modernising Wills Law — Hodge Jones &amp; Allen</a></li>
+        <li><a href="https://www.willwriters.com/blog/electronic-wills/" target="_blank" rel="noopener noreferrer">Electronic Wills: Modernising Inheritance for the Digital Age — The Society of Will Writers</a></li>
+        <li><a href="https://druces.com/will-reform-2025-modernising-the-wills-act/" target="_blank" rel="noopener noreferrer">Will Reform 2025: Key Changes to Modernise the Wills Act — Druces</a></li>
+      </ul>
+    `
+  },
+  'probate-delays-what-to-expect': {
+    title: 'Probate Delays in 2026: How Long Will You Really Wait?',
+    date: '2026-04-10',
+    category: 'Executors and Probate',
+    image: '/logos/blog-probate-delays.svg',
+    content: `
+      <p>If you're an <a href="/resource/executors">executor</a> dealing with a loved one's estate, one of your first questions is likely to be: how long will <a href="/resource/do-i-need-probate">probate</a> take? The good news is that processing times have improved significantly. The bad news is that delays aren't over yet — and bigger challenges are coming.</p>
+
+      <h2>The current picture</h2>
+      <p>After a severe backlog in 2023 (when some families waited over six months), HMCTS — the government body that processes probate applications — has made real progress:</p>
+      <ul>
+        <li><strong>Online applications:</strong> typically processed within <strong>4-5 weeks</strong></li>
+        <li><strong>Paper applications:</strong> still taking up to <strong>13 weeks</strong></li>
+        <li><strong>Overall average:</strong> around <strong>6 weeks</strong> from submission to grant</li>
+      </ul>
+      <p>That's a significant improvement from the 12+ weeks at the end of 2023 and the 23-week paper application timescales we saw at the worst of the backlog.</p>
+
+      <h2>Online vs. paper: it makes a big difference</h2>
+      <p>The single most important thing you can do to speed up probate is <strong>apply online</strong>. Around 80% of applications are now submitted digitally, and they're processed much faster than paper ones.</p>
+      <p>HMCTS has been expanding the types of application that can be submitted online. Previously, only straightforward cases with a will could use the digital service. Now, more complex cases are being added, and HMCTS plans to allow <strong>intestacy applications</strong> (where there's no will) to be submitted online by summer 2026.</p>
+
+      <h2>Why do delays still happen?</h2>
+      <p>Even with improvements, certain things can slow down your application:</p>
+      <ul>
+        <li><strong>Errors on the application form</strong> — mistakes in names, dates, or values can cause your application to be "stopped" (put on hold) while HMCTS requests corrections</li>
+        <li><strong>Missing documents</strong> — the original will must be submitted; copies are not accepted</li>
+        <li><strong>Caveats</strong> — if someone lodges a caveat (a legal objection to probate being granted), your application is frozen until it's resolved. Caveat applications have risen 12% recently as rising property prices fuel disputes</li>
+        <li><strong>Complex estates</strong> — estates with overseas assets, trusts, or business interests take longer</li>
+        <li><strong>Q1 pressure</strong> — January to March is HMCTS's busiest period, so applications during this time may take longer</li>
+      </ul>
+
+      <h2>The pension challenge ahead</h2>
+      <p>From <strong>April 2027, unused pension funds will come into the inheritance tax net</strong>. This will make many more estates liable for IHT, which means more estates will need to complete the full IHT reporting process before they can apply for probate.</p>
+      <p>The <a href="https://www.lawgazette.co.uk/features/legacy-system/5126439.article" target="_blank" rel="noopener noreferrer">Law Gazette has warned</a> that this could create a fresh wave of delays, as executors struggle with more complex tax calculations and HMCTS handles a higher volume of IHT-linked applications.</p>
+
+      <h2>How to avoid delays: a checklist for executors</h2>
+      <ol>
+        <li><strong>Apply online</strong> — it's faster, and you can track your application's progress</li>
+        <li><strong>Double-check everything</strong> — make sure names, dates, and values exactly match the death certificate and will</li>
+        <li><strong>Submit the original will</strong> — not a copy. If you can't find it, you'll need to explain why</li>
+        <li><strong>Get the IHT form right first time</strong> — errors here are the most common cause of "stopped" applications</li>
+        <li><strong>Register the death promptly</strong> — you can't apply for probate without the death certificate</li>
+        <li><strong>Check for caveats</strong> — if family disputes are likely, deal with them early rather than waiting for a caveat to derail your application</li>
+        <li><strong>Keep records</strong> — photograph or copy everything before submitting originals</li>
+      </ol>
+
+      <h2>What can you do now to help your executor?</h2>
+      <p>The best thing you can do is make your executor's job easier <em>before</em> they need to do it:</p>
+      <ul>
+        <li><strong>Make a will</strong> — an up-to-date, clear will is the single biggest thing you can do to simplify probate. <a href="/resource/make-an-online-will-in-five-easy-steps">Create yours in five easy steps</a></li>
+        <li><strong>Tell your executor where your will is</strong> — they can't act on it if they can't find it</li>
+        <li><strong>Keep a list of your assets</strong> — bank accounts, pensions, property, investments, digital assets</li>
+        <li><strong>Choose the right executor</strong> — someone organised, trustworthy, and willing to do it. <a href="/resource/choosing-executors-for-your-will">Read our guide to choosing executors</a></li>
+      </ul>
+
+      <h2>The bottom line</h2>
+      <p>Probate is getting faster, but it's not instant. The best way to minimise delays is to have a clear, properly drafted will and to apply online. And with changes to pension taxation coming in 2027, now is the time to make sure your estate is as straightforward as possible for the people you leave behind.</p>
+
+      <h2>Sources</h2>
+      <ul>
+        <li><a href="https://www.gov.uk/government/news/probate-waiting-times-halved-thanks-to-government-push" target="_blank" rel="noopener noreferrer">Probate waiting times halved thanks to Government push — GOV.UK</a></li>
+        <li><a href="https://www.icaew.com/regulation/regulatory-news/regulatory-news-2026-03/hmcts-update-for-probate-firms" target="_blank" rel="noopener noreferrer">HMCTS update for probate firms: Q1 2026 — ICAEW</a></li>
+        <li><a href="https://www.lawgazette.co.uk/features/legacy-system/5126439.article" target="_blank" rel="noopener noreferrer">Wills and probate: Legacy system — Law Gazette</a></li>
+        <li><a href="https://www.legalfutures.co.uk/latest-news/delays-fall-as-probate-service-performance-improves" target="_blank" rel="noopener noreferrer">Delays fall as Probate Service performance improves — Legal Futures</a></li>
+        <li><a href="https://www.fraserandfraser.co.uk/news/probate-delays-are-we-finally-over-the-hump/" target="_blank" rel="noopener noreferrer">Probate delays: are we finally over the hump? — Fraser &amp; Fraser</a></li>
+        <li><a href="https://www.lawsociety.org.uk/contact-or-visit-us/press-office/press-releases/decline-in-probate-delays-is-a-good-first-step" target="_blank" rel="noopener noreferrer">Decline in probate delays is a good first step — The Law Society</a></li>
+      </ul>
+    `
   }
 };
 
@@ -572,7 +820,7 @@ function BlogPost() {
             <div className="content-wrapper">
               <h2>Post Not Found</h2>
               <p>Sorry, we couldn't find the blog post you're looking for.</p>
-              <Link to="/blog" className="btn btn-primary">Browse All Posts</Link>
+              <Link to="/blog" className="btn btn-primary">Browse all posts</Link>
             </div>
           </div>
         </section>
@@ -627,6 +875,11 @@ function BlogPost() {
         <div className="container">
           <div className="page-with-sidebar">
             <article className="content-wrapper">
+              {post.image && (
+                <div className="text-center" style={{ marginBottom: '30px' }}>
+                  <img src={post.image} alt={post.title} width={400} height={320} style={{ maxWidth: '300px', height: 'auto' }} />
+                </div>
+              )}
               <div dangerouslySetInnerHTML={{ __html: post.content }} />
 
               {/* Further Reading - External Authority Links */}
@@ -647,20 +900,16 @@ function BlogPost() {
               <div className="text-center mt-4" style={{ background: '#f8f9fa', padding: '40px', borderRadius: '8px' }}>
                 <h3>Ready to Make Your Will?</h3>
                 <p>Create your solicitor-checked will in just 15 minutes.</p>
-                <a href="https://makeawillonline.co.uk/my-will" className="btn btn-primary btn-lg">Get Started</a>
+                <a href="https://makeawillonline.co.uk/my-will" className="btn btn-primary btn-lg">Get started</a>
               </div>
             </article>
 
             <aside className="sidebar">
-              {/* Blog illustration */}
-              {(() => {
-                const IllustrationComponent = postToIllustration[postSlug] || categoryToIllustration[post.category] || GeneralGuidanceIllustration;
-                return (
-                  <div className="sidebar-widget" style={{ textAlign: 'center' }}>
-                    <IllustrationComponent />
-                  </div>
-                );
-              })()}
+              {post.image && (
+                <div className="sidebar-widget" style={{ textAlign: 'center' }}>
+                  <img src={post.image} alt={post.title} width={400} height={320} style={{ maxWidth: '100%', height: 'auto' }} />
+                </div>
+              )}
 
               <div className="sidebar-widget">
                 <h4>Related Posts</h4>
@@ -694,7 +943,7 @@ function BlogPost() {
               <div className="sidebar-widget">
                 <h4>Need Help?</h4>
                 <p>Our team is here to answer any questions.</p>
-                <Link to="/contact" className="btn btn-secondary" style={{ width: '100%' }}>Contact Us</Link>
+                <Link to="/contact" className="btn btn-secondary" style={{ width: '100%' }}>Contact us</Link>
               </div>
             </aside>
           </div>

@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { MakeWillIllustration } from '../components/Illustrations';
 import SEO from '../components/SEO';
 
 function MakeYourWill() {
@@ -50,7 +49,7 @@ function MakeYourWill() {
                 </div>
               </div>
               <div style={{ filter: 'brightness(1.1) contrast(1.05)' }}>
-                <MakeWillIllustration />
+                <img src="/logos/make-your-will.svg" alt="Make your will illustration" width={400} height={320} style={{ maxWidth: '280px', height: 'auto' }} />
               </div>
             </div>
 
@@ -69,7 +68,7 @@ function MakeYourWill() {
                   <li>Unlimited beneficiaries</li>
                 </ul>
                 <a href="https://makeawillonline.co.uk/my-will" className="btn btn-primary" style={{ width: '100%', display: 'block', textAlign: 'center' }}>
-                  Start Single Will
+                  Start single will
                 </a>
               </div>
 
@@ -87,7 +86,7 @@ function MakeYourWill() {
                   <li>Save vs two single wills</li>
                 </ul>
                 <a href="https://makeawillonline.co.uk/my-will" className="btn btn-primary" style={{ width: '100%', display: 'block', textAlign: 'center' }}>
-                  Start Mirror Wills
+                  Start mirror wills
                 </a>
               </div>
 
@@ -102,7 +101,7 @@ function MakeYourWill() {
                   <li>All solicitor-checked</li>
                 </ul>
                 <a href="https://makeawillonline.co.uk/my-will" className="btn btn-primary" style={{ width: '100%', display: 'block', textAlign: 'center' }}>
-                  Start Bundle
+                  Start bundle
                 </a>
               </div>
             </div>
@@ -110,7 +109,7 @@ function MakeYourWill() {
             <div style={{ background: '#f8f9fa', padding: '30px', borderRadius: '8px' }}>
               <h3>Not sure which to choose?</h3>
               <p>Our team can help you decide which option is right for your situation.</p>
-              <Link to="/book-a-call" className="btn btn-secondary">Book a Free Consultation</Link>
+              <Link to="/book-a-call" className="btn btn-secondary">Book a free consultation</Link>
             </div>
           </div>
         </div>

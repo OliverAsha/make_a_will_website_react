@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
+  <!-- Warm background -->
+  <rect width="400" height="320" fill="#faf8f6"/>
+  <ellipse cx="200" cy="175" rx="155" ry="135" fill="#f0ebe6"/>
+  <ellipse cx="200" cy="185" rx="115" ry="100" fill="#e0d6cc"/>
+  <!-- Ground surface -->
+  <polygon points="60,265 340,265 360,285 40,285" fill="#c4b5a5"/>
+  <polygon points="40,285 360,285 380,295 20,295" fill="#e0d6cc"/>
+
+  <!-- Origami scales of justice -->
+  <g>
+    <!-- Central pillar -->
+    <polygon points="175,120 185,118 187,255 177,257" fill="#8B4D3B"/>
+    <polygon points="185,118 193,120 195,257 187,255" fill="#6D3A2C"/>
+    <!-- Pillar base -->
+    <polygon points="160,252 200,250 210,262 150,264" fill="#8B4D3B"/>
+    <polygon points="150,264 210,262 215,268 145,270" fill="#6D3A2C"/>
+    <!-- Crossbar -->
+    <polygon points="100,128 260,122 262,130 102,136" fill="#D4832E"/>
+    <polygon points="100,128 260,122 260,126 100,132" fill="#E5A630"/>
+    <!-- Fulcrum triangle -->
+    <polygon points="175,120 185,118 193,120 184,110" fill="#E5A630"/>
+    <!-- Left pan - triangular dish -->
+    <polygon points="90,148 130,148 110,180" fill="#D4832E"/>
+    <polygon points="90,148 110,180 100,175" fill="#B86D1F"/>
+    <polygon points="130,148 110,180 120,175" fill="#E5A630"/>
+    <!-- Left chains -->
+    <polygon points="100,132 104,134 94,150 90,148" fill="#c4b5a5"/>
+    <polygon points="118,130 122,132 134,148 130,148" fill="#c4b5a5"/>
+    <!-- Right pan - triangular dish -->
+    <polygon points="240,142 280,142 260,174" fill="#D4832E"/>
+    <polygon points="240,142 260,174 250,170" fill="#B86D1F"/>
+    <polygon points="280,142 260,174 270,170" fill="#E5A630"/>
+    <!-- Right chains -->
+    <polygon points="248,126 252,128 244,142 240,142" fill="#c4b5a5"/>
+    <polygon points="268,124 272,126 284,142 280,142" fill="#c4b5a5"/>
+  </g>
+
+  <!-- Origami document with stamp -->
+  <g>
+    <!-- Paper left facet -->
+    <polygon points="278,150 330,147 330,255 278,258" fill="#faf8f6"/>
+    <!-- Paper right facet -->
+    <polygon points="330,147 362,150 362,258 330,255" fill="#f0ebe6"/>
+    <!-- Fold corner -->
+    <polygon points="348,147 362,150 362,165" fill="#e0d6cc"/>
+    <!-- Text lines -->
+    <polygon points="288,172 325,170 325,175 288,177" fill="#e0d6cc"/>
+    <polygon points="288,185 328,183 328,188 288,190" fill="#e0d6cc"/>
+    <polygon points="288,198 320,196 320,201 288,203" fill="#e0d6cc"/>
+    <polygon points="288,211 326,209 326,214 288,216" fill="#e0d6cc"/>
+    <!-- Official stamp - hexagonal seal -->
+    <polygon points="315,228 325,222 335,228 335,240 325,246 315,240" fill="#D4832E"/>
+    <polygon points="325,222 335,228 335,235 325,230" fill="#B86D1F"/>
+    <polygon points="320,230 325,227 330,230 330,238 325,241 320,238" fill="#E5A630"/>
+  </g>
+
+  <!-- Decorative leaf pair - bottom left -->
+  <g>
+    <polygon points="55,268 72,255 78,262 65,272" fill="#5a8a4a"/>
+    <polygon points="65,272 78,262 85,268 72,276" fill="#4a7a3a"/>
+    <polygon points="55,268 42,258 48,252 58,262" fill="#6a9a5a"/>
+    <polygon points="58,262 48,252 55,248 62,256" fill="#5a8a4a"/>
+  </g>
+
+  <!-- Decorative leaf pair - bottom right -->
+  <g>
+    <polygon points="335,268 322,255 316,262 329,272" fill="#5a8a4a"/>
+    <polygon points="329,272 316,262 310,268 322,276" fill="#4a7a3a"/>
+    <polygon points="335,268 348,258 342,252 332,262" fill="#6a9a5a"/>
+    <polygon points="332,262 342,252 335,248 328,256" fill="#5a8a4a"/>
+  </g>
+
+  <!-- Diamond accent - top left -->
+  <polygon points="45,35 55,50 45,65 35,50" fill="#E5A630"/>
+  <polygon points="45,35 55,50 45,50" fill="#D4832E"/>
+
+  <!-- Diamond accent - top right -->
+  <polygon points="355,30 365,45 355,60 345,45" fill="#E5A630"/>
+  <polygon points="355,30 365,45 355,45" fill="#D4832E"/>
+
+  <!-- Small accent circles -->
+  <circle cx="70" cy="42" r="3" fill="#D4832E"/>
+  <circle cx="330" cy="38" r="3" fill="#D4832E"/>
+  <circle cx="200" cy="28" r="2.5" fill="#E5A630"/>
+</svg>
