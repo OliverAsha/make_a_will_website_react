@@ -15,6 +15,7 @@ import GlossaryPage from './pages/GlossaryPage';
 import ServicePage from './pages/ServicePage';
 import SampleWill from './pages/SampleWill';
 import MakeYourWill from './pages/MakeYourWill';
+import StartYourWill from './pages/StartYourWill';
 import Charities from './pages/Charities';
 import './index.css';
 
@@ -85,6 +86,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/sample-will" element={<SampleWill />} />
             <Route path="/make-your-will" element={<MakeYourWill />} />
+            <Route path="/start-your-will" element={<StartYourWill />} />
             <Route path="/blog" element={<Blog />} />
 
             {/* Resources */}

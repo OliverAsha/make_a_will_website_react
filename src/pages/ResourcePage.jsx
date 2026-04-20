@@ -1982,7 +1982,7 @@ function ResourcePage() {
               <div className="text-center mt-4" style={{ background: '#f8f9fa', padding: '40px', borderRadius: '8px' }}>
                 <h3>Ready to Make Your Will?</h3>
                 <p>Create your solicitor-checked will in just 15 minutes.</p>
-                <a href="https://makeawillonline.co.uk/my-will" className="btn btn-primary btn-lg">Get started</a>
+                <a href="/start-your-will" className="btn btn-primary btn-lg">Get started</a>
               </div>
             </div>
 

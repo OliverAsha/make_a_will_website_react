@@ -183,7 +183,7 @@ function Blog() {
               <div className="sidebar-widget">
                 <h4>Ready to Make Your Will?</h4>
                 <p>Create your solicitor-checked will in just 15 minutes.</p>
-                <a href="https://makeawillonline.co.uk/my-will" className="btn btn-primary" style={{ width: '100%', marginTop: '10px' }}>
+                <a href="/start-your-will" className="btn btn-primary" style={{ width: '100%', marginTop: '10px' }}>
                   Get started
                 </a>
               </div>

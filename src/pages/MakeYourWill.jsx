@@ -67,7 +67,7 @@ function MakeYourWill() {
                   <li>Money-back guarantee</li>
                   <li>Unlimited beneficiaries</li>
                 </ul>
-                <a href="https://makeawillonline.co.uk/my-will" className="btn btn-primary" style={{ width: '100%', display: 'block', textAlign: 'center' }}>
+                <a href="/start-your-will" className="btn btn-primary" style={{ width: '100%', display: 'block', textAlign: 'center' }}>
                   Start single will
                 </a>
               </div>
@@ -85,7 +85,7 @@ function MakeYourWill() {
                   <li>Lifetime updates for both</li>
                   <li>Save vs two single wills</li>
                 </ul>
-                <a href="https://makeawillonline.co.uk/my-will" className="btn btn-primary" style={{ width: '100%', display: 'block', textAlign: 'center' }}>
+                <a href="/start-your-will" className="btn btn-primary" style={{ width: '100%', display: 'block', textAlign: 'center' }}>
                   Start mirror wills
                 </a>
               </div>
@@ -100,7 +100,7 @@ function MakeYourWill() {
                   <li>Health & Welfare LPA</li>
                   <li>All solicitor-checked</li>
                 </ul>
-                <a href="https://makeawillonline.co.uk/my-will" className="btn btn-primary" style={{ width: '100%', display: 'block', textAlign: 'center' }}>
+                <a href="/start-your-will" className="btn btn-primary" style={{ width: '100%', display: 'block', textAlign: 'center' }}>
                   Start bundle
                 </a>
               </div>

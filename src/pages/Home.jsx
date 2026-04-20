@@ -152,7 +152,7 @@ function Home() {
             Join thousands of people who have already created their will with Make a Will.
             It takes just 15 minutes and provides complete peace of mind.
           </p>
-          <a href="https://makeawillonline.co.uk/my-will" className="btn btn-primary btn-lg">make your will now</a>
+          <a href="/start-your-will" className="btn btn-primary btn-lg">make your will now</a>
         </div>
       </section>
     </div>

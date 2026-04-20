@@ -25,7 +25,7 @@ function Hero() {
               Create your legally valid will online in as little as 15 minutes, with every will reviewed by a qualified solicitor.
             </p>
             <div className="hero-cta">
-              <a href="https://makeawillonline.co.uk/my-will" className="btn btn-primary">
+              <a href="/start-your-will" className="btn btn-primary">
                 make my will
               </a>
               <div className="trustpilot-badge">

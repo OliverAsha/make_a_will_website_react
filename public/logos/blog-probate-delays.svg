@@ -1,116 +1,102 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
-  <!-- Warm background -->
+<svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
   <rect width="400" height="320" fill="#faf8f6"/>
   <ellipse cx="200" cy="175" rx="155" ry="135" fill="#f0ebe6"/>
   <ellipse cx="200" cy="185" rx="115" ry="100" fill="#e0d6cc"/>
-  <!-- Ground surface -->
+
+  <!-- Ground -->
   <polygon points="60,265 340,265 360,285 40,285" fill="#c4b5a5"/>
   <polygon points="40,285 360,285 380,295 20,295" fill="#e0d6cc"/>
 
-  <!-- Origami courthouse (centre) -->
+  <!-- Top-left accent: small document card -->
   <g>
-    <!-- Base left -->
-    <polygon points="115,120 200,115 200,230 115,235" fill="#faf8f6"/>
-    <!-- Base right -->
-    <polygon points="200,115 285,120 285,235 200,230" fill="#f0ebe6"/>
-    <!-- Pediment left -->
-    <polygon points="105,120 200,68 200,115 115,120" fill="#D4832E"/>
-    <!-- Pediment right -->
-    <polygon points="200,68 295,120 285,120 200,115" fill="#B86D1F"/>
-    <!-- Pediment highlight -->
-    <polygon points="200,68 155,95 200,85" fill="#E5A630"/>
-    <!-- Columns -->
-    <polygon points="130,130 140,129 140,220 130,221" fill="#e0d6cc"/>
-    <polygon points="140,129 148,130 148,221 140,220" fill="#c4b5a5"/>
-    <polygon points="165,128 175,127 175,218 165,219" fill="#e0d6cc"/>
-    <polygon points="175,127 183,128 183,219 175,218" fill="#c4b5a5"/>
-    <polygon points="218,128 228,127 228,218 218,219" fill="#e0d6cc"/>
-    <polygon points="228,127 236,128 236,219 228,218" fill="#c4b5a5"/>
-    <polygon points="253,129 263,130 263,221 253,220" fill="#e0d6cc"/>
-    <polygon points="263,130 271,130 271,221 263,220" fill="#c4b5a5"/>
-    <!-- Door -->
-    <polygon points="188,170 200,169 200,230 188,231" fill="#8B4D3B"/>
-    <polygon points="200,169 212,170 212,231 200,230" fill="#6D3A2C"/>
-    <!-- Steps -->
-    <polygon points="108,235 292,235 298,245 102,245" fill="#e0d6cc"/>
-    <polygon points="102,245 298,245 305,253 95,253" fill="#c4b5a5"/>
+    <polygon points="35,40 70,40 70,68 35,68" fill="#faf8f6"/>
+    <polygon points="70,40 75,44 75,72 70,68" fill="#e0d6cc"/>
+    <polygon points="35,68 70,68 75,72 40,72" fill="#c4b5a5"/>
+    <polygon points="40,48 65,48 65,51 40,51" fill="#c4b5a5"/>
+    <polygon points="40,55 62,55 62,58 40,58" fill="#c4b5a5"/>
+    <polygon points="40,62 58,62 58,65 40,65" fill="#c4b5a5"/>
   </g>
 
-  <!-- Origami clock (right) -->
+  <!-- Top-right accent: paper heart -->
   <g>
-    <!-- Clock face - octagon -->
-    <polygon points="315,80 335,68 352,78 358,98 352,118 335,128 315,118 308,98" fill="#D4832E"/>
-    <polygon points="335,68 352,78 358,98 352,100 335,80 315,80 308,98 315,100" fill="#E5A630"/>
-    <!-- Inner face -->
-    <polygon points="318,85 333,75 347,83 352,98 347,113 333,121 318,113 312,98" fill="#faf8f6"/>
-    <polygon points="333,75 347,83 347,98 333,88" fill="#f0ebe6"/>
-    <!-- Hour hand -->
-    <polygon points="332,98 335,78 338,98" fill="#6D3A2C"/>
-    <!-- Minute hand -->
-    <polygon points="335,96 350,100 335,102" fill="#8B4D3B"/>
-    <!-- Centre -->
-    <polygon points="330,94 335,90 340,94 340,102 335,106 330,102" fill="#6D3A2C"/>
+    <polygon points="340,45 355,36 370,45 355,62" fill="#E5A630"/>
+    <polygon points="355,36 370,45 355,62" fill="#D4832E"/>
+    <polygon points="355,48 370,45 355,62" fill="#B86D1F"/>
   </g>
 
-  <!-- Origami document with stamp (left) -->
+  <!-- Document with rosette (left satellite) -->
   <g>
-    <!-- Paper left facet -->
-    <polygon points="45,115 80,110 80,210 45,215" fill="#faf8f6"/>
-    <!-- Paper right facet -->
-    <polygon points="80,110 108,115 108,215 80,210" fill="#f0ebe6"/>
-    <!-- Text lines -->
-    <polygon points="52,130 76,128 76,133 52,135" fill="#e0d6cc"/>
-    <polygon points="52,140 80,138 80,143 52,145" fill="#e0d6cc"/>
-    <polygon points="52,150 72,148 72,153 52,155" fill="#e0d6cc"/>
-    <polygon points="52,160 78,158 78,163 52,165" fill="#e0d6cc"/>
-    <!-- Stamp -->
-    <polygon points="68,180 76,173 86,177 88,187 80,193 70,191" fill="#D4832E"/>
-    <polygon points="76,173 86,177 80,183 72,180" fill="#B86D1F"/>
+    <polygon points="40,180 115,180 115,270 40,270" fill="#faf8f6"/>
+    <polygon points="115,180 120,185 120,270 115,270" fill="#e0d6cc"/>
+    <polygon points="40,270 115,270 120,275 45,275" fill="#c4b5a5"/>
+    <polygon points="100,180 115,180 115,194 103,190" fill="#e0d6cc"/>
+    <polygon points="103,190 115,194 107,198" fill="#c4b5a5"/>
+    <polygon points="50,200 105,200 105,203 50,203" fill="#c4b5a5"/>
+    <polygon points="50,212 105,212 105,215 50,215" fill="#c4b5a5"/>
+    <polygon points="50,224 105,224 105,227 50,227" fill="#c4b5a5"/>
+    <polygon points="89,248 84,244 80,239 76,244 71,248 76,252 80,257 84,252" fill="#D4832E"/>
+    <polygon points="80,239 84,244 89,248 84,252 80,257" fill="#B86D1F"/>
+    <polygon points="76,256 84,256 87,266 73,266" fill="#B86D1F"/>
+    <polygon points="80,256 84,256 87,266 80,266" fill="#6D3A2C"/>
   </g>
 
-  <!-- Origami hourglass (bottom centre) -->
+  <!-- Hourglass (centrepiece) -->
   <g>
-    <!-- Top triangle -->
-    <polygon points="185,232 215,232 200,248" fill="#E5A630"/>
-    <polygon points="200,232 215,232 200,248" fill="#D4832E"/>
-    <!-- Bottom triangle -->
-    <polygon points="185,264 215,264 200,248" fill="#D4832E"/>
-    <polygon points="200,264 215,264 200,248" fill="#B86D1F"/>
-    <!-- Top bar -->
-    <polygon points="182,228 218,228 218,233 182,233" fill="#8B4D3B"/>
-    <polygon points="200,228 218,228 218,233 200,233" fill="#6D3A2C"/>
-    <!-- Bottom bar -->
-    <polygon points="182,263 218,263 218,268 182,268" fill="#8B4D3B"/>
-    <polygon points="200,263 218,263 218,268 200,268" fill="#6D3A2C"/>
+    <polygon points="155,100 245,100 240,108 160,108" fill="#8B4D3B"/>
+    <polygon points="160,108 240,108 240,115 160,115" fill="#6D3A2C"/>
+
+    <polygon points="160,115 200,115 200,177 196,177" fill="#f0ebe6"/>
+    <polygon points="200,115 240,115 204,177 200,177" fill="#e0d6cc"/>
+    <polygon points="193,167 207,167 204,177 196,177" fill="#E5A630"/>
+    <polygon points="200,167 207,167 204,177 200,177" fill="#D4832E"/>
+    <polygon points="199,177 201,177 201,195 199,195" fill="#D4832E"/>
+
+    <polygon points="196,177 204,177 206,185 194,185" fill="#8B4D3B"/>
+
+    <polygon points="194,185 200,185 200,245 160,245" fill="#f0ebe6"/>
+    <polygon points="200,185 206,185 240,245 200,245" fill="#e0d6cc"/>
+    <polygon points="170,215 200,215 200,245 160,245" fill="#E5A630"/>
+    <polygon points="200,215 230,215 240,245 200,245" fill="#D4832E"/>
+    <polygon points="160,245 240,245 230,248 170,248" fill="#B86D1F"/>
+
+    <polygon points="155,245 245,245 240,253 160,253" fill="#8B4D3B"/>
+    <polygon points="160,253 240,253 240,260 160,260" fill="#6D3A2C"/>
+    <polygon points="160,260 240,260 235,264 165,264" fill="#4A2A1E"/>
   </g>
 
-  <!-- Origami leaf left -->
+  <!-- Blue envelope (right satellite) -->
   <g>
-    <polygon points="60,240 75,218 85,240 75,262" fill="#5a8a4a"/>
-    <polygon points="75,218 85,240 80,228" fill="#4a7a3a"/>
-    <polygon points="60,240 75,218 68,228" fill="#6a9a5a"/>
+    <polygon points="275,200 370,200 370,212 275,212" fill="#4D8AAA"/>
+    <polygon points="275,212 370,212 370,258 275,258" fill="#2D6A8A"/>
+    <polygon points="370,200 375,205 375,262 370,258" fill="#1D5A7A"/>
+    <polygon points="275,258 370,258 375,262 280,262" fill="#1D5A7A"/>
+    <polygon points="275,200 322,236 275,236" fill="#3D7A9A"/>
+    <polygon points="370,200 322,236 370,236" fill="#2D6A8A"/>
+    <polygon points="275,200 370,200 322,236" fill="#5D9ABB"/>
   </g>
 
-  <!-- Origami leaf right -->
+  <!-- Bottom-left sage leaves -->
   <g>
-    <polygon points="328,238 343,215 353,238 343,260" fill="#5a8a4a"/>
-    <polygon points="343,215 353,238 348,226" fill="#4a7a3a"/>
-    <polygon points="328,238 343,215 336,226" fill="#6a9a5a"/>
+    <polygon points="25,275 40,258 40,275" fill="#6a9a5a"/>
+    <polygon points="40,258 55,275 40,275" fill="#5a8a4a"/>
+    <polygon points="40,275 55,275 40,288" fill="#4a7a3a"/>
+    <polygon points="25,275 40,275 40,288" fill="#5a8a4a"/>
+    <polygon points="55,280 65,268 75,280" fill="#6a9a5a"/>
+    <polygon points="65,268 75,280 65,288" fill="#5a8a4a"/>
   </g>
 
-  <!-- Decorative diamonds -->
-  <polygon points="48,75 56,65 64,75 56,85" fill="#E5A630"/>
-  <polygon points="56,65 64,75 60,70" fill="#D4832E"/>
+  <!-- Bottom-right sage leaves -->
+  <g>
+    <polygon points="345,275 360,258 360,275" fill="#6a9a5a"/>
+    <polygon points="360,258 375,275 360,275" fill="#5a8a4a"/>
+    <polygon points="360,275 375,275 360,288" fill="#4a7a3a"/>
+    <polygon points="345,275 360,275 360,288" fill="#5a8a4a"/>
+    <polygon points="325,280 335,268 345,280" fill="#6a9a5a"/>
+    <polygon points="335,268 345,280 335,288" fill="#5a8a4a"/>
+  </g>
 
-  <polygon points="350,55 357,47 364,55 357,63" fill="#D4832E"/>
-  <polygon points="357,47 364,55 360,51" fill="#B86D1F"/>
-
-  <!-- Heart -->
-  <polygon points="55,50 60,43 65,50 60,57" fill="#D4832E"/>
-  <polygon points="60,43 65,50 62,46" fill="#B86D1F"/>
-
-  <!-- Accent circles -->
-  <circle cx="40" cy="105" r="7" fill="#f0ebe6"/>
-  <circle cx="365" cy="42" r="5" fill="#e0d6cc"/>
-  <circle cx="45" cy="260" r="4" fill="#E5A630"/>
+  <!-- Accent diamonds -->
+  <polygon points="140,50 145,45 150,50 145,55" fill="#D4832E"/>
+  <polygon points="275,60 279,56 283,60 279,64" fill="#5a8a4a"/>
 </svg>

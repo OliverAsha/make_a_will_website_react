@@ -28,7 +28,7 @@ function Header() {
             </ul>
             <div className="nav-buttons">
               <a href="https://makeawillonline.co.uk/my-will/login" className="nav-login">Login</a>
-              <a href="https://makeawillonline.co.uk/my-will" className="btn btn-primary">make a will</a>
+              <a href="/start-your-will" className="btn btn-primary">make a will</a>
             </div>
           </nav>
 

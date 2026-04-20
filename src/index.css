@@ -112,11 +112,12 @@ p {
 .btn {
   display: inline-block;
   padding: 10px 30px;
-  font-family: var(--font-heading);
+  font-family: var(--font-family);
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   text-transform: none;
   text-align: center;
+  white-space: nowrap;
   border: 2px solid transparent;
   border-radius: var(--border-radius);
   cursor: pointer;
@@ -426,6 +427,14 @@ p {
 
   .hero-inner {
     grid-template-columns: 1fr;
+  }
+
+  .hero-image {
+    order: 0;
+  }
+
+  .hero-content {
+    order: 1;
   }
 
   .hero-content h1 {
@@ -1185,4 +1194,178 @@ p {
 
 .authority-links a:hover {
   color: var(--white);
+}
+
+/* Questionnaire / Start Your Will flow */
+.questionnaire {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  flex-direction: column;
+  background: var(--gray-100);
+}
+
+.questionnaire .progress-bar {
+  width: 100%;
+  height: 8px;
+  background: var(--gray-200);
+}
+
+.questionnaire .progress-fill {
+  height: 100%;
+  background: var(--primary);
+  transition: width 0.4s ease;
+}
+
+.questionnaire-inner {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.question-card {
+  max-width: 640px;
+  width: 100%;
+  background: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 40px 32px;
+  text-align: center;
+}
+
+.question-step {
+  color: var(--gray-500);
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.question-text {
+  font-size: 1.6rem;
+  margin-bottom: 36px;
+  line-height: 1.4;
+}
+
+.question-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.question-actions .btn {
+  min-width: 140px;
+}
+
+.question-back {
+  background: none;
+  border: none;
+  color: var(--gray-600);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.95rem;
+  padding: 8px 12px;
+  text-decoration: underline;
+}
+
+.question-back:hover {
+  color: var(--primary);
+}
+
+.more-info {
+  margin: 0 0 24px;
+}
+
+.more-info > summary {
+  list-style: none;
+  cursor: pointer;
+  color: var(--primary);
+  font-weight: 500;
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.95rem;
+}
+
+.more-info > summary::-webkit-details-marker {
+  display: none;
+}
+
+.more-info > summary::before {
+  content: '+';
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid var(--primary);
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.more-info[open] > summary::before {
+  content: '−';
+}
+
+.more-info-body {
+  padding: 4px 0 12px 28px;
+  color: var(--gray-700);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.more-info-body p {
+  margin: 0 0 10px;
+}
+
+.more-info-body p:last-child {
+  margin-bottom: 0;
+}
+
+.more-info-body ol,
+.more-info-body ul {
+  margin: 8px 0 10px 20px;
+  padding: 0;
+}
+
+.more-info-body li {
+  margin-bottom: 6px;
+}
+
+.more-info-body a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .question-card {
+    padding: 28px 20px;
+  }
+
+  .question-text {
+    font-size: 1.25rem;
+    margin-bottom: 28px;
+  }
+
+  .question-actions {
+    flex-direction: column;
+  }
+
+  .question-actions .btn {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .more-info > summary {
+    justify-content: flex-start;
+  }
 }
