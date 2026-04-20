@@ -41,8 +41,8 @@ function Contact() {
             </p>
           </div>
           <div className="content-wrapper">
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', marginBottom: '40px' }}>
-              <div>
+            <div className="contact-grid">
+              <div className="contact-info">
                 <h2>Get in Touch</h2>
 
                 <div style={{ marginTop: '30px' }}>
@@ -59,7 +59,7 @@ function Contact() {
                 </div>
               </div>
 
-              <div>
+              <div className="contact-form-wrapper">
                 <form className="contact-form" onSubmit={handleSubmit}>
                   <div className="form-group">
                     <label htmlFor="name">Your Name</label>

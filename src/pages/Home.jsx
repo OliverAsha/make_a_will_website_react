@@ -4,7 +4,7 @@ import SEO from '../components/SEO';
 
 function Home() {
   return (
-    <>
+    <div className="home-page">
       <SEO />
       <Hero />
 
@@ -155,7 +155,7 @@ function Home() {
           <a href="https://makeawillonline.co.uk/my-will" className="btn btn-primary btn-lg">make your will now</a>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 
