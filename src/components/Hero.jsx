@@ -22,7 +22,7 @@ function Hero() {
           <div className="hero-content">
             <h1>Solicitor-checked wills made simple</h1>
             <p className="hero-subtitle">
-              Create your legally valid will online in as little as 15 minutes, with every will reviewed by a qualified solicitor.
+              Every will is reviewed by a qualified solicitor. Legally valid in England &amp; Wales. Most people finish in 15 minutes.
             </p>
             <div className="hero-cta">
               <a href="/start-your-will" className="btn btn-primary">

@@ -17,6 +17,7 @@ import SampleWill from './pages/SampleWill';
 import MakeYourWill from './pages/MakeYourWill';
 import StartYourWill from './pages/StartYourWill';
 import Charities from './pages/Charities';
+import { trackPageView } from './analytics';
 import './index.css';
 
 // Generic page component for routes not yet implemented
@@ -44,7 +45,11 @@ function ScrollToTop() {
   const location = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [location.pathname]);
+    const id = setTimeout(() => {
+      trackPageView(location.pathname + location.search, document.title);
+    }, 100);
+    return () => clearTimeout(id);
+  }, [location.pathname, location.search]);
   return null;
 }
 

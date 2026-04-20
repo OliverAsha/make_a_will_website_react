@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { trackEvent } from '../analytics';
 
 const QUESTIONS = [
   {
@@ -101,10 +102,28 @@ function StartYourWill() {
 
   const scrollTop = () => window.scrollTo(0, 0);
 
+  useEffect(() => {
+    trackEvent('questionnaire_start');
+  }, []);
+
   const answer = (yes) => {
-    setAnswers((prev) => [...prev, yes]);
+    const newAnswers = [...answers, yes];
+    setAnswers(newAnswers);
     setIndex((i) => i + 1);
     scrollTop();
+
+    trackEvent('questionnaire_answer', {
+      question_index: index + 1,
+      answer: yes ? 'yes' : 'no',
+    });
+
+    if (newAnswers.length === QUESTIONS.length) {
+      const flaggedCount = newAnswers.filter((a, i) => a === QUESTIONS[i].flagOn).length;
+      trackEvent('questionnaire_complete', {
+        outcome: flaggedCount > 0 ? 'advisor' : 'clear',
+        flagged_count: flaggedCount,
+      });
+    }
   };
 
   const back = () => {
@@ -166,8 +185,20 @@ function StartYourWill() {
                 Please click "continue" to proceed to make your will online, or click "book a call" if you would rather speak with an advisor to make your will.
               </p>
               <div className="question-actions">
-                <a href={MAKE_WILL_URL} className="btn btn-primary">Continue</a>
-                <a href={BOOK_CALL_URL} className="btn btn-secondary">Book a Call</a>
+                <a
+                  href={MAKE_WILL_URL}
+                  onClick={() => trackEvent('questionnaire_cta_click', { cta: 'continue', outcome: 'clear' })}
+                  className="btn btn-primary"
+                >
+                  Continue
+                </a>
+                <a
+                  href={BOOK_CALL_URL}
+                  onClick={() => trackEvent('questionnaire_cta_click', { cta: 'book_call', outcome: 'clear' })}
+                  className="btn btn-secondary"
+                >
+                  Book a Call
+                </a>
               </div>
               <button type="button" onClick={restart} className="question-back">← Start again</button>
             </div>
@@ -180,8 +211,20 @@ function StartYourWill() {
                 You answered {flaggedList}. We advise you to speak with an advisor to help make your will.
               </p>
               <div className="question-actions">
-                <a href={MAKE_WILL_URL} className="btn btn-secondary">Make a Will Online</a>
-                <a href={BOOK_CALL_URL} className="btn btn-primary">Book a Call</a>
+                <a
+                  href={MAKE_WILL_URL}
+                  onClick={() => trackEvent('questionnaire_cta_click', { cta: 'make_will', outcome: 'advisor' })}
+                  className="btn btn-secondary"
+                >
+                  Make a Will Online
+                </a>
+                <a
+                  href={BOOK_CALL_URL}
+                  onClick={() => trackEvent('questionnaire_cta_click', { cta: 'book_call', outcome: 'advisor' })}
+                  className="btn btn-primary"
+                >
+                  Book a Call
+                </a>
               </div>
               <button type="button" onClick={restart} className="question-back">← Start again</button>
             </div>
