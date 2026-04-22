@@ -6,7 +6,7 @@
 //   2. Every time the server needs to call Zoho, it trades that refresh token for a
 //      short-lived ACCESS token (good for ~1 hour) and uses it in the Authorization header.
 
-import { toZohoStamp, fromZohoStamp, DEFAULT_TZ } from './time.js';
+import { toZohoStamp, toZohoUtcStamp, fromZohoStamp, DEFAULT_TZ } from './time.js';
 
 const ACCOUNTS_DOMAIN = process.env.ZOHO_ACCOUNTS_DOMAIN || 'accounts.zoho.com';
 const CALENDAR_DOMAIN = process.env.ZOHO_CALENDAR_DOMAIN || 'calendar.zoho.com';
@@ -85,8 +85,8 @@ export async function getBusyIntervals(dateISO) {
   const dayEndUtc = new Date(Date.UTC(year, month - 1, day, 23, 59, 59));
 
   const range = JSON.stringify({
-    start: toZohoStamp(dayStartUtc, DEFAULT_TZ),
-    end: toZohoStamp(dayEndUtc, DEFAULT_TZ)
+    start: toZohoUtcStamp(dayStartUtc),
+    end: toZohoUtcStamp(dayEndUtc)
   });
 
   const data = await zohoRequest(`/calendars/${encodeURIComponent(calendarUid)}/events`, {

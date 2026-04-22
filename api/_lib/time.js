@@ -42,6 +42,18 @@ function formatOffset(offsetMs) {
   return `${sign}${hh}${mm}`;
 }
 
+// Zoho's events-listing endpoint rejects offset stamps on the `range` query
+// and only accepts UTC "Z" stamps like "20260420T090000Z".
+export function toZohoUtcStamp(utcDate) {
+  const y = utcDate.getUTCFullYear();
+  const mo = String(utcDate.getUTCMonth() + 1).padStart(2, '0');
+  const d = String(utcDate.getUTCDate()).padStart(2, '0');
+  const h = String(utcDate.getUTCHours()).padStart(2, '0');
+  const mi = String(utcDate.getUTCMinutes()).padStart(2, '0');
+  const s = String(utcDate.getUTCSeconds()).padStart(2, '0');
+  return `${y}${mo}${d}T${h}${mi}${s}Z`;
+}
+
 // Zoho Calendar uses a compact timestamp like "20260420T100000+0100".
 export function toZohoStamp(utcDate, timeZone = DEFAULT_TZ) {
   const offset = tzOffsetMs(utcDate.getTime(), timeZone);
