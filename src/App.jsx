@@ -16,6 +16,7 @@ import ServicePage from './pages/ServicePage';
 import SampleWill from './pages/SampleWill';
 import MakeYourWill from './pages/MakeYourWill';
 import StartYourWill from './pages/StartYourWill';
+import BookACall from './pages/BookACall';
 import Charities from './pages/Charities';
 import { trackPageView } from './analytics';
 import './index.css';
@@ -110,7 +111,7 @@ function App() {
             {/* Services */}
             <Route path="/lifetime-updates" element={<ServicePage />} />
             <Route path="/a-pair-of-wills-or-mirror-wills" element={<ServicePage />} />
-            <Route path="/book-a-call" element={<ServicePage />} />
+            <Route path="/book-a-call" element={<BookACall />} />
             <Route path="/login" element={<GenericPage title="Login" description="Access your account" />} />
 
             {/* Charity Pages */}
