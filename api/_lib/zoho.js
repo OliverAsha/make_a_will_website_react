@@ -123,9 +123,7 @@ export async function createEvent({ title, description, startUtc, endUtc, attend
       end: toZohoStamp(endUtc, DEFAULT_TZ)
     },
     isprivate: false,
-    attendees: attendeeEmail
-      ? [{ email: attendeeEmail, name: attendeeName || attendeeEmail, status: 'NEEDS-ACTION' }]
-      : []
+    attendees: attendeeEmail ? [{ email: attendeeEmail }] : []
   };
 
   const body = new URLSearchParams({ eventdata: JSON.stringify(eventdata) }).toString();
