@@ -89,7 +89,7 @@ const QUESTIONS = [
 ];
 
 const MAKE_WILL_URL = 'https://makeawillonline.co.uk/my-will';
-const BOOK_CALL_URL = 'https://www.makeawillonline.co.uk/book-a-call/';
+const BOOK_CALL_URL = 'https://www.makeawill.co.uk/book-a-call';
 
 function StartYourWill() {
   const [index, setIndex] = useState(0);
