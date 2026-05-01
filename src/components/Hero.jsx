@@ -19,10 +19,10 @@ function Hero() {
     <section className="hero">
       <div className="container">
         <div className="hero-inner">
+          <h1 className="hero-title">Wills made by solicitors. Simple</h1>
           <div className="hero-content">
-            <h1>Solicitor-checked wills made simple</h1>
             <p className="hero-subtitle">
-              Every will is reviewed by a qualified solicitor. Legally valid in England &amp; Wales. Most people finish in 15 minutes.
+              Every clause of every will is made by and checked by solicitors. Legally valid in England &amp; Wales. Most people finish in 15 minutes or less.
             </p>
             <div className="hero-cta">
               <a href="/start-your-will" className="btn btn-primary">
@@ -32,7 +32,7 @@ function Hero() {
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="#00B67A">
                   <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
                 </svg>
-                <span>Rated Excellent on Trustpilot</span>
+                <span>Rated excellent</span>
               </div>
             </div>
             <ul className="hero-features">

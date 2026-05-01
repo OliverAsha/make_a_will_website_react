@@ -48,7 +48,7 @@
   /* Trust accent — calming blue/teal for trust badges, security icons, info sections */
   --trust-blue: #2D6A8A;
   --font-family: 'Poppins', sans-serif;
-  --font-heading: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-heading: 'Manrope', sans-serif;
   --shadow-sm: 0 1px 2px rgba(139, 77, 59, 0.08);
   --shadow: 0 4px 6px rgba(139, 77, 59, 0.12);
   --shadow-lg: 0 10px 25px rgba(139, 77, 59, 0.18);
@@ -355,20 +355,42 @@ p {
 .hero-inner {
   display: grid;
   grid-template-columns: 6fr 5fr;
-  gap: 60px;
+  grid-template-areas:
+    "title image"
+    "body  image";
+  column-gap: 60px;
+  row-gap: 8px;
   align-items: start;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.hero-content {
+.hero-title {
+  grid-area: title;
   padding-left: 48px;
+  align-self: end;
+}
+
+.hero-content {
+  grid-area: body;
+  padding-left: 48px;
+}
+
+.hero-image {
+  grid-area: image;
+  align-self: center;
+  text-align: center;
+}
+
+.hero-title,
+.hero-content h1 {
+  margin-bottom: 0;
+  color: var(--gray-900);
+  line-height: 1.15;
 }
 
 .hero-content h1 {
   margin-bottom: 28px;
-  color: var(--gray-900);
-  line-height: 1.15;
 }
 
 .hero-subtitle {
@@ -399,10 +421,6 @@ p {
   flex-shrink: 0;
 }
 
-.hero-image {
-  text-align: center;
-}
-
 .hero-image img {
   max-width: 100%;
   height: auto;
@@ -431,19 +449,21 @@ p {
 
   .hero-inner {
     grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "image"
+      "body";
+    gap: 24px;
   }
 
-  .hero-image {
-    order: 0;
+  .hero-title {
+    padding-left: 0;
+    font-size: 2rem;
+    margin-bottom: 0;
   }
 
   .hero-content {
-    order: 1;
     padding-left: 0;
-  }
-
-  .hero-content h1 {
-    font-size: 2rem;
   }
 
   .hero-features {
