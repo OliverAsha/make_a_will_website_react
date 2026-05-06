@@ -30,3 +30,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Windows Alternate Data Stream metadata (created when files arrive via WSL
+# from Windows — e.g. browser downloads, copy-paste from Explorer). These
+# are tiny "[ZoneTransfer] ZoneId=3" sidecars used by Windows for security
+# warnings and have no role in the build.
+*:Zone.Identifier
