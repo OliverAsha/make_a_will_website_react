@@ -17,7 +17,7 @@ export const aboutContent = {
     <p>At Make a Will, we believe everyone deserves access to quality legal services for creating their will. We combine the convenience of technology with the expertise of qualified solicitors to provide a service that is both accessible and reliable.</p>
 
     <h2>Why We're Different</h2>
-    <p>Unlike other online will services, every will we create is checked by a qualified solicitor. This unique approach means you get the convenience of completing your will from home, with the peace of mind that comes from professional legal oversight. <a href="/how-solicitor-checked-online-will-works">See exactly how our solicitor check works</a>.</p>
+    <p>Unlike other online will services, every will we create is checked by a qualified solicitor. This unique approach means you get the convenience of completing your will from home, with the peace of mind that comes from professional legal oversight. <a href="/resource/how-solicitor-checked-online-will-works">See exactly how our solicitor check works</a>.</p>
 
     <h2>Our Story</h2>
     <p>Make a Will was founded with a simple goal: to make will-writing accessible to everyone, without compromising on quality. We saw that many people were either paying high fees for traditional solicitors or risking their family's future with unchecked DIY wills.</p>

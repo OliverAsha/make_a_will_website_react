@@ -31,7 +31,7 @@ extract it to `src/data/` first, then edit.
 | ----------------------------------- | -------------------------- | ----------------- |
 | `/resource/{slug}`                  | `src/data/resources.js`    | `ResourcePage.jsx`|
 | Glossary terms (5 routes)           | `src/data/glossary.js`     | `GlossaryPage.jsx`|
-| Service & policy pages (11 routes)  | `src/data/services.js`     | `ServicePage.jsx` |
+| Service & policy pages (10 routes)  | `src/data/services.js`     | `ServicePage.jsx` |
 | Blog posts (13 routes)              | `src/data/blog.js`         | `BlogPost.jsx`    |
 | `/faq`                              | `src/data/faq.js`          | `FAQ.jsx`         |
 | `/about-us`                         | `src/data/about.js`        | `About.jsx`       |

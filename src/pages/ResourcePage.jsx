@@ -36,6 +36,7 @@ const resourceToCategory = {
   'are-online-wills-legal': 'wills',
   'make-an-online-will-in-five-easy-steps': 'wills',
   'what-is-a-solicitor-checked-will': 'wills',
+  'how-solicitor-checked-online-will-works': 'wills',
   'who-can-witness-a-will': 'wills',
   'how-to-sign-execute-a-will': 'wills',
   'will-writing-glossary': 'wills',
@@ -77,6 +78,7 @@ const resourceToIllustration = {
   'are-online-wills-legal': '/logos/resource-making-will.svg',
   'make-an-online-will-in-five-easy-steps': '/logos/resource-making-will.svg',
   'what-is-a-solicitor-checked-will': '/logos/resource-making-will.svg',
+  'how-solicitor-checked-online-will-works': '/logos/resource-making-will.svg',
   'will-writing-glossary': '/logos/resource-glossary.svg',
 
   // Witnesses and signing

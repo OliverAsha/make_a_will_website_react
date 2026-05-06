@@ -143,6 +143,10 @@ const seoConfig = {
     title: 'What Is a Solicitor-Checked Will?',
     description: 'Every will we create is reviewed by a qualified solicitor. Learn what this means, why it matters, and how it protects you and your family.'
   },
+  '/resource/how-solicitor-checked-online-will-works': {
+    title: 'How Our Solicitor-Checked Wills Work | Make a Will',
+    description: 'A qualified solicitor on our team reviews every will we produce within two working days. See the four-step review process and what we look for.'
+  },
   '/resource/who-can-witness-a-will': {
     title: 'Who Can Witness a Will? | Witness Requirements',
     description: 'Learn who can and cannot witness your will, what witnesses need to do, and common mistakes to avoid when signing your will.'
@@ -270,10 +274,6 @@ const seoConfig = {
   '/resource/what-to-do-when-someone-dies': {
     title: 'What to Do When Someone Dies: A Complete UK Checklist',
     description: 'Step-by-step checklist of what to do when someone dies in the UK — from registering the death to applying for probate and distributing the estate.'
-  },
-  '/how-solicitor-checked-online-will-works': {
-    title: 'How Our Solicitor-Checked Wills Work | Make a Will',
-    description: 'A qualified solicitor on our team reviews every will we produce within two working days. See the four-step review process and what we look for.'
   },
   '/lifetime-updates': {
     title: 'Lifetime Will Updates | Change Your Will Anytime',
@@ -463,7 +463,6 @@ let pagesGenerated = 0;
 const GLOSSARY_ROUTES = new Set(['/beneficiary', '/bequest', '/codicil', '/legacy', '/testator']);
 
 const SERVICE_ROUTES = new Set([
-  '/how-solicitor-checked-online-will-works',
   '/lifetime-updates',
   '/a-pair-of-wills-or-mirror-wills',
   '/data-handling-policy',
