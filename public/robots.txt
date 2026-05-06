@@ -1,4 +1,71 @@
+# Make a Will — robots.txt
+# We welcome search engines and AI assistants. The site is a public
+# information service; nothing here is rate-limited or paywalled.
+# Sitemap and llms.txt are listed at the bottom.
+
 User-agent: *
 Allow: /
+
+# --- AI / LLM crawlers (explicitly allowed) -------------------------------
+# Some bots only respect rules under their own user-agent and ignore "*",
+# so we list each one explicitly. These crawlers either gather training
+# data or fetch live pages to cite in answers — both useful for our
+# visibility in AI-powered search.
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: Cohere-AI
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+# --------------------------------------------------------------------------
 
 Sitemap: https://www.makeawill.co.uk/sitemap.xml
