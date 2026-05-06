@@ -209,6 +209,10 @@ const seoConfig = {
   },
 
   // Service pages
+  '/how-solicitor-checked-online-will-works': {
+    title: 'How Our Solicitor-Checked Wills Work | Make a Will',
+    description: 'A qualified solicitor on our team reviews every will we produce within two working days. See the four-step review process and what we look for.'
+  },
   '/lifetime-updates': {
     title: 'Lifetime Will Updates | Change Your Will Anytime',
     description: 'Update your will whenever your circumstances change — at no extra cost. Every update is reviewed by a qualified solicitor.'

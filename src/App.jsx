@@ -109,6 +109,7 @@ function App() {
             <Route path="/our-competition-and-markets-authority-statement" element={<ServicePage />} />
 
             {/* Services */}
+            <Route path="/how-solicitor-checked-online-will-works" element={<ServicePage />} />
             <Route path="/lifetime-updates" element={<ServicePage />} />
             <Route path="/a-pair-of-wills-or-mirror-wills" element={<ServicePage />} />
             <Route path="/book-a-call" element={<BookACall />} />

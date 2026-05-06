@@ -15,6 +15,7 @@ export const resourceCategories = [
       { title: "Are online wills legal?", path: "/resource/are-online-wills-legal" },
       { title: "Make an Online Will in Five Easy Steps", path: "/resource/make-an-online-will-in-five-easy-steps" },
       { title: "What is a Solicitor Checked will?", path: "/resource/what-is-a-solicitor-checked-will" },
+      { title: "How our solicitor-checked wills work", path: "/how-solicitor-checked-online-will-works" },
       { title: "Who can witness a will?", path: "/resource/who-can-witness-a-will" },
       { title: "How To Sign a Will", path: "/resource/how-to-sign-execute-a-will" },
       { title: "Will writing glossary", path: "/resource/will-writing-glossary" },

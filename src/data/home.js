@@ -47,6 +47,18 @@ export const homeContent = {
       </div>
     </section>
 
+    <section class="solicitor-row" style="padding:32px 0;background:#f9fafb;border-bottom:1px solid #e5e7eb">
+      <div class="container">
+        <div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap;justify-content:center;max-width:840px;margin:0 auto">
+          <img src="/team/oliver-asha.jpg" alt="Oliver Asha, Solicitor and TEP, founder of Make a Will" width="88" height="88" style="border-radius:50%;object-fit:cover;flex-shrink:0;background:#e5e7eb"/>
+          <div style="flex:1 1 360px;min-width:0">
+            <p style="margin:0 0 6px;font-size:1.05rem;line-height:1.5;font-style:italic">"Every will we produce is reviewed by a qualified solicitor on our team within two working days. If anything in your answers needs a closer look, we'll come back to you before your will is finalised."</p>
+            <p style="margin:0;font-size:0.95rem;color:#6b7280">&mdash; Oliver Asha, Solicitor &amp; TEP (SRA 372772) &middot; <a href="/how-solicitor-checked-online-will-works">See exactly how it works</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="steps-section">
       <div class="container">
         <div class="section-title">
