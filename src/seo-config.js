@@ -7,7 +7,7 @@ const SITE_URL = 'https://www.makeawill.co.uk';
 const seoConfig = {
   // Main pages
   '/': {
-    title: 'Make a Will Online | Solicitor-Checked Wills from £90',
+    title: 'Make a Will | Solicitor-Checked Wills from £90',
     description: 'Create a solicitor-checked will online in as little as 15 minutes. Trusted since 2008, with lifetime updates and a money-back guarantee.'
   },
   '/faq': {
