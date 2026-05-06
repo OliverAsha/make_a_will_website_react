@@ -15,6 +15,21 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 
+// Page content data — single source of truth, shared with the React app
+// (src/pages/*.jsx import from these same modules). When you change content,
+// it's reflected in BOTH the React render and the pre-baked static HTML.
+import { resourceContent } from '../src/data/resources.js';
+import { glossaryContent } from '../src/data/glossary.js';
+import { serviceContent } from '../src/data/services.js';
+import { blogContent } from '../src/data/blog.js';
+import { faqItems } from '../src/data/faq.js';
+import { aboutContent } from '../src/data/about.js';
+import { sampleWillContent } from '../src/data/sample-will.js';
+import { charitiesContent } from '../src/data/charities.js';
+import { homeContent } from '../src/data/home.js';
+import { blogPosts, blogCategories } from '../src/data/blog-index.js';
+import { resourceCategories } from '../src/data/resources-index.js';
+
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const distDir = join(__dirname, '..', 'dist');
 
@@ -25,9 +40,47 @@ const distDir = join(__dirname, '..', 'dist');
 
 const SITE_URL = 'https://www.makeawill.co.uk';
 
+// --- Schema (JSON-LD) helpers ---------------------------------------------
+//
+// We pre-bake JSON-LD structured data into each page's static HTML. This means
+// AI crawlers and search engines that don't run JavaScript still see the schema.
+//
+// Site-wide Organization schema lives in index.html (the template), so it gets
+// copied to every page automatically. Per-route schemas are defined below in
+// `seoConfig` under a `schema` key, and are injected before </head> at build time.
+//
+// IMPORTANT: when you put JSON inside an HTML <script> tag, any "</" sequence
+// can break out of the tag. serializeSchema() escapes "<" to its unicode form
+// to make the embed safe.
+
+function serializeSchema(schema) {
+  return JSON.stringify(schema, null, 2).replace(/</g, '\\u003c');
+}
+
+// Strip HTML tags from a string. schema.org's FAQPage Answer.text expects
+// plain text — we strip HTML from the imported answer strings before using
+// them in JSON-LD. (The pre-rendered HTML body keeps the links intact.)
+function stripHtml(html) {
+  return html.replace(/<[^>]+>/g, '');
+}
+
+const faqPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqItems.map(({ question, answer }) => ({
+    "@type": "Question",
+    "name": question,
+    "acceptedAnswer": { "@type": "Answer", "text": stripHtml(answer) }
+  }))
+};
+
 // All routes and their SEO data — mirrors src/seo-config.js
 // This is intentionally duplicated here so the build script has no runtime
 // dependency on React/Vite. If you add a new page, add it in BOTH places.
+//
+// To attach JSON-LD to a route, add a `schema` field. It will be injected
+// into the static HTML before </head>. Example:
+//   '/some-page': { title: '...', description: '...', schema: someSchemaObject }
 const seoConfig = {
   '/': {
     title: 'Make a Will | Solicitor-Checked Wills from £90',
@@ -35,7 +88,8 @@ const seoConfig = {
   },
   '/faq': {
     title: 'Frequently Asked Questions About Making a Will',
-    description: 'Find answers to common questions about making a will online, including legal validity, witnesses, executors, updating your will, and more.'
+    description: 'Find answers to common questions about making a will online, including legal validity, witnesses, executors, updating your will, and more.',
+    schema: faqPageSchema
   },
   '/about-us': {
     title: 'About Us | Make a Will',
@@ -319,22 +373,256 @@ const seoConfig = {
   },
 };
 
+// --- Auto-attach Article schema to all /resource/* guide pages -----------
+//
+// Every guide page gets an Article JSON-LD block describing the article and
+// referencing the site-wide Organization (defined in index.html) as both
+// author and publisher. This is the main E-E-A-T signal for crawlers on
+// our YMYL legal content.
+//
+// Per-route overrides (set on the route's seoConfig entry above):
+//   datePublished : 'YYYY-MM-DD' — when the guide was first published
+//   dateModified  : 'YYYY-MM-DD' — when it was last reviewed/updated
+//   image         : full URL of a guide-specific image (≥1200px wide ideal)
+//   schema        : a complete custom schema, which bypasses this auto-build
+//
+// If you don't override datePublished, DEFAULT_PUBLISHED_DATE is used as a
+// placeholder. dateModified defaults to today's build date.
+
+const TODAY = new Date().toISOString().split('T')[0];
+const DEFAULT_PUBLISHED_DATE = '2024-01-01'; // TODO: replace per-route with real first-published dates as you find them
+const DEFAULT_ARTICLE_IMAGE = `${SITE_URL}/og-default.png`; // 1200×600 branded fallback image. Override per-route via meta.image when a guide-specific image exists.
+
+function articleHeadline(title) {
+  // Strip the " | Make a Will" branding suffix so the headline is just the topic.
+  return title.replace(/\s*\|\s*Make a Will\s*$/i, '').trim();
+}
+
+function createArticleSchema(route, meta) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": articleHeadline(meta.title),
+    "description": meta.description,
+    "url": `${SITE_URL}${route}`,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `${SITE_URL}${route}`
+    },
+    "inLanguage": "en-GB",
+    "image": meta.image || DEFAULT_ARTICLE_IMAGE,
+    "datePublished": meta.datePublished || DEFAULT_PUBLISHED_DATE,
+    "dateModified": meta.dateModified || TODAY,
+    // Oliver Asha (Solicitor, TEP) is the named author of every guide. The
+    // Person entity is defined in index.html (#oliver-asha) so we just
+    // reference it by @id here. This is the strongest E-E-A-T signal we can
+    // give for YMYL legal content: a verifiable, SRA-registered solicitor
+    // bylined on each article.
+    "author": { "@id": `${SITE_URL}/#oliver-asha` },
+    "publisher": { "@id": `${SITE_URL}/#organization` }
+  };
+}
+
+let articleSchemasAttached = 0;
+for (const [route, meta] of Object.entries(seoConfig)) {
+  // Only auto-attach to individual /resource/* guides, not the /resource hub itself.
+  if (route.startsWith('/resource/') && !meta.schema) {
+    meta.schema = createArticleSchema(route, meta);
+    articleSchemasAttached++;
+  }
+}
+console.log(`Auto-attached Article schema to ${articleSchemasAttached} resource pages.`);
+
 // --- Generate static HTML pages ---
 
 const template = readFileSync(join(distDir, 'index.html'), 'utf-8');
 let pagesGenerated = 0;
 
+// --- Article body pre-rendering (Option A) -------------------------------
+//
+// We inject the actual article body HTML into <div id="root"> at build time,
+// at the marker `<!-- PRERENDER_CONTENT -->`. This means non-JS crawlers
+// (most AI bots) see the full article text — not just the title and schema.
+//
+// On a real visit, React mounts via createRoot() and replaces #root's
+// children with its own render. The replacement causes a brief paint flicker
+// but no hydration warnings. Since both the static HTML and the React render
+// pull from the same data modules (src/data/*.js), they can never drift.
+
+// Route → content-source mapping. Mirrors the React Router config in
+// src/App.jsx exactly: a route only gets pre-rendered content if its React
+// component would render that same content. (E.g. /book-a-call has a
+// serviceContent entry but the route uses <BookACall />, not <ServicePage />,
+// so we must NOT inject the service text — that would diverge from what
+// users see after JS loads.)
+
+const GLOSSARY_ROUTES = new Set(['/beneficiary', '/bequest', '/codicil', '/legacy', '/testator']);
+
+const SERVICE_ROUTES = new Set([
+  '/lifetime-updates',
+  '/a-pair-of-wills-or-mirror-wills',
+  '/data-handling-policy',
+  '/disclaimer',
+  '/money-back-guarantee',
+  '/our-competition-and-markets-authority-statement',
+  '/fundraising-online-wills',
+  '/charities-and-fundraising-for-gifts-in-wills',
+  '/solicitor-checked-wills-for-charity-supporters',
+  '/gifts-in-wills-training-with-richard-radcliffe'
+]);
+
+const BLOG_ROUTES = new Set([
+  '/digital-assets-in-your-will',
+  '/inheritance-tax-changes-2026',
+  '/will-law-reform-2026',
+  '/probate-delays-what-to-expect',
+  '/why-make-a-will',
+  '/why-write-a-will',
+  '/5-reasons-to-update-your-will',
+  '/do-I-need-probate',
+  '/dying-without-a-will-intestacy',
+  '/children-and-gifts-in-wills',
+  '/do-you-cohabit',
+  '/uk-expat-wills',
+  '/charity-gifts-in-wills-how-and-why'
+]);
+
+// Build the blog index listing as static HTML from the blog-index metadata.
+function buildBlogIndexHTML() {
+  const formatDate = (iso) => new Date(iso).toLocaleDateString('en-GB', {
+    day: 'numeric', month: 'long', year: 'numeric'
+  });
+  const posts = blogPosts.map(p => `<article style="margin-bottom:32px">
+  <h2><a href="${p.path}">${p.title}</a></h2>
+  <p><time datetime="${p.date}">${formatDate(p.date)}</time> &middot; ${p.category}</p>
+  <p>${p.excerpt}</p>
+</article>`).join('\n');
+  const categoryList = blogCategories.map(c =>
+    `<li><a href="/topic/${c.toLowerCase().replace(/ /g, '-')}">${c}</a></li>`
+  ).join('\n');
+  return `<p>Insights and advice on wills, estate planning, and protecting your family&rsquo;s future.</p>
+${posts}
+<h2>Categories</h2>
+<ul>${categoryList}</ul>`;
+}
+
+// Build the resources index listing as static HTML from the index metadata.
+function buildResourcesIndexHTML() {
+  return resourceCategories.map(cat => {
+    const items = cat.resources
+      .map(r => `<li><a href="${r.path}">${r.title}</a></li>`)
+      .join('\n');
+    return `<h2>${cat.title}</h2>\n<ul>\n${items}\n</ul>`;
+  }).join('\n\n');
+}
+
+function getContentForRoute(route) {
+  if (route === '/') {
+    return { source: 'home', ...homeContent };
+  }
+  if (route === '/about-us') {
+    return { source: 'about', ...aboutContent };
+  }
+  if (route === '/sample-will') {
+    return { source: 'sample-will', ...sampleWillContent };
+  }
+  if (route === '/charities') {
+    return { source: 'charities', ...charitiesContent };
+  }
+  if (route === '/blog') {
+    return {
+      source: 'blog-index',
+      title: 'Blog',
+      content: buildBlogIndexHTML()
+    };
+  }
+  if (route === '/resource' || route === '/resources') {
+    return {
+      source: 'resources-index',
+      title: 'Resources',
+      content: `<p>Browse our comprehensive library of guides covering everything from making your first will to understanding probate.</p>\n\n${buildResourcesIndexHTML()}`
+    };
+  }
+  if (route === '/faq') {
+    return {
+      source: 'faq',
+      title: 'Frequently Asked Questions',
+      content: faqItems
+        .map(({ question, answer }) => `<h2>${question}</h2>\n<p>${answer}</p>`)
+        .join('\n')
+    };
+  }
+  if (route.startsWith('/resource/')) {
+    const slug = route.slice('/resource/'.length);
+    if (resourceContent[slug]) return { source: 'resource', ...resourceContent[slug] };
+  }
+  if (GLOSSARY_ROUTES.has(route)) {
+    const slug = route.slice(1);
+    if (glossaryContent[slug]) return { source: 'glossary', ...glossaryContent[slug] };
+  }
+  if (SERVICE_ROUTES.has(route)) {
+    const slug = route.slice(1);
+    if (serviceContent[slug]) return { source: 'service', ...serviceContent[slug] };
+  }
+  if (BLOG_ROUTES.has(route)) {
+    const slug = route.slice(1);
+    if (blogContent[slug]) return { source: 'blog', ...blogContent[slug] };
+  }
+  return null;
+}
+
+// Render the article HTML that will sit inside <div id="root">.
+// Kept intentionally simple — crawlers care about headings, paragraphs, and
+// links, not CSS classes.
+function renderArticleHTML(content) {
+  if (!content) return '';
+  // Home is a marketing landing with its own hero <h1>; render its content
+  // as-is without an extra <h1>/article wrapper (avoids duplicate headings).
+  if (content.source === 'home') {
+    return content.content.trim();
+  }
+  const showsByline = content.source === 'resource' || content.source === 'blog';
+  const byline = showsByline
+    ? '<p class="article-byline">By <a href="/about-us#oliver-asha-bio-heading">Oliver Asha, Solicitor &amp; TEP</a></p>\n'
+    : '';
+  return `<article class="prerendered-content">
+<h1>${content.title}</h1>
+${byline}${content.content.trim()}
+</article>`;
+}
+
+// Apply title, description, per-route JSON-LD schema, and the prerendered
+// article body to the HTML template. The site-wide Organization schema
+// lives in index.html and is copied automatically.
+function applyMeta(html, meta, route) {
+  let out = html
+    .replace(/<title>.*?<\/title>/, `<title>${meta.title}</title>`)
+    .replace(
+      /<meta name="description" content=".*?" \/>/,
+      `<meta name="description" content="${meta.description}" />`
+    );
+
+  if (meta.schema) {
+    const schemaScript =
+      `<script type="application/ld+json">\n${serializeSchema(meta.schema)}\n    </script>`;
+    out = out.replace('</head>', `    ${schemaScript}\n  </head>`);
+  }
+
+  // Inject pre-rendered article body (or empty string for routes without
+  // content data — login, contact form, the questionnaire flow, etc.).
+  out = out.replace('<!-- PRERENDER_CONTENT -->', renderArticleHTML(getContentForRoute(route)));
+
+  return out;
+}
+
+let prerenderedCount = 0;
 for (const [route, meta] of Object.entries(seoConfig)) {
+  if (getContentForRoute(route)) prerenderedCount++;
+
   // Skip the root — index.html already exists
   if (route === '/') {
     // Still update the root page's meta tags
-    const rootHtml = template
-      .replace(/<title>.*?<\/title>/, `<title>${meta.title}</title>`)
-      .replace(
-        /<meta name="description" content=".*?" \/>/,
-        `<meta name="description" content="${meta.description}" />`
-      );
-    writeFileSync(join(distDir, 'index.html'), rootHtml);
+    writeFileSync(join(distDir, 'index.html'), applyMeta(template, meta, route));
     pagesGenerated++;
     continue;
   }
@@ -346,18 +634,11 @@ for (const [route, meta] of Object.entries(seoConfig)) {
     mkdirSync(pageDir, { recursive: true });
   }
 
-  const html = template
-    .replace(/<title>.*?<\/title>/, `<title>${meta.title}</title>`)
-    .replace(
-      /<meta name="description" content=".*?" \/>/,
-      `<meta name="description" content="${meta.description}" />`
-    );
-
-  writeFileSync(pagePath, html);
+  writeFileSync(pagePath, applyMeta(template, meta, route));
   pagesGenerated++;
 }
 
-console.log(`Generated ${pagesGenerated} static HTML pages.`);
+console.log(`Generated ${pagesGenerated} static HTML pages (${prerenderedCount} with pre-rendered article body).`);
 
 // --- Generate sitemap.xml ---
 
@@ -394,3 +675,101 @@ ${sitemapEntries.join('\n')}
 
 writeFileSync(join(distDir, 'sitemap.xml'), sitemap);
 console.log(`Generated sitemap.xml with ${sitemapEntries.length} URLs.`);
+
+// --- Generate llms.txt ---
+//
+// llms.txt is an emerging convention (see llmstxt.org) for giving LLMs a
+// curated, human-readable map of a site's most important pages. We generate
+// it automatically from seoConfig so it stays in sync with the site.
+
+const llmsTxtExclude = new Set([
+  '/login',
+  '/resources',           // duplicate of /resource
+  '/data-handling-policy',
+  '/disclaimer',
+  '/our-competition-and-markets-authority-statement',
+  '/do-I-need-probate',                  // capitalised duplicate of /resource/do-i-need-probate
+  '/dying-without-a-will-intestacy'      // duplicate of /resource/dying-without-a-will-intestacy
+]);
+
+const llmsSections = [
+  {
+    title: 'Service',
+    routes: [
+      '/',
+      '/make-your-will',
+      '/a-pair-of-wills-or-mirror-wills',
+      '/sample-will',
+      '/lifetime-updates',
+      '/money-back-guarantee',
+      '/book-a-call'
+    ]
+  },
+  {
+    title: 'About',
+    routes: ['/about-us', '/why-make-a-will', '/why-write-a-will', '/contact', '/faq']
+  },
+  {
+    title: 'Charities & Fundraising',
+    routes: [
+      '/charities',
+      '/fundraising-online-wills',
+      '/charities-and-fundraising-for-gifts-in-wills',
+      '/solicitor-checked-wills-for-charity-supporters',
+      '/gifts-in-wills-training-with-richard-radcliffe',
+      '/charity-gifts-in-wills-how-and-why'
+    ]
+  },
+  {
+    title: 'Guides',
+    filter: (route) => route.startsWith('/resource/') && route !== '/resource'
+  },
+  {
+    title: 'Glossary',
+    routes: ['/beneficiary', '/bequest', '/codicil', '/legacy', '/testator']
+  },
+  {
+    title: 'Topical pages',
+    routes: ['/5-reasons-to-update-your-will', '/children-and-gifts-in-wills', '/do-you-cohabit', '/uk-expat-wills']
+  }
+];
+
+function stripBrand(title) {
+  return title.replace(/\s*\|\s*Make a Will\s*$/i, '').trim();
+}
+
+function generateLlmsTxt() {
+  let out = '';
+  out += '# Make a Will\n\n';
+  out += '> The only solicitor-checked online wills service in the UK. Founded in 2008 by Oliver Asha, a Solicitor of England and Wales (SRA 372772) and Trust and Estate Practitioner (TEP).\n\n';
+  out += "Make a Will lets people in England and Wales create a legally valid will online in around 15–30 minutes, with every will reviewed by a qualified solicitor before it's delivered. Single wills from £90; mirror wills for couples £135. Lifetime updates included; 30-day money-back guarantee. All guides on this site are authored by Oliver Asha.\n\n";
+
+  const seen = new Set();
+
+  for (const section of llmsSections) {
+    let routes;
+    if (section.routes) {
+      routes = section.routes.filter(r => seoConfig[r]);
+    } else if (section.filter) {
+      routes = Object.keys(seoConfig).filter(r => section.filter(r));
+    } else {
+      routes = [];
+    }
+
+    routes = routes.filter(r => !llmsTxtExclude.has(r) && !seen.has(r));
+    if (routes.length === 0) continue;
+
+    out += `## ${section.title}\n\n`;
+    for (const route of routes) {
+      seen.add(route);
+      const meta = seoConfig[route];
+      out += `- [${stripBrand(meta.title)}](${SITE_URL}${route}): ${meta.description}\n`;
+    }
+    out += '\n';
+  }
+
+  return out;
+}
+
+writeFileSync(join(distDir, 'llms.txt'), generateLlmsTxt());
+console.log('Generated llms.txt');

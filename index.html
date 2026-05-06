@@ -17,13 +17,111 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/logos/favicon-180.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Make a Will - The only solicitor-checked wills service. Create your legally valid will in minutes." />
+
+    <!-- Default Open Graph / Twitter share image (1200×600). Per-page overrides
+         can be added at runtime via the <SEO> component if/when needed. -->
+    <meta property="og:image" content="https://www.makeawill.co.uk/og-default.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="600" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://www.makeawill.co.uk/og-default.png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" />
     <title>Make a Will | Solicitor-Checked Wills</title>
+
+    <!--
+      Site-wide Organization schema (JSON-LD) for AI search and Google rich results.
+      This block appears on every page (it's part of the template). It tells crawlers
+      who Make a Will is as an entity. The @id lets other schema blocks reference it.
+
+      Still TODO — add to the JSON below when you have them:
+        - More "sameAs" entries (Facebook, Instagram, X/Twitter, Trustpilot, YouTube)
+        - "award"            : any awards Make a Will has won
+        - Companies House registration number (use "identifier" with a propertyID)
+        - Regulator info if applicable
+    -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "@id": "https://www.makeawill.co.uk/#organization",
+      "name": "Make a Will",
+      "alternateName": "Make a Will Online",
+      "url": "https://www.makeawill.co.uk",
+      "logo": "https://www.makeawill.co.uk/logos/favicon-180.png",
+      "image": "https://www.makeawill.co.uk/og-default.png",
+      "description": "The only solicitor-checked online wills service in the UK. Trusted since 2008.",
+      "foundingDate": "2008",
+      "founder": {
+        "@type": "Person",
+        "@id": "https://www.makeawill.co.uk/#oliver-asha",
+        "name": "Oliver Asha",
+        "jobTitle": "Solicitor",
+        "honorificSuffix": "TEP",
+        "description": "Solicitor (England & Wales) and Trust and Estate Practitioner (TEP). Founder of Make a Will.",
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "professional licence",
+            "name": "Solicitor of England and Wales",
+            "identifier": "372772",
+            "url": "https://www.sra.org.uk/consumers/register/person/?sraNumber=372772",
+            "recognizedBy": {
+              "@type": "Organization",
+              "name": "Solicitors Regulation Authority",
+              "url": "https://www.sra.org.uk"
+            }
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "professional certification",
+            "name": "Trust and Estate Practitioner (TEP)",
+            "url": "https://www.step.org/directory/members/mr-oliver-asha-0033c00002wbj1maab",
+            "recognizedBy": {
+              "@type": "Organization",
+              "name": "Society of Trust and Estate Practitioners",
+              "url": "https://www.step.org"
+            }
+          }
+        ],
+        "sameAs": [
+          "https://solicitors.lawsociety.org.uk/person/159165/oliver-asha",
+          "https://www.sra.org.uk/consumers/register/person/?sraNumber=372772",
+          "https://www.step.org/directory/members/mr-oliver-asha-0033c00002wbj1maab"
+        ]
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Platf9rm Brighton, North Road",
+        "addressLocality": "Brighton",
+        "addressRegion": "East Sussex",
+        "postalCode": "BN1 1UG",
+        "addressCountry": "GB"
+      },
+      "telephone": "+44 1273 112888",
+      "email": "contact@makeawill.co.uk",
+      "areaServed": { "@type": "Country", "name": "United Kingdom" },
+      "priceRange": "£90–£135",
+      "serviceType": "Online will writing service",
+      "slogan": "Solicitor-Checked Wills",
+      "sameAs": [
+        "https://www.tiktok.com/@makeawill",
+        "https://www.linkedin.com/company/makeawillonline"
+      ]
+    }
+    </script>
   </head>
   <body>
-    <div id="root"></div>
+    <!--
+      The marker below is replaced at build time by scripts/generate-pages.js
+      with the article body HTML for each route. On a real visit, React mounts
+      via createRoot() and replaces #root's children with its own render.
+      Crawlers without JS see the article body. Both come from src/data/*.js,
+      so they can never drift apart.
+    -->
+    <div id="root"><!-- PRERENDER_CONTENT --></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
