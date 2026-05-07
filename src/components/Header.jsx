@@ -22,6 +22,7 @@ function Header() {
               <li><NavLink to="/faq">FAQs</NavLink></li>
               <li><NavLink to="/resource">Resources</NavLink></li>
               <li><NavLink to="/sample-will">Sample Will</NavLink></li>
+              <li><NavLink to="/pricing">Pricing</NavLink></li>
               <li><NavLink to="/about-us">About</NavLink></li>
               <li><NavLink to="/blog">Blog</NavLink></li>
               <li><NavLink to="/contact">Contact</NavLink></li>

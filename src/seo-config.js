@@ -213,6 +213,10 @@ const seoConfig = {
   },
 
   // Service pages
+  '/pricing': {
+    title: 'Pricing | Solicitor-Checked Wills from £90',
+    description: '£90 for a solicitor-checked online will, £135 for mirror wills, £350+VAT for a will with solicitor consultation. See how our prices compare to other UK providers.'
+  },
   '/lifetime-updates': {
     title: 'Lifetime Will Updates | Change Your Will Anytime',
     description: 'Update your will whenever your circumstances change — at no extra cost. Every update is reviewed by a qualified solicitor.'

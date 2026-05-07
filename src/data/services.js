@@ -1,4 +1,151 @@
 export const serviceContent = {
+  'pricing': {
+    title: 'Pricing',
+    description: '£90 for a solicitor-checked online will, £135 for mirror wills. £350 + VAT for a will with solicitor consultation. See how our prices compare to other UK providers.',
+    content: `
+      <p style="font-size:1.1rem;color:#374151">Two ways to make a solicitor-checked will. Both legally valid in England &amp; Wales. Both reviewed by a qualified solicitor on our team before you sign. Start with our questionnaire — we'll recommend the option that fits your circumstances, and you're free to choose either.</p>
+
+      <p style="text-align:center;margin:32px 0">
+        <a href="/start-your-will" class="btn btn-primary">Make my will</a>
+      </p>
+
+      <h2>Two ways to make your will</h2>
+
+      <div style="border:1px solid #e5e7eb;border-radius:8px;padding:24px;background:#f9fafb;margin:24px 0">
+        <p style="font-size:0.85rem;color:#6b7280;margin:0 0 4px;text-transform:uppercase;letter-spacing:0.05em;font-weight:500">Option 1 &mdash; Recommended for most people</p>
+        <h3 style="margin:0 0 16px">Online will</h3>
+        <p style="font-size:1.5rem;font-weight:600;margin:0 0 4px">&pound;90 single will</p>
+        <p style="font-size:1.5rem;font-weight:600;margin:0 0 20px">&pound;135 mirror wills</p>
+        <p><strong>What's included:</strong></p>
+        <ul>
+          <li>Plain-English online questionnaire (most people finish in 15&ndash;30 minutes)</li>
+          <li>Your will produced and emailed immediately</li>
+          <li>A qualified solicitor on our team reviews it within 2 working days</li>
+          <li>We come back to you in writing if anything needs a closer look</li>
+          <li>28 days from completion to make any amendments</li>
+        </ul>
+        <p style="margin-top:20px"><strong>Optional add-ons:</strong></p>
+        <ul>
+          <li><strong>Printing &amp; posting</strong> &mdash; &pound;20 single / &pound;30 pair. We print, include clear signing instructions, and post to you ready for signature.</li>
+          <li><strong>Lifetime updates</strong> &mdash; &pound;20 per person per year. Update your will whenever life changes (marriage, children, new home, change of executor). Fair use of 5 updates per year &mdash; far more than most people need. Every update reviewed by a solicitor.</li>
+        </ul>
+      </div>
+
+      <div style="border:1px solid #e5e7eb;border-radius:8px;padding:24px;margin:24px 0">
+        <p style="font-size:0.85rem;color:#6b7280;margin:0 0 4px;text-transform:uppercase;letter-spacing:0.05em;font-weight:500">Option 2 &mdash; For more complex circumstances</p>
+        <h3 style="margin:0 0 16px">Will with solicitor consultation</h3>
+        <p style="font-size:1.5rem;font-weight:600;margin:0 0 4px">&pound;350 + VAT <span style="color:#6b7280;font-size:1rem;font-weight:400">(&pound;420 inc VAT)</span> single will</p>
+        <p style="font-size:1.5rem;font-weight:600;margin:0 0 20px">&pound;550 + VAT <span style="color:#6b7280;font-size:1rem;font-weight:400">(&pound;660 inc VAT)</span> mirror wills</p>
+        <p><strong>What's included:</strong></p>
+        <ul>
+          <li>One-to-one consultation with a qualified solicitor (typically 45&ndash;60 minutes, by phone or video)</li>
+          <li>Your will drafted personally based on what we discuss</li>
+          <li>Solicitor review of the finalised draft, the same way every will is checked</li>
+          <li>Printing and posting included as standard</li>
+          <li>28 days from completion to amend</li>
+          <li>Lifetime updates included for the first year, then &pound;20 per person per year (fair use of 5 updates per year)</li>
+        </ul>
+        <p style="margin-top:20px"><strong>Choose this option if:</strong></p>
+        <ul>
+          <li>Your circumstances are more complex &mdash; business interests, property abroad, blended family, vulnerable beneficiaries, or potential inheritance tax exposure</li>
+          <li>You'd prefer to talk things through with a solicitor before anything is drafted</li>
+          <li>You'd value a recommendation on whether trusts or specialist tax planning would help</li>
+        </ul>
+      </div>
+
+      <h2>How it actually works</h2>
+      <p>Whichever option you choose, you start with our questionnaire. We ask about your assets, your family, and your wishes &mdash; and as we go, we recommend whether the online or consultation option suits your circumstances. You're free to choose either: there's no obligation to follow our recommendation.</p>
+
+      <p style="text-align:center;margin:32px 0">
+        <a href="/start-your-will" class="btn btn-primary">Make my will</a>
+      </p>
+
+      <h2>Returning-customer credit</h2>
+      <p>If you've previously made a will with us online, the price you paid can be put towards a will with solicitor consultation if you decide to upgrade. So a single will previously made online for &pound;90 means the consultation upgrade is &pound;260 + VAT instead of &pound;350 + VAT. Just mention it when you book and we'll apply the credit automatically.</p>
+      <p>This applies whether you bought a single will or mirror wills, and there's no time limit.</p>
+
+      <h2>How our pricing compares</h2>
+      <p>Comparators from publicly published price lists across the UK market. Prices are total cost including VAT where the provider charges it. Prices marked "+ VAT" are exclusive of VAT, with the inclusive total shown in brackets where helpful.</p>
+
+      <h3>Online and volume providers</h3>
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Provider</th>
+            <th>Single will</th>
+            <th>Mirror wills (couples)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background:#fef3c7">
+            <td><strong>Make a Will (us)</strong></td>
+            <td><strong>&pound;90</strong></td>
+            <td><strong>&pound;135</strong></td>
+          </tr>
+          <tr><td>Which? Wills</td><td>from &pound;99</td><td>bundles from &pound;196</td></tr>
+          <tr><td>Co-op Legal Services</td><td>&pound;149</td><td>&pound;199</td></tr>
+          <tr><td>Octopus Legacy</td><td>&pound;150</td><td>&pound;250</td></tr>
+          <tr><td>WSL</td><td>&pound;150</td><td>&pound;250</td></tr>
+          <tr><td>Cornwall Will Writing</td><td>&pound;199</td><td>&pound;299</td></tr>
+          <tr><td>MG Legal</td><td>&pound;175</td><td>&pound;325</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Solicitor-drafted wills</h3>
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Provider</th>
+            <th>Single will</th>
+            <th>Mirror wills (couples)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background:#fef3c7">
+            <td><strong>Make a Will solicitor consultation (us)</strong></td>
+            <td><strong>&pound;350 + VAT (&pound;420)</strong></td>
+            <td><strong>&pound;550 + VAT (&pound;660)</strong></td>
+          </tr>
+          <tr><td>Hugh James (consultation tier)</td><td>&pound;300 + VAT (&pound;360)</td><td>not separately published</td></tr>
+          <tr><td>Hobbs Law</td><td>&pound;300 + VAT (&pound;360)</td><td>&pound;500 + VAT (&pound;600)</td></tr>
+          <tr><td>Lyons Law</td><td>from &pound;300 + VAT</td><td>from &pound;500 + VAT</td></tr>
+          <tr><td>Oliver Fisher</td><td>&pound;500 + VAT (&pound;600)</td><td>&pound;650 + VAT (&pound;780)</td></tr>
+          <tr><td>Shakespeare Martineau</td><td>from &pound;850</td><td>not separately published</td></tr>
+          <tr><td>Debenhams Ottaway</td><td>&pound;975 + VAT (&pound;1,170)</td><td>&pound;1,300 + VAT (&pound;1,560)</td></tr>
+        </tbody>
+      </table>
+
+      <p style="font-size:0.9rem;color:#6b7280;margin-top:20px">Comparator prices verified from publicly published price lists in 2026. Providers may change their pricing at any time &mdash; see the provider's current pricing page if comparing today: <a href="https://www.which.co.uk/legal/wills" rel="nofollow noopener noreferrer" target="_blank">Which? Wills</a> &middot; <a href="https://www.co-oplegalservices.co.uk/" rel="nofollow noopener noreferrer" target="_blank">Co-op Legal Services</a> &middot; <a href="https://octopuslegacy.com/" rel="nofollow noopener noreferrer" target="_blank">Octopus Legacy</a> &middot; <a href="https://www.hughjames.com/" rel="nofollow noopener noreferrer" target="_blank">Hugh James</a> &middot; <a href="https://www.shma.co.uk/" rel="nofollow noopener noreferrer" target="_blank">Shakespeare Martineau</a> &middot; <a href="https://www.debenhamsottaway.co.uk/" rel="nofollow noopener noreferrer" target="_blank">Debenhams Ottaway</a>. For other firms (WSL, Cornwall Will Writing, MG Legal, Hobbs Law, Lyons Law, Oliver Fisher, Kew Law) prices were verified from each firm's published pricing page; URLs may vary, so search the firm name for current pricing.</p>
+
+      <h2>Frequently asked</h2>
+
+      <h3>What's the real difference between online and solicitor consultation?</h3>
+      <p>The legal substance and the review quality are the same &mdash; both products use the same solicitor-drafted clauses, and both go through full solicitor review. The difference is when the conversation happens. Online: you complete a questionnaire, the will is drafted, then a solicitor reviews it and contacts you if anything needs a closer look. Consultation: you talk to a solicitor first, the will is drafted with your specific circumstances in mind, and it then goes through the same review.</p>
+
+      <h3>Is the &pound;90 online will really solicitor-checked?</h3>
+      <p>Yes. Every will we produce, regardless of which option you choose, is read and reviewed by a qualified solicitor on our team before you sign. <a href="/resource/how-solicitor-checked-online-will-works">See exactly how it works</a>.</p>
+
+      <h3>How does the questionnaire choose between online and consultation?</h3>
+      <p>As you go through the questionnaire, we ask about things that matter for the kind of will you need &mdash; business interests, foreign property, second-marriage trusts, vulnerable beneficiaries, inheritance tax exposure, and so on. If your answers suggest a straightforward will, we recommend the online option. If they suggest more careful planning, we recommend the consultation. You're free to choose either at the end &mdash; there's no automatic gating.</p>
+
+      <h3>What is "fair use" on lifetime updates?</h3>
+      <p>Up to 5 updates per year. The typical user updates their will once every 3&ndash;5 years, so that's comfortably more than anyone needs in normal use. The fair-use clause is just to prevent abuse.</p>
+
+      <h3>Are LPAs (Lasting Powers of Attorney) included?</h3>
+      <p>LPAs aren't currently part of our online or consultation packages. If you'd like an LPA, we'd be happy to recommend a specialist &mdash; <a href="/contact">contact us</a>.</p>
+
+      <h3>Do I need the consultation option, or is online enough?</h3>
+      <p>Most families with straightforward circumstances are well served by the online product &mdash; and our questionnaire will tell you if that's likely the case. If you have business interests, property abroad, blended-family arrangements, vulnerable beneficiaries, or substantial inheritance tax exposure, we'd recommend the consultation option &mdash; or, in some cases, we may suggest a specialist for some elements of your planning.</p>
+
+      <h3>How is VAT shown?</h3>
+      <p>Our online wills are advertised inclusive of VAT &mdash; the price you see is the price you pay. Solicitor consultation prices are advertised as "&pound;X + VAT" (with the inclusive total in brackets), in line with normal solicitor pricing convention. The "+VAT" version always means an additional 20% on top of the headline figure.</p>
+
+      <p style="text-align:center;margin:48px 0 24px">
+        <a href="/start-your-will" class="btn btn-primary btn-lg">Make my will</a>
+      </p>
+      <p style="text-align:center;color:#6b7280;font-size:0.95rem">Have a question? <a href="/contact">Contact us</a> or <a href="/book-a-call">book a free 15-minute call</a> before you commit.</p>
+    `
+  },
   'lifetime-updates': {
     title: 'Lifetime Updates',
     description: 'Update your will whenever you need',
