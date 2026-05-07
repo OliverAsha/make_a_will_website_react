@@ -27,7 +27,7 @@ export const serviceContent = {
         <p style="margin-top:20px"><strong>Optional add-ons:</strong></p>
         <ul>
           <li><strong>Printing &amp; posting</strong> &mdash; &pound;20 single / &pound;30 pair. We print, include clear signing instructions, and post to you ready for signature.</li>
-          <li><strong>Lifetime updates</strong> &mdash; &pound;20 per person per year. Update your will whenever life changes (marriage, children, new home, change of executor). Fair use of 5 updates per year &mdash; far more than most people need. Every update reviewed by a solicitor.</li>
+          <li><strong>Lifetime updates</strong> &mdash; &pound;20 per person per year. Update your will whenever life changes (marriage, children, new home, change of executor). Fair use of 5 updates per year, where a "use" is each time a new version of your will is generated. Every updated will is reviewed by a solicitor.</li>
         </ul>
       </div>
 
@@ -43,7 +43,7 @@ export const serviceContent = {
           <li>Solicitor review of the finalised draft, the same way every will is checked</li>
           <li>Printing and posting included as standard</li>
           <li>28 days from completion to amend</li>
-          <li>Lifetime updates included for the first year, then &pound;20 per person per year (fair use of 5 updates per year)</li>
+          <li>Lifetime updates included for the first year, then &pound;20 per person per year. Fair use of 5 uses per year, where a "use" is each requested amendment or each consultation (by email, phone, or meeting).</li>
         </ul>
         <p style="margin-top:20px"><strong>Choose this option if:</strong></p>
         <ul>
@@ -129,10 +129,15 @@ export const serviceContent = {
       <p>As you go through the questionnaire, we ask about things that matter for the kind of will you need &mdash; business interests, foreign property, second-marriage trusts, vulnerable beneficiaries, inheritance tax exposure, and so on. If your answers suggest a straightforward will, we recommend the online option. If they suggest more careful planning, we recommend the consultation. You're free to choose either at the end &mdash; there's no automatic gating.</p>
 
       <h3>What is "fair use" on lifetime updates?</h3>
-      <p>Up to 5 updates per year. The typical user updates their will once every 3&ndash;5 years, so that's comfortably more than anyone needs in normal use. The fair-use clause is just to prevent abuse.</p>
+      <p>Fair use is up to 5 uses per year. What counts as a "use" depends on which option you have:</p>
+      <ul>
+        <li>For an <strong>online will</strong>, a use is each time you generate a new version of your will (typically when life circumstances change &mdash; marriage, a child, a new home, a change of beneficiary).</li>
+        <li>For a <strong>will with solicitor consultation</strong>, a use is each requested amendment or each consultation by email, phone, or meeting.</li>
+      </ul>
+      <p>Either way, 5 uses per year is comfortably more than most people need &mdash; the typical customer updates their will once every 3&ndash;5 years. The fair-use clause is there to prevent abuse, not to limit normal use.</p>
 
       <h3>Are LPAs (Lasting Powers of Attorney) included?</h3>
-      <p>LPAs aren't currently part of our online or consultation packages. If you'd like an LPA, we'd be happy to recommend a specialist &mdash; <a href="/contact">contact us</a>.</p>
+      <p>LPAs aren't currently part of our online or consultation packages. If you'd like an LPA, we'd be happy to discuss your options &mdash; <a href="/contact">contact us</a>.</p>
 
       <h3>Do I need the consultation option, or is online enough?</h3>
       <p>Most families with straightforward circumstances are well served by the online product &mdash; and our questionnaire will tell you if that's likely the case. If you have business interests, property abroad, blended-family arrangements, vulnerable beneficiaries, or substantial inheritance tax exposure, we'd recommend the consultation option &mdash; or, in some cases, we may suggest a specialist for some elements of your planning.</p>
