@@ -166,7 +166,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 0;
+  padding: 20px 0;
   flex-wrap: nowrap;
   gap: 20px;
 }
@@ -204,7 +204,7 @@ p {
 .nav-links a {
   color: var(--gray-700);
   font-weight: 500;
-  font-size: 1.06rem;
+  font-size: 0.95rem;
   line-height: 1.2;
   padding: 8px 0;
   position: relative;
@@ -213,14 +213,19 @@ p {
 }
 
 .nav-login {
-  color: var(--gray-700);
+  color: var(--gray-500);
   font-weight: 500;
-  font-size: 1.06rem;
+  font-size: 0.875rem;
   line-height: 1.2;
   padding: 8px 0;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
+  transition: color 150ms ease;
+}
+
+.nav-login:hover {
+  color: var(--gray-700);
 }
 
 .nav-links a:hover,
@@ -248,6 +253,21 @@ p {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+/* Header CTA — slightly smaller and tighter than the global .btn-primary
+   so it doesn't dominate the nav bar. Subtle hover darken instead of
+   the global button's full hue swap (orange -> brown). */
+.nav-buttons .btn-primary {
+  font-size: 15px;
+  padding: 8px 22px;
+  font-weight: 500;
+  transition: background-color 150ms ease, border-color 150ms ease;
+}
+
+.nav-buttons .btn-primary:hover {
+  background-color: #A0611A;
+  border-color: #A0611A;
 }
 
 /* Mobile menu */

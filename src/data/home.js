@@ -19,7 +19,7 @@ export const homeContent = {
           <div class="hero-content">
             <p class="hero-subtitle">Every clause of every will is made by and checked by solicitors. Legally valid in England &amp; Wales. Most people finish in 15 minutes or less.</p>
             <div class="hero-cta">
-              <a href="/start-your-will" class="btn btn-primary">make my will</a>
+              <a href="/start-your-will" class="btn btn-primary">Make my will</a>
               <div class="trustpilot-badge">${trustpilotStarSvg}<span>Rated excellent</span></div>
             </div>
             <ul class="hero-features">
