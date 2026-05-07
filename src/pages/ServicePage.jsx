@@ -43,8 +43,12 @@ function ServicePage() {
     );
   }
 
-  // Get the appropriate illustration for this page
-  const illustrationSrc = pageIllustrations[slug] || '/logos/service-policy.svg';
+  // Pages with an entry in pageIllustrations get the marketing-style layout
+  // (two-column grid + illustration + auto bottom CTA). Pages WITHOUT an entry
+  // (e.g. /pricing) get the simpler full-width About-style layout, leaving
+  // any CTAs to be authored inside the page content itself.
+  const illustrationSrc = pageIllustrations[slug];
+  const hasIllustration = !!illustrationSrc;
 
   return (
     <>
@@ -59,18 +63,24 @@ function ServicePage() {
       <section className="page-content">
         <div className="container">
           <div className="content-wrapper">
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: '40px', alignItems: 'start', marginBottom: '30px' }}>
-              <div dangerouslySetInnerHTML={{ __html: page.content }} />
-              <div style={{ position: 'sticky', top: '100px' }}>
-                <img src={illustrationSrc} alt={page.title} width={400} height={320} style={{ maxWidth: '280px', height: 'auto' }} />
+            {hasIllustration ? (
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: '40px', alignItems: 'start', marginBottom: '30px' }}>
+                <div dangerouslySetInnerHTML={{ __html: page.content }} />
+                <div style={{ position: 'sticky', top: '100px' }}>
+                  <img src={illustrationSrc} alt={page.title} width={400} height={320} style={{ maxWidth: '280px', height: 'auto' }} />
+                </div>
               </div>
-            </div>
+            ) : (
+              <div dangerouslySetInnerHTML={{ __html: page.content }} />
+            )}
 
-            <div className="text-center mt-4" style={{ background: '#f8f9fa', padding: '40px', borderRadius: '8px' }}>
-              <h3>Ready to Make Your Will?</h3>
-              <p>Create your solicitor-checked will in just 15 minutes.</p>
-              <a href="/start-your-will" className="btn btn-primary btn-lg">Get started</a>
-            </div>
+            {hasIllustration && (
+              <div className="text-center mt-4" style={{ background: '#f8f9fa', padding: '40px', borderRadius: '8px' }}>
+                <h3>Ready to Make Your Will?</h3>
+                <p>Create your solicitor-checked will in just 15 minutes.</p>
+                <a href="/start-your-will" className="btn btn-primary btn-lg">Get started</a>
+              </div>
+            )}
           </div>
         </div>
       </section>

@@ -1,7 +1,7 @@
 export const serviceContent = {
   'pricing': {
     title: 'Pricing',
-    description: '£90 for a solicitor-checked online will, £135 for mirror wills. £350 + VAT for a will with solicitor consultation. See how our prices compare to other UK providers.',
+    description: 'Two solicitor-checked options: online from £90, or with a one-to-one consultation.',
     content: `
       <p style="font-size:1.1rem;color:#374151">Two ways to make a solicitor-checked will. Both legally valid in England &amp; Wales. Both reviewed by a qualified solicitor on our team before you sign. Start with our questionnaire — we'll recommend the option that fits your circumstances, and you're free to choose either.</p>
 
