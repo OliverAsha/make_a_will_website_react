@@ -204,7 +204,7 @@ p {
 .nav-links a {
   color: var(--gray-700);
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 1.06rem;
   line-height: 1.2;
   padding: 8px 0;
   position: relative;
@@ -215,7 +215,7 @@ p {
 .nav-login {
   color: var(--gray-500);
   font-weight: 500;
-  font-size: 0.875rem;
+  font-size: 1.06rem;
   line-height: 1.2;
   padding: 8px 0;
   text-decoration: none;
@@ -259,7 +259,7 @@ p {
    so it doesn't dominate the nav bar. Subtle hover darken instead of
    the global button's full hue swap (orange -> brown). */
 .nav-buttons .btn-primary {
-  font-size: 15px;
+  font-size: 17px;
   padding: 8px 22px;
   font-weight: 500;
   transition: background-color 150ms ease, border-color 150ms ease;

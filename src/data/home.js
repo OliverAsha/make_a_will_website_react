@@ -168,7 +168,7 @@ export const homeContent = {
       <div class="container text-center">
         <h2>Ready to Get Started?</h2>
         <p style="max-width:600px;margin:20px auto">Join thousands of people who have already created their will with Make a Will. It takes just 15 minutes and provides complete peace of mind.</p>
-        <a href="/start-your-will" class="btn btn-primary btn-lg">make your will now</a>
+        <a href="/start-your-will" class="btn btn-primary btn-lg">Make my will now</a>
       </div>
     </section>
   `
