@@ -93,7 +93,7 @@ const seoConfig = {
   },
   '/about-us': {
     title: 'About Us | Make a Will',
-    description: 'Learn about Make a Will — the only solicitor-checked online wills service. Award-winning, trusted since 2008, with qualified solicitors reviewing every will.'
+    description: 'Learn about Make a Will — solicitor-checked online wills plus one-to-one solicitor consultations for more complex estates. Award-winning, trusted since 2008.'
   },
   '/contact': {
     title: 'Contact Us | Make a Will',
@@ -146,6 +146,10 @@ const seoConfig = {
   '/resource/how-solicitor-checked-online-will-works': {
     title: 'How Our Solicitor-Checked Wills Work | Make a Will',
     description: 'A qualified solicitor on our team reviews every will we produce within two working days. See the four-step review process and what we look for.'
+  },
+  '/resource/how-our-solicitor-consultation-works': {
+    title: 'How Our Solicitor Consultation Works | Make a Will',
+    description: 'A clear walkthrough of our solicitor consultation route — from a free 15-minute call through to a fixed-fee quote and a will drafted around your specific circumstances.'
   },
   '/resource/who-can-witness-a-will': {
     title: 'Who Can Witness a Will? | Witness Requirements',

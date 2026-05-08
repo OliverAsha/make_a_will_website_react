@@ -11,19 +11,18 @@ function Blog() {
       <SEO />
       <div className="page-header">
         <div className="container">
-          <h1>Blog</h1>
-          <p>Insights and advice about wills, estate planning, and protecting your family</p>
+          <div className="page-header-flex">
+            <div className="page-header-text">
+              <h1>Blog</h1>
+              <p>Insights and advice about wills, estate planning, and protecting your family</p>
+            </div>
+            <img className="page-hero-image" src="/logos/blog-image.png" alt="Blog illustration" width={1402} height={1122} />
+          </div>
         </div>
       </div>
 
       <section className="page-content">
         <div className="container">
-          <div className="text-center" style={{ marginBottom: '40px' }}>
-            <img src="/logos/blog-image.png" alt="Blog illustration" width={1402} height={1122} style={{ maxWidth: '300px', height: 'auto' }} />
-            <p style={{ marginTop: '20px', maxWidth: '600px', margin: '20px auto 0' }}>
-              Insights and advice on wills, estate planning, and protecting your family's future.
-            </p>
-          </div>
           <div className="page-with-sidebar">
             <div>
               <div className="blog-grid">

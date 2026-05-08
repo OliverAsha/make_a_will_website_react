@@ -448,6 +448,23 @@ p {
   box-shadow: var(--shadow-lg);
 }
 
+/* Page-top illustration used on /about-us, /pricing, /faq, /resources,
+   /blog, /contact, etc. Wrapper centres the image and gives breathing
+   room before the body content. The image itself gets the same rounded
+   corners + soft shadow as the homepage hero. New pages should use these
+   classes instead of duplicating inline styles. */
+.page-hero-image-wrapper {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.page-hero-image {
+  max-width: 300px;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-lg);
+}
+
 .trustpilot-badge {
   margin-top: 10px;
   display: flex;
@@ -563,8 +580,8 @@ p {
 .step-number {
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
-  color: var(--white);
+  border: 1px solid var(--primary);
+  color: var(--gray-900);
   font-size: 1.5rem;
   font-weight: 700;
   border-radius: 50%;
@@ -646,8 +663,10 @@ p {
 
 .comparison-table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 .comparison-table th,
@@ -658,14 +677,23 @@ p {
 }
 
 .comparison-table th {
-  background: var(--secondary);
-  color: var(--white);
+  background: var(--white);
+  color: var(--secondary);
   font-weight: 600;
+  border-top: 1px solid var(--secondary);
+  border-bottom: 1px solid var(--secondary);
 }
 
 .comparison-table th:first-child {
-  background: var(--gray-100);
-  color: var(--gray-700);
+  background: var(--white);
+  color: var(--secondary);
+  border-left: 1px solid var(--secondary);
+  border-top-left-radius: var(--border-radius);
+}
+
+.comparison-table th:last-child {
+  border-right: 1px solid var(--secondary);
+  border-top-right-radius: var(--border-radius);
 }
 
 .comparison-table td:first-child {
@@ -819,21 +847,64 @@ p {
 
 /* Page Content */
 .page-header {
-  background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
-  color: var(--white);
+  border-top: 1px solid var(--primary);
+  border-bottom: 1px solid var(--primary);
   padding: 60px 0;
   text-align: center;
 }
 
 .page-header h1 {
-  color: var(--white);
+  color: var(--gray-900);
   margin-bottom: 15px;
 }
 
 .page-header p {
-  opacity: 0.9;
+  color: var(--gray-700);
   max-width: 600px;
   margin: 0 auto;
+}
+
+/* Page-header with a hero image alongside the title text.
+   Used on /faq, /resources, /pricing, /about-us, /blog, /contact.
+   Wrap the title block in .page-header-text and place an .page-hero-image
+   sibling next to it — see CLAUDE.md for the markup pattern. */
+.page-header-flex {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.page-header-flex .page-header-text {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.page-header-flex .page-header-text p {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.page-header-flex .page-hero-image {
+  flex: 0 0 auto;
+  max-width: 240px;
+}
+
+@media (max-width: 768px) {
+  .page-header-flex {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+  .page-header-flex .page-header-text {
+    width: 100%;
+  }
+  .page-header-flex .page-header-text p {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .page-content {

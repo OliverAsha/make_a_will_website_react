@@ -2,6 +2,12 @@ export const serviceContent = {
   'pricing': {
     title: 'Pricing',
     description: 'Two solicitor-checked options: online from £90, or with a one-to-one consultation.',
+    headerImage: {
+      src: '/logos/pricing-image.png',
+      alt: 'Pricing illustration',
+      width: 1448,
+      height: 1086
+    },
     content: `
       <p style="font-size:1.1rem;color:#374151">Two ways to make a solicitor-checked will. Both legally valid in England &amp; Wales. Both reviewed by a qualified solicitor on our team before you sign. Start with our questionnaire — we'll recommend the option that fits your circumstances, and you're free to choose either.</p>
 
@@ -29,26 +35,39 @@ export const serviceContent = {
           <li><strong>Printing &amp; posting</strong> &mdash; &pound;20 single / &pound;30 pair. We print, include clear signing instructions, and post to you ready for signature.</li>
           <li><strong>Lifetime updates</strong> &mdash; &pound;20 per person per year. Update your will whenever life changes (marriage, children, new home, change of executor). Fair use of 5 updates per year, where a "use" is each time a new version of your will is generated. Every updated will is reviewed by a solicitor.</li>
         </ul>
+        <p style="margin-top:20px;color:#6b7280;font-size:0.95rem">The online will is delivered by <a href="https://makeawillonline.co.uk/">Make a Will Online</a>, our sister service. Start the questionnaire and we'll guide you to the right route.</p>
       </div>
 
       <div style="border:1px solid #e5e7eb;border-radius:8px;padding:24px;margin:24px 0">
-        <p style="font-size:0.85rem;color:#6b7280;margin:0 0 4px;text-transform:uppercase;letter-spacing:0.05em;font-weight:500">Option 2 &mdash; For more complex circumstances</p>
-        <h3 style="margin:0 0 16px">Will with solicitor consultation</h3>
-        <p style="font-size:1.5rem;font-weight:600;margin:0 0 4px">&pound;350 + VAT <span style="color:#6b7280;font-size:1rem;font-weight:400">(&pound;420 inc VAT)</span> single will</p>
-        <p style="font-size:1.5rem;font-weight:600;margin:0 0 20px">&pound;550 + VAT <span style="color:#6b7280;font-size:1rem;font-weight:400">(&pound;660 inc VAT)</span> mirror wills</p>
-        <p><strong>What's included:</strong></p>
+        <p style="font-size:0.85rem;color:#6b7280;margin:0 0 4px;text-transform:uppercase;letter-spacing:0.05em;font-weight:500">Option 2 &mdash; For more complex needs or peace of mind</p>
+        <h3 style="margin:0 0 16px">Will with full solicitor consultation</h3>
+        <p style="font-size:1.5rem;font-weight:600;margin:0 0 4px">From &pound;350 + VAT <span style="color:#6b7280;font-size:1rem;font-weight:400">(&pound;420 inc VAT)</span> &mdash; single will</p>
+        <p style="font-size:1.5rem;font-weight:600;margin:0 0 12px">From &pound;550 + VAT <span style="color:#6b7280;font-size:1rem;font-weight:400">(&pound;660 inc VAT)</span> &mdash; mirror wills</p>
+        <p style="color:#6b7280;font-size:0.95rem;margin:0 0 20px">More complex matters (trusts, inheritance tax planning, vulnerable beneficiaries) are quoted higher. The fixed fee is always agreed in writing before any drafting starts.</p>
+
+        <p><strong>How it works:</strong></p>
+        <ol>
+          <li><strong>Book a free 15-minute call</strong> so we understand what you need. No obligation, no drafting at this stage.</li>
+          <li><strong>Have a full consultation</strong> (45&ndash;60 minutes by phone or video) covering your assets, family, and anything that needs careful handling.</li>
+          <li><strong>Receive a fixed-fee quote</strong>, agreed before drafting begins.</li>
+          <li><strong>Your solicitor drafts the will</strong> and posts it to you with signing instructions. 28 days to amend.</li>
+        </ol>
+        <p><a href="/resource/how-our-solicitor-consultation-works">Read more: how our solicitor consultation works</a>.</p>
+
+        <p style="margin-top:20px"><strong>What's included:</strong></p>
         <ul>
-          <li>One-to-one consultation with a qualified solicitor (typically 45&ndash;60 minutes, by phone or video)</li>
-          <li>Your will drafted personally based on what we discuss</li>
-          <li>Solicitor review of the finalised draft, the same way every will is checked</li>
+          <li>One-to-one consultation with a qualified solicitor on our team</li>
+          <li>A will drafted around your specific circumstances, using a deeper clause library than our online product</li>
+          <li>Solicitor sign-off of the finalised draft</li>
           <li>Printing and posting included as standard</li>
           <li>28 days from completion to amend</li>
           <li>Lifetime updates included for the first year, then &pound;20 per person per year. Fair use of 5 uses per year, where a "use" is each requested amendment or each consultation (by email, phone, or meeting).</li>
         </ul>
+
         <p style="margin-top:20px"><strong>Choose this option if:</strong></p>
         <ul>
           <li>Your circumstances are more complex &mdash; business interests, property abroad, blended family, vulnerable beneficiaries, or potential inheritance tax exposure</li>
-          <li>You'd prefer to talk things through with a solicitor before anything is drafted</li>
+          <li>You'd prefer to talk things through with a solicitor for peace of mind, even if your situation is straightforward</li>
           <li>You'd value a recommendation on whether trusts or specialist tax planning would help</li>
         </ul>
       </div>
@@ -60,9 +79,8 @@ export const serviceContent = {
         <a href="/start-your-will" class="btn btn-primary">Make my will</a>
       </p>
 
-      <h2>Returning-customer credit</h2>
-      <p>If you've previously made a will with us online, the price you paid can be put towards a will with solicitor consultation if you decide to upgrade. So a single will previously made online for &pound;90 means the consultation upgrade is &pound;260 + VAT instead of &pound;350 + VAT. Just mention it when you book and we'll apply the credit automatically.</p>
-      <p>This applies whether you bought a single will or mirror wills, and there's no time limit.</p>
+      <h2>Already bought an online will?</h2>
+      <p>If your needs have grown beyond a simple will and you now want a consultation, we'll credit what you paid for your online will against your consultation quote. Just mention it when we quote. No time limit, and it works for both single and mirror wills.</p>
 
       <h2>How our pricing compares</h2>
       <p>Comparators from publicly published price lists across the UK market. Prices are total cost including VAT where the provider charges it. Prices marked "+ VAT" are exclusive of VAT, with the inclusive total shown in brackets where helpful.</p>
@@ -120,7 +138,7 @@ export const serviceContent = {
       <h2>Frequently asked</h2>
 
       <h3>What's the real difference between online and solicitor consultation?</h3>
-      <p>The legal substance and the review quality are the same &mdash; both products use the same solicitor-drafted clauses, and both go through full solicitor review. The difference is when the conversation happens. Online: you complete a questionnaire, the will is drafted, then a solicitor reviews it and contacts you if anything needs a closer look. Consultation: you talk to a solicitor first, the will is drafted with your specific circumstances in mind, and it then goes through the same review.</p>
+      <p>Different tools for different jobs. The online product (delivered by Make a Will Online) is questionnaire-led and uses a streamlined library of solicitor-drafted clauses &mdash; ideal for the great majority of straightforward estates, and reviewed by a solicitor on our team. The consultation route uses a much deeper clause library, drafted bespoke around your circumstances after a one-to-one conversation. Both produce a legally valid will in England &amp; Wales; the consultation is the right tool when your situation needs more careful planning, or when you'd prefer to talk things through with a solicitor.</p>
 
       <h3>Is the &pound;90 online will really solicitor-checked?</h3>
       <p>Yes. Every will we produce, regardless of which option you choose, is read and reviewed by a qualified solicitor on our team before you sign. <a href="/resource/how-solicitor-checked-online-will-works">See exactly how it works</a>.</p>

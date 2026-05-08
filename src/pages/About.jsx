@@ -13,8 +13,13 @@ function About() {
       <SEO />
       <div className="page-header">
         <div className="container">
-          <h1>About Us</h1>
-          <p>The only solicitor-checked online wills service</p>
+          <div className="page-header-flex">
+            <div className="page-header-text">
+              <h1>About Us</h1>
+              <p>Solicitor-checked online wills, plus one-to-one solicitor consultations</p>
+            </div>
+            <img className="page-hero-image" src="/logos/about-us-image.png" alt="About us illustration" width={1402} height={1122} />
+          </div>
         </div>
       </div>
 

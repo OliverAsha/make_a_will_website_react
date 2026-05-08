@@ -73,6 +73,61 @@ no real value — there's no static content for crawlers to index:
   maintained alongside the HTML build. `robots.txt` has explicit allowlist
   entries for AI crawlers (GPTBot, ClaudeBot, PerplexityBot, etc.).
 
+## Page-top hero image styling
+
+Top-of-page illustrations on `/about-us`, `/pricing`, `/faq`, `/resources`,
+`/blog`, `/contact` (and any future content page) sit **inside the
+`.page-header` bar, alongside the page title and subtitle**. Image is on
+the right at desktop widths (>768px) and stacks above the text on mobile.
+
+The styling lives in **CSS classes in `src/index.css`**:
+
+- `.page-header-flex` — flex container inside `.container` that puts text
+  beside an image. Becomes a vertical stack on mobile.
+- `.page-header-text` — wraps the `<h1>` and subtitle `<p>`. Lets the text
+  block flex-grow without crowding the image.
+- `.page-hero-image` — caps width at 240px in this context, applies
+  `--border-radius` and `--shadow-lg`. (The same class is reused outside
+  the header at 300px max-width via `.page-hero-image-wrapper`, kept
+  for any standalone-image use case.)
+
+**When adding a new page with a hero illustration, use this markup
+pattern.** Do not put the image inside the body content (the prerendered
+article); put it in the page-header in JSX so it sits alongside the title.
+
+In a JSX page file:
+```jsx
+<div className="page-header">
+  <div className="container">
+    <div className="page-header-flex">
+      <div className="page-header-text">
+        <h1>Page Title</h1>
+        <p>Optional subtitle</p>
+      </div>
+      <img className="page-hero-image"
+           src="/logos/your-image.png"
+           alt="..." width={W} height={H} />
+    </div>
+  </div>
+</div>
+```
+
+For service-page routes that go through `ServicePage.jsx`, opt in by
+adding a `headerImage` field to the service entry in `src/data/services.js`:
+```js
+'my-service': {
+  title: 'My Service',
+  description: '...',
+  headerImage: { src: '/logos/x.png', alt: '...', width: W, height: H },
+  content: `...`
+}
+```
+`ServicePage.jsx` will render it in the page-header automatically.
+
+If you need an image *outside* the header (e.g. inline in article body),
+use the older `.page-hero-image-wrapper` + `.page-hero-image` pattern;
+that's still defined in `index.css` for that case.
+
 ## Source of truth for the founder's credentials
 
 Oliver Asha's name, job title, qualifications, and verifiable profile URLs

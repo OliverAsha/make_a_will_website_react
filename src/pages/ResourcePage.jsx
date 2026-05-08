@@ -171,8 +171,10 @@ function ResourcePage() {
             className="article-byline"
             style={{
               margin: '8px 0 0',
+              maxWidth: 'none',
               fontSize: '0.95rem',
-              color: '#6b7280'
+              color: '#6b7280',
+              textAlign: 'right'
             }}
           >
             By{' '}

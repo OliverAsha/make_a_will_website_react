@@ -55,8 +55,26 @@ function ServicePage() {
       <SEO />
       <div className="page-header">
         <div className="container">
-          <h1>{page.title}</h1>
-          {page.description && <p>{page.description}</p>}
+          {page.headerImage ? (
+            <div className="page-header-flex">
+              <div className="page-header-text">
+                <h1>{page.title}</h1>
+                {page.description && <p>{page.description}</p>}
+              </div>
+              <img
+                className="page-hero-image"
+                src={page.headerImage.src}
+                alt={page.headerImage.alt}
+                width={page.headerImage.width}
+                height={page.headerImage.height}
+              />
+            </div>
+          ) : (
+            <>
+              <h1>{page.title}</h1>
+              {page.description && <p>{page.description}</p>}
+            </>
+          )}
         </div>
       </div>
 

@@ -16,19 +16,18 @@ function FAQ() {
       <SEO />
       <div className="page-header">
         <div className="container">
-          <h1>Frequently Asked Questions</h1>
-          <p>Find answers to common questions about making a will online</p>
+          <div className="page-header-flex">
+            <div className="page-header-text">
+              <h1>Frequently Asked Questions</h1>
+              <p>Find answers to common questions about making a will online</p>
+            </div>
+            <img className="page-hero-image" src="/logos/faq-image.png" alt="FAQ illustration" width={1402} height={1122} />
+          </div>
         </div>
       </div>
 
       <section className="faq-section">
         <div className="container">
-          <div className="text-center" style={{ marginBottom: '40px' }}>
-            <img src="/logos/faq-image.png" alt="FAQ illustration" width={1402} height={1122} style={{ maxWidth: '300px', height: 'auto' }} />
-            <p style={{ marginTop: '20px', maxWidth: '600px', margin: '20px auto 0' }}>
-              Find answers to the most common questions about making a will online, from legal validity to pricing.
-            </p>
-          </div>
           <div className="content-wrapper">
             {faqItems.map((faq, index) => (
               <div

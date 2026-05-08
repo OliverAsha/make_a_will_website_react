@@ -482,6 +482,9 @@ export const resourceContent = {
       <p>A will that is ambiguously worded, or that is missing a key clause, can cost your family thousands of pounds in legal fees, delay <a href="/resource/do-i-need-probate">probate</a> by months, and cause disputes between people you love. The whole point of a will is to make things easier when you are no longer there to explain what you meant.</p>
       <p>A solicitor reviewing your will is the difference between a document and a plan that actually works.</p>
 
+      <h2>What if I need more than an online will?</h2>
+      <p>For some circumstances &mdash; trusts, business interests, property abroad, blended families, vulnerable beneficiaries, inheritance tax planning &mdash; a will needs to be drafted around your specifics rather than fitted to a questionnaire. For those cases, our <a href="/resource/how-our-solicitor-consultation-works">solicitor consultation route</a> uses a much deeper clause library and starts with a one-to-one conversation with a qualified solicitor on our team.</p>
+
       <h2>Who reviews your will</h2>
       <p><strong>Oliver Asha</strong> &mdash; Solicitor (England &amp; Wales, SRA 372772) and Trust and Estate Practitioner (TEP) &mdash; founded Make a Will in 2008. Oliver leads our solicitor review team. All of our reviewing solicitors are qualified in England and Wales and regulated by the Solicitors Regulation Authority. Verify Oliver's credentials at the <a href="https://solicitors.lawsociety.org.uk/person/159165/oliver-asha" target="_blank" rel="noopener noreferrer">Law Society</a>, the <a href="https://www.sra.org.uk/consumers/register/person/?sraNumber=372772" target="_blank" rel="noopener noreferrer">SRA register</a>, and the <a href="https://www.step.org/directory/members/mr-oliver-asha-0033c00002wbj1maab" target="_blank" rel="noopener noreferrer">STEP directory</a>.</p>
     `
@@ -1524,6 +1527,7 @@ export const resourceContent = {
         <li><strong>Property abroad:</strong> Assets in other countries may need separate legal advice.</li>
         <li><strong>Business assets:</strong> Business owners often need specific provisions to protect their business and partners.</li>
       </ul>
+      <p>If your circumstances put you firmly in the "more complex" bracket, our <a href="/resource/how-our-solicitor-consultation-works">solicitor consultation route</a> is built for that &mdash; bespoke drafting following a one-to-one conversation with a qualified solicitor, from &pound;350 + VAT.</p>
 
       <h2>Is it worth paying for a will?</h2>
       <p>Absolutely. The cost of NOT having a will can be far greater than the cost of making one. If you die without a valid will, your estate is distributed according to <a href="/resource/dying-without-a-will-intestacy">intestacy rules</a>, which may not reflect your wishes at all. Unmarried partners could be left with nothing. Family disputes can arise. And there may be inheritance tax inefficiencies that a well-drafted will could have avoided.</p>
@@ -1838,6 +1842,68 @@ export const resourceContent = {
       <h2>Why making a will matters</h2>
       <p>If you are reading this guide because you have just lost someone, you may now understand first-hand how much easier a clear will makes this whole process. A well-drafted will names executors, sets out exactly who should inherit what, and reduces the scope for confusion, delays, and disputes.</p>
       <p>If you have not yet made your own will, now is a good time to think about it. It is one of the kindest things you can do for the people who will one day have to manage your affairs. Our guide on <a href="/resource/do-i-need-to-make-a-will">whether you need a will</a> is a good place to start, and you can find out about the <a href="/resource/cost-of-making-a-will">cost of making a will</a> too.</p>
+    `
+  },
+  'how-our-solicitor-consultation-works': {
+    title: 'How our solicitor consultation works',
+    content: `
+      <p>Our solicitor consultation route is for situations where a straightforward online will isn't the right tool &mdash; typically because your circumstances involve planning that goes beyond what a questionnaire can comfortably capture, or because you'd simply prefer to talk things through with a qualified solicitor. Common examples include business interests, property abroad, blended-family arrangements, trusts, inheritance tax planning, and vulnerable beneficiaries.</p>
+
+      <p>Consultation wills draw on a deeper clause library than our online product and are drafted bespoke to your circumstances. If your circumstances are straightforward, an online will from <a href="https://makeawillonline.co.uk/">Make a Will Online</a> (our sister service) will almost always be the right &mdash; and much cheaper &mdash; choice.</p>
+
+      <p>Here's how the consultation route works, end to end.</p>
+
+      <h2>1. Book a call</h2>
+      <p>You start with a free 15-minute call. There's no charge, no obligation, and no drafting happens at this stage. The point of the call is for us to understand your situation, suggest whether a full consultation is the right fit, and answer any initial questions you have.</p>
+      <p>You can <a href="/book-a-call">book your call online</a> or <a href="/contact">contact us</a> if you'd prefer a different time.</p>
+
+      <h2>2. Discuss your needs</h2>
+      <p>If you decide to proceed, the next step is a full consultation &mdash; typically 45 to 60 minutes, by phone or video, with a qualified solicitor on our team. We go through:</p>
+      <ul>
+        <li>Your assets (property, savings, investments, business interests, anything held abroad)</li>
+        <li>Your family circumstances (spouse or partner, children, stepchildren, dependants, anyone with particular needs)</li>
+        <li>Who you'd like to act as <a href="/resource/executors">executors</a> and, if relevant, guardians</li>
+        <li>How you'd like your estate distributed, including any specific gifts or charitable legacies</li>
+        <li>Anything more complex on the horizon &mdash; trusts, inheritance tax planning, vulnerable beneficiaries, second-marriage considerations</li>
+      </ul>
+      <p>By the end of the consultation, we'll have a clear picture of what your will needs to do.</p>
+
+      <h2>3. Get a quote</h2>
+      <p>We give you a fixed quote for the work, agreed before any drafting starts. Standard consultation wills are <strong>from &pound;350 + VAT (single)</strong> or <strong>from &pound;550 + VAT (mirror)</strong>; we'll quote higher only when the work genuinely calls for it &mdash; for example, where trusts or specialist tax planning are involved. The quote is all-inclusive: drafting, solicitor review, printing, posting, and 28 days to amend after your will is finalised.</p>
+
+      <h2>4. We draft your will</h2>
+      <p>Once you've accepted the quote, your solicitor drafts your will based on what we discussed. We aim to send the first draft within 5 working days for standard consultations, longer if the work involves trusts or external advice (we'll always tell you the expected timeline up front).</p>
+
+      <h2>5. Solicitor review and sign-off</h2>
+      <p>Once your draft is complete, a separate qualified solicitor on our team reviews it for accuracy, legal validity, and consistency with what we discussed. This second-pair-of-eyes check is a quality step every will we produce goes through, online or consultation. <a href="/resource/what-is-a-solicitor-checked-will">Read more about our solicitor-checking process here.</a></p>
+
+      <h2>6. Sign, witness, and store</h2>
+      <p>We post your will to you with clear signing instructions. To be legally valid in England &amp; Wales, you sign in the presence of two independent witnesses who are present at the same time and who also sign. <a href="/resource/who-can-witness-a-will">More on choosing witnesses here.</a> If you'd like, we can hold a copy of your will in safe storage at no extra cost.</p>
+
+      <h2>What if my circumstances are simpler?</h2>
+      <p>If, after the initial 15-minute call, we think a full consultation isn't necessary &mdash; that an online will would serve you just as well at a fraction of the cost &mdash; we'll say so. You can then move straight to the questionnaire on <a href="https://makeawillonline.co.uk/">Make a Will Online</a>, our sister service that delivers our online wills product.</p>
+
+      <h2>Already bought an online will?</h2>
+      <p>If you've already bought an online will from Make a Will Online and your circumstances have grown beyond a simple will, we'll credit what you paid for the online will against your consultation quote. Just mention it when we quote.</p>
+
+      <h2>Common questions</h2>
+
+      <h3>Is the consultation really free?</h3>
+      <p>The initial 15-minute call is free and unconditional. The full consultation and the will itself are charged at the agreed quote &mdash; we only invoice once you've accepted a quote and we've started drafting.</p>
+
+      <h3>What does the consultation actually cost in total?</h3>
+      <p>See our <a href="/pricing">pricing page</a> for current published prices. The fixed quote is agreed in writing before any drafting begins.</p>
+
+      <h3>Can I make changes after the will is drafted?</h3>
+      <p>Yes. You have 28 days from the finalised draft to request amendments. Beyond that, our optional lifetime updates package covers ongoing changes &mdash; see <a href="/pricing">pricing</a> for details.</p>
+
+      <h3>Who will I be talking to?</h3>
+      <p>A qualified solicitor of England and Wales who specialises in wills, trusts, and probate. The lead solicitor on the team is Oliver Asha (Solicitor &amp; TEP); for more on his background see the <a href="/about-us">About page</a>.</p>
+
+      <p style="text-align:center;margin:48px 0 24px">
+        <a href="/book-a-call" class="btn btn-primary">Book a free 15-minute call</a>
+      </p>
+      <p style="text-align:center;color:#6b7280;font-size:0.95rem">If your circumstances are straightforward, our sister service <a href="https://makeawillonline.co.uk/">Make a Will Online</a> may be a better fit.</p>
     `
   }
 };

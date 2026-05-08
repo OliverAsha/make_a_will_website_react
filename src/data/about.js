@@ -8,10 +8,12 @@
 
 export const aboutContent = {
   title: 'About Us',
-  description: 'The only solicitor-checked online wills service',
+  description: 'Solicitor-checked online wills, plus one-to-one solicitor consultations for more complex estates. Trusted since 2008.',
   content: `
-    <p style="text-align:center;margin-bottom:40px"><img src="/logos/about-us-image.png" alt="About us illustration" width="1402" height="1122" style="max-width:300px;height:auto"/></p>
     <p style="text-align:center;max-width:600px;margin:0 auto 40px">Learn about who we are, why we started Make a Will, and how we're making professional will-writing accessible to everyone.</p>
+
+    <h2>Two ways to make your will</h2>
+    <p>Most people only need a straightforward will, and our online product &mdash; delivered by <a href="https://makeawillonline.co.uk/">Make a Will Online</a>, our sister service &mdash; handles that quickly and affordably from &pound;90. When circumstances are more involved (trusts, business interests, blended families, inheritance tax planning), or you'd simply prefer to talk things through with a qualified solicitor, our <a href="/resource/how-our-solicitor-consultation-works">consultation route</a> is here. Either way, every will we produce is reviewed by a solicitor on our team.</p>
 
     <h2>Our Mission</h2>
     <p>At Make a Will, we believe everyone deserves access to quality legal services for creating their will. We combine the convenience of technology with the expertise of qualified solicitors to provide a service that is both accessible and reliable.</p>

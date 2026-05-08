@@ -21,6 +21,14 @@ export const faqItems = [
     answer: 'A solicitor-checked will is one that has been reviewed by a qualified legal professional to ensure it is correctly drafted, legally valid, and will accurately reflect your wishes. This provides an extra layer of protection against errors or ambiguities that could lead to disputes. <a href="/resource/what-is-a-solicitor-checked-will">Learn more about solicitor-checked wills</a>.'
   },
   {
+    question: "What's the difference between Make a Will and Make a Will Online?",
+    answer: 'Make a Will Online is our online wills service — solicitor-drafted, solicitor-checked, questionnaire-led, and from £90. It\'s designed for the great majority of estates where a streamlined process is the right fit. Make a Will is where you book a one-to-one consultation with a solicitor when your circumstances need a closer look — business interests, foreign property, blended-family arrangements, trusts, inheritance tax planning, vulnerable beneficiaries, or anything that needs to be drafted around your specifics. Consultation wills draw on a much deeper clause library than the online product. <a href="/resource/how-our-solicitor-consultation-works">See how our solicitor consultation works</a>.'
+  },
+  {
+    question: "How do I know whether to do an online will or book a consultation?",
+    answer: 'Start the questionnaire — most people get a clear recommendation within a few minutes. As a rule: if your circumstances are straightforward (single property, simple family situation, no business or foreign assets, no inheritance-tax complications), the online route on Make a Will Online is almost always the right fit. If anything is less straightforward, or you\'d simply prefer to talk things through with a solicitor for peace of mind, the consultation route is worth the conversation. Either way, we\'ll tell you what we recommend — and you\'re free to choose either. <a href="/pricing">See both options</a>.'
+  },
+  {
     question: "Can I update my will after I've made it?",
     answer: 'Yes! With Make a Will, you get lifetime updates included. You can log in and make changes to your will whenever your circumstances change — whether you get married, have children, buy property, or simply change your mind about who should inherit. <a href="/lifetime-updates">Learn about lifetime updates</a>.'
   },
