@@ -59,7 +59,8 @@ function MakeYourWill() {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '30px', marginBottom: '40px' }}>
               <div className="card" style={{ padding: '30px', textAlign: 'center' }}>
                 <h3>Single Will</h3>
-                <p style={{ fontSize: '2rem', color: '#D4832E', fontWeight: '700' }}>£90</p>
+                <p style={{ fontSize: '2rem', color: '#D4832E', fontWeight: '700', marginBottom: '4px' }}>£60</p>
+                <p style={{ fontStyle: 'italic', color: '#6b7280', fontSize: '0.85rem', marginTop: 0, marginBottom: '12px' }}>provided by Make a Will Online</p>
                 <p>Perfect for individuals who want to create their will.</p>
                 <ul style={{ textAlign: 'left', marginBottom: '20px' }}>
                   <li>Solicitor-checked</li>
@@ -77,7 +78,8 @@ function MakeYourWill() {
                   Most Popular
                 </div>
                 <h3>Mirror Wills</h3>
-                <p style={{ fontSize: '2rem', color: '#D4832E', fontWeight: '700' }}>£135</p>
+                <p style={{ fontSize: '2rem', color: '#D4832E', fontWeight: '700', marginBottom: '4px' }}>£90</p>
+                <p style={{ fontStyle: 'italic', color: '#6b7280', fontSize: '0.85rem', marginTop: 0, marginBottom: '12px' }}>provided by Make a Will Online</p>
                 <p>For couples who want matching wills that reflect each other.</p>
                 <ul style={{ textAlign: 'left', marginBottom: '20px' }}>
                   <li>Two wills for couples</li>

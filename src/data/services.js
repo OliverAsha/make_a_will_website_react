@@ -1,7 +1,7 @@
 export const serviceContent = {
   'pricing': {
     title: 'Pricing',
-    description: 'Two solicitor-checked options: online from £90, or with a one-to-one consultation.',
+    description: 'Two solicitor-checked options: online from £60 (provided by Make a Will Online), or with a one-to-one consultation.',
     headerImage: {
       src: '/logos/pricing-image.png',
       alt: 'Pricing illustration',
@@ -20,8 +20,9 @@ export const serviceContent = {
       <div style="border:1px solid #e5e7eb;border-radius:8px;padding:24px;background:#f9fafb;margin:24px 0">
         <p style="font-size:0.85rem;color:#6b7280;margin:0 0 4px;text-transform:uppercase;letter-spacing:0.05em;font-weight:500">Option 1 &mdash; Recommended for most people</p>
         <h3 style="margin:0 0 16px">Online will</h3>
-        <p style="font-size:1.5rem;font-weight:600;margin:0 0 4px">&pound;90 single will</p>
-        <p style="font-size:1.5rem;font-weight:600;margin:0 0 20px">&pound;135 mirror wills</p>
+        <p style="font-size:1.5rem;font-weight:600;margin:0 0 4px">&pound;60 single will</p>
+        <p style="font-size:1.5rem;font-weight:600;margin:0 0 4px">&pound;90 mirror wills</p>
+        <p style="font-style:italic;color:#6b7280;font-size:0.9rem;margin:0 0 20px">provided by Make a Will Online</p>
         <p><strong>What's included:</strong></p>
         <ul>
           <li>Plain-English online questionnaire (most people finish in 15&ndash;30 minutes)</li>
@@ -96,9 +97,9 @@ export const serviceContent = {
         </thead>
         <tbody>
           <tr style="background:#fef3c7">
-            <td><strong>Make a Will (us)</strong></td>
+            <td><strong>Make a Will (us)</strong><br><em style="font-weight:normal;color:#6b7280;font-size:0.85rem">provided by Make a Will Online</em></td>
+            <td><strong>&pound;60</strong></td>
             <td><strong>&pound;90</strong></td>
-            <td><strong>&pound;135</strong></td>
           </tr>
           <tr><td>Which? Wills</td><td>from &pound;99</td><td>bundles from &pound;196</td></tr>
           <tr><td>Co-op Legal Services</td><td>&pound;149</td><td>&pound;199</td></tr>
@@ -140,8 +141,9 @@ export const serviceContent = {
       <h3>What's the real difference between online and solicitor consultation?</h3>
       <p>Different tools for different jobs. The online product (delivered by Make a Will Online) is questionnaire-led and uses a streamlined library of solicitor-drafted clauses &mdash; ideal for the great majority of straightforward estates, and reviewed by a solicitor on our team. The consultation route uses a much deeper clause library, drafted bespoke around your circumstances after a one-to-one conversation. Both produce a legally valid will in England &amp; Wales; the consultation is the right tool when your situation needs more careful planning, or when you'd prefer to talk things through with a solicitor.</p>
 
-      <h3>Is the &pound;90 online will really solicitor-checked?</h3>
+      <h3>Is the &pound;60 online will really solicitor-checked?</h3>
       <p>Yes. Every will we produce, regardless of which option you choose, is read and reviewed by a qualified solicitor on our team before you sign. <a href="/resource/how-solicitor-checked-online-will-works">See exactly how it works</a>.</p>
+      <p style="font-style:italic;color:#6b7280;font-size:0.9rem;margin:-8px 0 16px">The &pound;60 online will is provided by Make a Will Online, our sister service.</p>
 
       <h3>How does the questionnaire choose between online and consultation?</h3>
       <p>As you go through the questionnaire, we ask about things that matter for the kind of will you need &mdash; business interests, foreign property, second-marriage trusts, vulnerable beneficiaries, inheritance tax exposure, and so on. If your answers suggest a straightforward will, we recommend the online option. If they suggest more careful planning, we recommend the consultation. You're free to choose either at the end &mdash; there's no automatic gating.</p>

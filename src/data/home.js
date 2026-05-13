@@ -24,7 +24,7 @@ export const homeContent = {
             </div>
             <ul class="hero-features">
               <li>${checkSvg}<span>Every will reviewed by a qualified solicitor</span></li>
-              <li>${checkSvg}<span>Single will £90, mirror wills £135</span></li>
+              <li>${checkSvg}<span>Single will £60, mirror wills £90<br><em style="font-weight:normal;color:#6b7280;font-size:0.85rem">provided by Make a Will Online</em></span></li>
               <li>${checkSvg}<span>Legally valid in England &amp; Wales</span></li>
             </ul>
           </div>

@@ -46,7 +46,7 @@ function Hero() {
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                   <polyline points="20 6 9 17 4 12"/>
                 </svg>
-                <span>Single will £90, mirror wills £135</span>
+                <span>Single will £60, mirror wills £90<br /><em style={{ fontWeight: 'normal', color: '#6b7280', fontSize: '0.85rem' }}>provided by Make a Will Online</em></span>
               </li>
               <li>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">

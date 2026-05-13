@@ -22,7 +22,7 @@ export const faqItems = [
   },
   {
     question: "What's the difference between Make a Will and Make a Will Online?",
-    answer: 'Make a Will Online is our online wills service — solicitor-drafted, solicitor-checked, questionnaire-led, and from £90. It\'s designed for the great majority of estates where a streamlined process is the right fit. Make a Will is where you book a one-to-one consultation with a solicitor when your circumstances need a closer look — business interests, foreign property, blended-family arrangements, trusts, inheritance tax planning, vulnerable beneficiaries, or anything that needs to be drafted around your specifics. Consultation wills draw on a much deeper clause library than the online product. <a href="/resource/how-our-solicitor-consultation-works">See how our solicitor consultation works</a>.'
+    answer: 'Make a Will Online is our online wills service — solicitor-drafted, solicitor-checked, questionnaire-led, and from £60. It\'s designed for the great majority of estates where a streamlined process is the right fit. Make a Will is where you book a one-to-one consultation with a solicitor when your circumstances need a closer look — business interests, foreign property, blended-family arrangements, trusts, inheritance tax planning, vulnerable beneficiaries, or anything that needs to be drafted around your specifics. Consultation wills draw on a much deeper clause library than the online product. <a href="/resource/how-our-solicitor-consultation-works">See how our solicitor consultation works</a>.'
   },
   {
     question: "How do I know whether to do an online will or book a consultation?",
@@ -58,7 +58,7 @@ export const faqItems = [
   },
   {
     question: "How much does it cost to make a will?",
-    answer: 'Our single wills start from £90, and mirror wills for couples are £135. Every will is checked by a qualified solicitor, and lifetime updates are included at no extra cost. This compares to £150–£500+ for a traditional solicitor visit. <a href="/resource/cost-of-making-a-will">See our full pricing guide</a>.'
+    answer: 'Our single wills start from £60, and mirror wills for couples are £90. Every will is checked by a qualified solicitor, and lifetime updates are included at no extra cost. This compares to £150–£500+ for a traditional solicitor visit. <a href="/resource/cost-of-making-a-will">See our full pricing guide</a>. <em>Online wills provided by Make a Will Online.</em>'
   },
   {
     question: "Do I need an LPA as well as a will?",

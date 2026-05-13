@@ -7,7 +7,7 @@ const SITE_URL = 'https://www.makeawill.co.uk';
 const seoConfig = {
   // Main pages
   '/': {
-    title: 'Make a Will | Solicitor-Checked Wills from £90',
+    title: 'Make a Will | Solicitor-Checked Wills from £60',
     description: 'Create a solicitor-checked will online in as little as 15 minutes. Trusted since 2008, with lifetime updates and a money-back guarantee.'
   },
   '/faq': {
@@ -185,7 +185,7 @@ const seoConfig = {
 
   '/resource/cost-of-making-a-will': {
     title: 'How Much Does It Cost to Make a Will? | UK Pricing Guide',
-    description: 'Compare the cost of making a will online vs with a solicitor. Our solicitor-checked wills start from £90. Find out what affects the price and what\'s included.'
+    description: 'Compare the cost of making a will online vs with a solicitor. Our solicitor-checked wills start from £60. Find out what affects the price and what\'s included. Online wills provided by Make a Will Online.'
   },
   '/resource/inheritance-tax-guide': {
     title: 'Inheritance Tax: Thresholds, Rates & How to Reduce It',
@@ -214,8 +214,8 @@ const seoConfig = {
 
   // Service pages
   '/pricing': {
-    title: 'Pricing | Solicitor-Checked Wills from £90',
-    description: '£90 for a solicitor-checked online will, £135 for mirror wills, £350+VAT for a will with solicitor consultation. See how our prices compare to other UK providers.'
+    title: 'Pricing | Solicitor-Checked Wills from £60',
+    description: '£60 for a solicitor-checked online will, £90 for mirror wills, £350+VAT for a will with solicitor consultation. See how our prices compare to other UK providers. Online wills provided by Make a Will Online.'
   },
   '/lifetime-updates': {
     title: 'Lifetime Will Updates | Change Your Will Anytime',

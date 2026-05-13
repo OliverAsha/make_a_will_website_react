@@ -83,7 +83,7 @@ const faqPageSchema = {
 //   '/some-page': { title: '...', description: '...', schema: someSchemaObject }
 const seoConfig = {
   '/': {
-    title: 'Make a Will | Solicitor-Checked Wills from £90',
+    title: 'Make a Will | Solicitor-Checked Wills from £60',
     description: 'Create a solicitor-checked will online in as little as 15 minutes. Trusted since 2008, with lifetime updates and a money-back guarantee.'
   },
   '/faq': {
@@ -253,7 +253,7 @@ const seoConfig = {
   },
   '/resource/cost-of-making-a-will': {
     title: 'How Much Does It Cost to Make a Will? | UK Pricing Guide',
-    description: 'Compare the cost of making a will online vs with a solicitor. Our solicitor-checked wills start from £90. Find out what affects the price and what\'s included.'
+    description: 'Compare the cost of making a will online vs with a solicitor. Our solicitor-checked wills start from £60. Find out what affects the price and what\'s included. Online wills provided by Make a Will Online.'
   },
   '/resource/inheritance-tax-guide': {
     title: 'Inheritance Tax: Thresholds, Rates & How to Reduce It',
@@ -280,8 +280,8 @@ const seoConfig = {
     description: 'Step-by-step checklist of what to do when someone dies in the UK — from registering the death to applying for probate and distributing the estate.'
   },
   '/pricing': {
-    title: 'Pricing | Solicitor-Checked Wills from £90',
-    description: '£90 for a solicitor-checked online will, £135 for mirror wills, £350+VAT for a will with solicitor consultation. See how our prices compare to other UK providers.'
+    title: 'Pricing | Solicitor-Checked Wills from £60',
+    description: '£60 for a solicitor-checked online will, £90 for mirror wills, £350+VAT for a will with solicitor consultation. See how our prices compare to other UK providers. Online wills provided by Make a Will Online.'
   },
   '/lifetime-updates': {
     title: 'Lifetime Will Updates | Change Your Will Anytime',
@@ -755,7 +755,7 @@ function generateLlmsTxt() {
   let out = '';
   out += '# Make a Will\n\n';
   out += '> The only solicitor-checked online wills service in the UK. Founded in 2008 by Oliver Asha, a Solicitor of England and Wales (SRA 372772) and Trust and Estate Practitioner (TEP).\n\n';
-  out += "Make a Will lets people in England and Wales create a legally valid will online in around 15–30 minutes, with every will reviewed by a qualified solicitor before it's delivered. Single wills from £90; mirror wills for couples £135. Lifetime updates included; 30-day money-back guarantee. All guides on this site are authored by Oliver Asha.\n\n";
+  out += "Make a Will lets people in England and Wales create a legally valid will online in around 15–30 minutes, with every will reviewed by a qualified solicitor before it's delivered. Single wills from £60; mirror wills for couples £90 (online wills provided by Make a Will Online). Lifetime updates included; 30-day money-back guarantee. All guides on this site are authored by Oliver Asha.\n\n";
 
   const seen = new Set();
 

@@ -1497,10 +1497,11 @@ export const resourceContent = {
       <h2>Our pricing</h2>
       <p>At Make a Will, we offer solicitor-checked wills at straightforward, transparent prices:</p>
       <ul>
-        <li><strong>Single will:</strong> £90</li>
-        <li><strong>Mirror wills (for couples):</strong> £135</li>
+        <li><strong>Single will:</strong> £60</li>
+        <li><strong>Mirror wills (for couples):</strong> £90</li>
         <li><strong>Will + <a href="/resource/lpa-vs-will">LPA</a> bundle:</strong> £249</li>
       </ul>
+      <p style="font-style:italic;color:#6b7280;font-size:0.9rem;margin-top:-8px">Online wills provided by Make a Will Online.</p>
       <p>You can <a href="/make-your-will">get started with your will here</a>. Every will we produce is checked by a qualified solicitor, and our price includes <a href="/lifetime-updates">lifetime updates</a> — so you can change your will whenever your circumstances change, at no extra cost.</p>
 
       <h2>Traditional solicitor costs</h2>
@@ -1534,7 +1535,8 @@ export const resourceContent = {
       <p>For the price of a meal out, you can have a professionally checked will that protects your family and gives you complete peace of mind. And if you are not completely satisfied, we offer a full <a href="/money-back-guarantee">money-back guarantee</a>.</p>
 
       <h2>Get started</h2>
-      <p>Making a will does not have to be expensive or complicated. Our guided online questionnaire takes about 15 minutes, and every will is reviewed by a solicitor before it reaches you. <a href="/make-your-will">Start your will today</a> from just £90.</p>
+      <p>Making a will does not have to be expensive or complicated. Our guided online questionnaire takes about 15 minutes, and every will is reviewed by a solicitor before it reaches you. <a href="/make-your-will">Start your will today</a> from just £60.</p>
+      <p style="font-style:italic;color:#6b7280;font-size:0.9rem;margin-top:-8px">Online wills provided by Make a Will Online.</p>
     `
   },
   'inheritance-tax-guide': {
@@ -1739,7 +1741,8 @@ export const resourceContent = {
 
       <h2>Our approach</h2>
       <p>Rather than giving you a blank template to fill in, our service uses a guided questionnaire that builds your will section by section. You answer straightforward questions about your family, your assets, and your wishes, and we generate a properly structured will document. A qualified solicitor then reviews everything before your will is finalised.</p>
-      <p>Single wills start from just £90. <a href="/make-your-will">Start making your will today</a>.</p>
+      <p>Single wills start from just £60. <a href="/make-your-will">Start making your will today</a>.</p>
+      <p style="font-style:italic;color:#6b7280;font-size:0.9rem;margin-top:-8px">Online wills provided by Make a Will Online.</p>
       <p>And if you are wondering whether an online will is valid — yes, <a href="/resource/are-online-wills-legal">online wills are legally valid</a> in England and Wales. It is the content and execution (signing and witnessing) that determine whether a will is legally binding, not the method used to create it.</p>
     `
   },
